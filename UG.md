@@ -19,46 +19,46 @@ Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep
 
 ### Keywords
 
-<span style="color: blue;">**Tasks**</span>
+**Tasks**
 
 A task refers to something that you would like to get done. This refers to reading a book or doing an assignment. Tasks can be created with or without a deadline. <br>
 
-<span style="color: blue;">**Deadline**</span>
+**Deadline**
 
 A deadline refers to a date and time associated with a task. This is in the format: DAY-MONTH-YEAR TIME_24H, e.g. `23-12-2020 1400` or `1-2-2000 0800` <br>
 
-<span style="color: blue;">**Modules**</span>
+**Modules**
 
 A module refers to a module taken under NUS. Entered modules will be checked against the list of NUS modules. <br>
 
-<span style="color: blue;">**CAP**</span>
+**CAP**
 
 CAP refers to Cumulative Average Point, which is the grading system used by NUS. CAP will be calculated based on your modules. <br>
 
-<span style="color: blue;">**Done**</span>
+**Done**
 
 A task can be marked as done. This will signify completion of the task so that you can get an easy view of any remaining tasks. <br>
 
-<span style="color: blue;">**Timetable**</span>
+**Timetable**
 
 The timetable is specific to you. It allows you to add lessons to your timetable with respect to the modules that you are taking. After setting the timetable up the first time, you do not need to go through the set up again. <br>
 
-<span style="color: blue;">**Day**</span>
+**Day**
 
 Values for `<day>`:\
 `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
 
-<span style="color: blue;">**Lesson Type**</span>
+**Lesson Type**
 
 Values for `<lesson type>`:\
 `TUTORIAL`, `LECTURE`, `SEMINAR`, `LAB`, `RECITATION`, `SESSION`
 
-<span style="color: blue;">**Time**</span>
+**Time**
 
 Format of `<time>`:\
 Must be in the 24h format e.g. `0900`, `1415`
 
-<span style="color: blue;">**Undo**</span>
+**Undo**
 
 Commands that can be undone:
 * Add / Delete tasks
@@ -85,76 +85,27 @@ Some example commands you can try:
 
 ## Features
 
-### Viewing help: `help` (Amalina)
+### Tasks
 
-Shows a message with the list of available commands and functions.
-
-#### Viewing help for a specific command: `help <command_word>`
-
-Example of usage:
-* `help`
-* `help timetable`
-* `help add`
-
-Get detailed help message for each command
-
-Example of output:
-```
-Command:
-⋗	help
-════════════════════════════════════════════════════════════════════════════════
-Hello! I'm ra.VI, your personal NUS assistant.
-I'm here to help you manage your tasks, modules, and lessons.
-This help message appears when you type 'help', or an unrecognised command.
-To find out more about any of my commands, type 'help <command>'.
-Here's a list of my commands to help you out:
-
-Action commands:
-	» add       - Add a task or module
-	» del       - Delete a task or module
-	» edit      - Edit a task or module
-	» done      - Mark a task as complete
-	» grade     - Grades and allocates MCs to a Module
-	» cap       - Calculates your CAP
-	» undo      - Undo the previous action (if you made changes)
-	» timetable - Manage your timetable
-Viewing commands:
-	» list      - Lists all tasks or modules
-	» summary   - See a neat summary of your tasks
-	» timetable - View your timetable, by day or by week
-Utility commands:
-	» help      - Get detailed help for each command
-	» bye       - Exit ra.VI (saves all changes!)
-════════════════════════════════════════════════════════════════════════════════
-```
-
-```
-Command:
-⋗	help add
-════════════════════════════════════════════════════════════════════════════════
-Add a task to the scheduler.
-	Format: add -t <task_name> [-by <deadline>]
-	Example usage: add -t Read Book
-	               add -t Return Book -by 30-12-2020 1800
-
-Add a module from NUSMods to the scheduler.
-	Format: add -m <module_code>
-	Example usage: add -m CS2113T
-════════════════════════════════════════════════════════════════════════════════
-```
-
-### Adding an item: `add <opt> <args>` (Sean)
-
-Items that can be added are either [<span style="color: blue;">tasks</span> or <span style="color: blue;">modules</span>](#13-keywords).
+Tasks are the one of the main features of ra.VI. Every modern student has tasks to do, and ra.VI helps you to manage your to-do list
 
 #### Adding a task: `add -t [-by]`
 
-You can add a <span style="color: blue;">task</span> to ra.VI by using the format below.
-<span style="color: green;">Format:</span> `add -t <task_name> [-by <deadline>]`
+You can add a task to ra.VI by using the format below.
+Format: `add -t <task_name> [-by <deadline>]`
 
-Example of usage:
-* `add -t read chapter 1`
-* `add -t read chapter 1 -by 30-12-2020 1800`
+<div class="container-lg clearfix">
+  <div class="col-6 float-left border p-4">
+    ```
+    add -t read chapter 1
+    add -t read chapter 1 -by 30-12-2020 1800
+    ```
+  </div>
+  <div class="col-6 float-right border p-4">
+    {OUTPUT}
+  </div>
+</div>
+
 
 Examples of the possible outputs:
 ```
@@ -179,422 +130,7 @@ Your new task:
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### Adding a module: `add -m`
 
-You can add a <span style="color: blue;">module</span> to ra.VI by using the format below.
-<span style="color: green;">Format:</span> `add -m <module_code>`
-
-Example of usage:
-* `add -m CS1231`
-
-Example of output:
-```
-Command:
-⋗	add -m CS1010s
-════════════════════════════════════════════════════════════════════════════════
-Your module has been added successfully.
-Your new module:
-'CS1010S: Programming Methodology (0.0MC) (Grade: No grade yet)'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-### Editing an item: `edit <opt> <args>` (Amalina)
-
-#### Editing a task description: `edit -t`
-
-You can edit a task description to ra.VI by using the format below.
-Format: `edit -t <task_index> <task_name>`
-
-Example of usage:
-* `edit -t 3 revise for CS2113`
-
-**Note:** <br>
- You can find the task indexes with `list -t`  
-
-Example of output:
-```
-Command:
-⋗	edit -t 1 buy stuff
-════════════════════════════════════════════════════════════════════════════════
-Your task has been edited successfully.
-Your task before editing - 'go running [x]'
-Your task after editing  - 'buy stuff [x]'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-#### Editing a module: `edit -m`
-
-Edit a module code in the scheduler.  
-Format: `edit -m <module_code> <new_module_code>`
-
-Example of usage:
-* `edit -m CS2113 CS2113T`
-
-Example of output:
-```
-Command:
-»	edit -m CG1112 ACC1002
-════════════════════════════════════════════════════════════════════════════════
-Your module has been edited successfully.
-Your module before editing - 'CG1112: Engineering Principles and Practice II (0.0MC) (Grade: No grade yet)'
-Your module after editing  - 'ACC1002: Financial Accounting (0.0MC) (Grade: No grade yet)'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-### Deleting an item: `del <opt> <args>` (Sean)
-
-#### Deleting a <span style="color: blue;">task:</span> `del -t`
-
-Remove a <span style="color: blue;">task</span> from the scheduler.  
-<span style="color: green;">Format:</span> `del -t <task_index>`
-
-Example of usage:
-* `del -t 1`
-
-Example of output:
-```
-Command:
-⋗	del -t 1
-════════════════════════════════════════════════════════════════════════════════
-Your task has been deleted successfully.
-Your deleted task - 'buy stuff [x]'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-#### Deleting a module: `del -m`
-
-Remove a module from the scheduler.  
-<span style="color: green;">Format:</span> `del -m <module_code>`
-
-Example of usage:
-* `del -m CS1010`
-
-Example of output:
-```
-Command:
-⋗	del -m CG1112
-════════════════════════════════════════════════════════════════════════════════
-Your module has been deleted successfully.
-Your deleted module - 'CG2271: Real-Time Operating Systems (4.0MC) (Grade: CS)'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-
-### Listing all items: `list <opt> <args>` (Amalina)
-
-#### Listing all tasks: `list -t`
-
-List all tasks in the scheduler.   
-Format: `list -t`
-
-Example of output:
-```
-Command:
-⋗	list -t
-════════════════════════════════════════════════════════════════════════════════
-Here's your list:
-
-1. go running [x]
-2. buy something [x], by 07:00PM, Sunday, 02 Feb 2020
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-#### Listing all modules: `list -m`
-
-List all modules in the scheduler.  
-Format: `list -m`
-
-Example of output:
-```
-Command:
-⋗	list -m
-════════════════════════════════════════════════════════════════════════════════
-Here's your list:
-
-1. CG1111: Engineering Principles and Practice I (4.0MC) (Grade: A+)
-2. CS1231: Discrete Structures (0.0MC) (Grade: No grade yet)
-3. CS1010: Programming Methodology (0.0MC) (Grade: No grade yet)
-4. CS1010X: Programming Methodology (0.0MC) (Grade: No grade yet)
-5. ACC1701: Accounting for Decision Makers (0.0MC) (Grade: No grade yet)
-6. CG2271: Real-Time Operating Systems (0.0MC) (Grade: No grade yet)
-7. CS2101: Effective Communication for Computing Professionals (4.0MC) (Grade: B+)
-8. GEH1032: Modern Technology in Medicine and Health (0.0MC) (Grade: No grade yet)
-════════════════════════════════════════════════════════════════════════════════
-```
-
-#### Grade a existing module: `grade` (Tobias)
-
-Assign a grade and its relevant module credits to a module in the Scheduler.
-Format: `grade <module Code> <module credit> <grade>`
-
-**Note:** <br>
-&nbsp;&nbsp;&nbsp;&nbsp;1. CS & CU are covered in the cap calculator <br>
-&nbsp;&nbsp;&nbsp;&nbsp;2. All grades input will accept both lower case and upper case. ie `A+` or `a+`.
-
-**Warning:** <br>
-*
-
-Example of usage (step-by-step) :
-Add in a module taken this semester by following the add command format mentioned earlier above.
- ie. `add -m CS2101`
-After the grade has been attained at the end of the semester, assign a grade to the respective module by following the grade format above.
-ie. `grade CS2101 4 B+`
-
-Example of output:
-```
-Command:
-⋗	grade CS2101 4 A-
-════════════════════════════════════════════════════════════════════════════════
-Your module has been graded successfully.
-The module - 'CS2101: Effective Communication for Computing Professionals (4.0MC) (Grade: A-)'.
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-#### Calculate your cap: `cap` (Tobias)
-
-Calculate your new updated cap, accumulated from past semesters.
-Format: `cap`
-
-Example of usage:
-* `cap`
-
-Example of output:
-```
-Command:
-⋗	cap
-════════════════════════════════════════════════════════════════════════════════
-Your current CAP is
-4.31
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-### Mark as done: `done <task_index>` (Amalina)
-
-Mark a task in the scheduler as done.  
-Format: `done <task_index>`
-
-Example of usage:
-* `done 1`
-
-**Note:** <br>
- You can find the task indexes with `list -t`  
-
-Example of output:
-```
-Command:
-⋗	done 1
-════════════════════════════════════════════════════════════════════════════════
-The task has been successfully marked as complete.
-Your completed task - 'buy new stuff [√]'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-### Undo a command: `undo` (Sean)
-
-<span style="color: blue;">Undo</span> takes the latest command that affects the save files of ra.VI and reverts its changes. You can look at [keywords](#13-keywords) for more details on the types of commands that will be reverted by undo.\
-Requirement: The previous command to be undone must be a command that affects the data files. e.g. [add](#32-adding-an-item-add-opt-args), [del](#34-deleting-an-item-del-opt-args), [edit](#33-editing-an-item-edit-opt-args), [done](#38-mark-as-done-done-task_index), [grade](#36-grade-a-existing-module-grade), [timetable -add](#3112-add-a-lesson-timetable--add), [timetable -del](#3113-delete-a-lesson-timetable--del), [timetable -reset](#3114-reset-the-timetable-timetable--reset)
-<span style="color: green;">Format:</span> `undo`
-
-Example of usage:
-1. `add -m CS2113T`
-2. `undo`
-
-Example of output:
-```
-Command:
-⋗	undo
-════════════════════════════════════════════════════════════════════════════════
-Undo is successful.
-Command undone - 'done 1'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-### Summary: `summary` (Amalina)
-
-Gets an overall view of the tasks.
-Format: `summary`
-
-Example of usage:
-* `summary`
-
-Example of output:
-```
-Command:
-⋗	summary
-════════════════════════════════════════════════════════════════════════════════
-Here's a summary of your latest tasks...
-
-Incomplete tasks with deadlines:
-1. buy something [x], by 07:00PM, Sunday, 02 Feb 20
-
-Incomplete tasks with no deadline:
-1. go running [x]
-
-Completed tasks:
-Your list is empty.
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-### Timetable: `timetable <opt> <args>` (Jun you)
-
-#### View the timetable: `timetable <args>`
-
-View the timetable for the day or for the week.\
-`<args>` : Must be one of the following : `-day` or `-week`
-
-Example of usage:
-* `timetable -day`
-* `timetable -week`
-
-Example of output:
-```
-Command:
-⋗	timetable -day
-════════════════════════════════════════════════════════════════════════════════
-Current NUS Week: 1
-
-TUESDAY, 03-11-20:
- ┌───────────┬────┬────────────────────┐
- │   Time    │ ID │       Lesson       │
- ├───────────┼────┼────────────────────┤
- │ 1300-1400 │ 01 │  CS2101 Tutorial   │
- └───────────┴────┴────────────────────┘
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-```
-Command:
-⋗	timetable -week
-════════════════════════════════════════════════════════════════════════════════
-Current NUS Week: 1
-
-No lessons on MONDAY, 02-11-20.
-
-TUESDAY, 03-11-20:
- ┌───────────┬────┬────────────────────┐
- │   Time    │ ID │       Lesson       │
- ├───────────┼────┼────────────────────┤
- │ 1300-1400 │ 01 │  CS2101 Tutorial   │
- └───────────┴────┴────────────────────┘
-
-No lessons on WEDNESDAY, 04-11-20.
-
-THURSDAY, 05-11-20:
- ┌───────────┬────┬────────────────────┐
- │   Time    │ ID │       Lesson       │
- ├───────────┼────┼────────────────────┤
- │ 0900-1200 │ 01 │     CG1111 Lab     │
- └───────────┴────┴────────────────────┘
-
-No lessons on FRIDAY, 06-11-20.
-
-No lessons on SATURDAY, 07-11-20.
-
-No lessons on SUNDAY, 08-11-20.
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-#### Add a lesson: `timetable -add`
-
-Adds a lesson to the timetable.\
-Format: `timetable -add <module> <day> <start time> <end time> <lesson type> <repeat>` <br>
-`<module>` : Must be added to the module list. See module list with `list -m`. <br>
-`<day>` : Must be one of the following : `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY` <br>
-`<start time>` : Must be in 24h format <br>
-`<end time>` : Must be in 24h format and is after `<start time>` <br>
-`<lesson type>` : Must be one of the following : `TUTORIAL`, `LECTURE`, `SEMINAR`, `LAB`, `RECITATION`, `SESSION` <br>
-`<repeat>` : 0 : One time lesson ; 1 : Once a week ; 2 : Every even week ; 3 : Every odd week
-
-Example of usage:
-* `timetable -add CS2101 TUESDAY 0800 1000 LECTURE 0`
-* `timetable -add CS2113T MONDAY 1300 1500 LAB 1`
-
-Example of output:
-```
-Command:
-⋗	timetable -add cg1111 MONDAY 0900 1200 LAB 1
-════════════════════════════════════════════════════════════════════════════════
-Your lesson has been added successfully.
-Your new lesson - 'CG1111 Lab: MONDAY 900-1200'
-Added to: every week.
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-#### Delete a lesson: `timetable -del`
-
-Deletes a lesson from the timetable.<br>
-Format: `timetable -del <day> <lesson index>` <br>
-`<day>` : Must be one of the following : `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY` <br>
-`<lesson index>` : Index of the lesson to be deleted. See timetable and the indexes with `timetable -day` or `timetable -week` <br>
-
-Example of usage:
-* `timetable -del MONDAY 1`
-
-Example of output:
-```
-Command:
-⋗	timetable -del MONDAY 1
-════════════════════════════════════════════════════════════════════════════════
-Your lesson has been deleted successfully from all weeks.
-Your deleted lesson - 'CG1111 Lab: MONDAY 900-1200'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-#### Reset the timetable: `timetable -reset`
-
-Clears the current timetable and creates a new timetable.\
-Format: `timetable -reset`
-
-**Note:** <br>
-After reset, it is mandatory to key in the current academic week
-
-Example of usage: <br>
-* `timetable -reset` <br>
-* `3`
-
-Example of output:
-```
-Command:
-⋗	timetable -reset
-════════════════════════════════════════════════════════════════════════════════
-Please enter the current week num e.g. 1 - 14 where 7 is recess week.
-In ra.Vi, NUS week 7 onwards is week 8 onwards.
-For example, in Academic week 9, please input the current week num to be 10
-════════════════════════════════════════════════════════════════════════════════
-3
-════════════════════════════════════════════════════════════════════════════════
-Timetable reset successful.
-════════════════════════════════════════════════════════════════════════════════
-```
-
-### Exiting the program: `bye` (Sean)
-
-Exits ra.VI.\
-<span style="color: blue;">Format:</span> `bye`
-
-<span style="color: green;">Example</span> of output:
-```
-Command:
-⋗	bye
-════════════════════════════════════════════════════════════════════════════════
-Goodbye, hope to see you soon!
-════════════════════════════════════════════════════════════════════════════════
-```
 
 ## FAQ
 
