@@ -27,31 +27,31 @@ A task refers to something that you would like to get done. This refers to readi
 
 **Deadline**
 
-A deadline refers to a date and time associated with a task. This is in the format: DAY-MONTH-YEAR TIME_24H, e.g. `23-12-2020 1400` or `1-2-2000 0800` <br>
+A deadline refers to a date and time associated with a task. This is in the format: DAY-MONTH-YEAR TIME_24H, e.g. `23-12-2020 1400` or `1-2-2000 0800`
 
 **Modules**
 
-A module refers to a module taken under NUS. Entered modules will be checked against the list of NUS modules taken from [NUSMods](https://nusmods.com/timetable/sem-1). <br>
+A module refers to a module taken under NUS. Entered modules will be checked against the list of NUS modules taken from [NUSMods](https://nusmods.com/timetable/sem-1).
 
 **Module Code**
 
-A module code refers to the **official** module code of the module you are trying to refer to. As with modules, ra.VI will be taking reference from [NUSMods](https://nusmods.com/timetable/sem-1). <br>
+A module code refers to the **official** module code of the module you are trying to refer to. As with modules, ra.VI will be taking reference from [NUSMods](https://nusmods.com/timetable/sem-1).
 
 **CAP**
 
-CAP refers to Cumulative Average Point, which is the [grading system used by NUS](http://www.nus.edu.sg/registrar/academic-information-policies/graduate/modular-system). The CAP will be calculated based on your modules and the grades you have assigned to them. <br>
+CAP refers to Cumulative Average Point, which is the [grading system used by NUS](http://www.nus.edu.sg/registrar/academic-information-policies/graduate/modular-system). The CAP will be calculated based on your modules and the grades you have assigned to them.
 
 **Done**
 
-Any task can be marked as “done”. This will signify completion of the task so that you can get an easy view of any remaining tasks. <br>
+Any task can be marked as “done”. This will signify completion of the task so that you can get an easy view of any remaining tasks.
 
 **Timetable**
 
-The timetable holds all the lessons you take. It allows you to add lessons for modules you are taking. <br>
+The timetable holds all the lessons you take. It allows you to add lessons for modules you are taking.
 
 **NUS Week Number**
 
-NUS’s semesters last for 6 weeks, followed by Recess Week, then another 6 weeks, and finally Reading Week for a total of 14 weeks. When you first use ra.VI, you will be asked to tell ra.VI the current NUS week number. After setting the timetable up the first time, you do not need to go through the set up again.<br>
+NUS’s semesters last for 6 weeks, followed by Recess Week, then another 6 weeks, and finally Reading Week for a total of 14 weeks. When you first use ra.VI, you will be asked to tell ra.VI the current NUS week number. After setting the timetable up the first time, you do not need to go through the set up again.
 
 **Day**
 
@@ -363,19 +363,19 @@ You can check your module list by using `list -m` to check if the module has bee
 |`edit -m CS2113 CS2101`|You have `CS2113` in your module list|![Edit Module]()|
 |`edit -m CG2271 CS2101`|You do not have `CG2271` in your module list|![Edit Missing Module]()|
 
-#### Grade an existing module
+### Grade an existing module
 Assign a grade and its relevant module credits to a module in the Scheduler.
 
 **Format:**
- `grade <module Code> <module credit> <grade>`
+ `grade <module_code> <module_credit> <grade>`
 
 **Example Usage.**
 Let’s say it is the end of the semester and results are out.
 You may assign the achieved grade and its relevant module credits to the module in your personalised module list by executing the `grade` command.
 
 ```note
-* ra.VI will accept both _lowercase_ and _uppercase_. ie `A+` or `a+`. <br>
-* Relevant module information,such as the number of module credits for the relevant module, can be found at [NUSMods](https://nusmods.com/modules) <br>
+* ra.VI will accept both _lowercase_ and _uppercase_. ie `A+` or `a+`.
+* Relevant module information, such as the number of module credits for the relevant module, can be found at [NUSMods](https://nusmods.com/modules)
 ```
 
 To assign a grade and module credits to the module:
@@ -397,9 +397,10 @@ ra.VI will display the message saying that your module has been successfully gra
 |`grade CS2101 4 A+`|CS2101 has been successfully graded|![Grade CS2101 Success]()|
 |`grade ACC1002 4 C+`|ACC1002 is not in your module list|![Grade ACC1002 Failure]()|
 
+
 #### Calculate your current CAP
-Curious to know your current CAP before,during or after the semester?
-You may have the flexibility of calculating your current cap anytime.
+Curious to know your current CAP before, during or after the semester?
+You have the flexibility of calculating your current CAP at any time.
 
 **Format:**
 `cap`
@@ -641,40 +642,40 @@ ra.VI saves all data and exits.
 ### Change Directory Command `cd`
 Traverse to the target directory.
 
-**Note:** <br>
+**Note:**
 All the modules and tasks are treated as directories, like the folders in the Window OS.
 To create a task related to Module CS2101, the user need to go into the Directory CS2101, to create the task.
-Format: `cd <module code>` <br>
-        `cd ..` <br>
+Format: `cd <module code>`
+        `cd ..`
 
-Example of usage: <br>
-* `cd CS2101` <br>
-* `cd ..` <br>
+Example of usage:
+* `cd CS2101`
+* `cd ..`
 
 Example of output:
-* `CS2101` <br>
-* `Root` <br>
+* `CS2101`
+* `Root`
 
 ### 6.2 General Add `add`
 The generic way to add a module or a task to the system.
 
-**Note:** <br>
+**Note:**
 There are two types of add commands in the system: add a module and add a task.
 The general add command combines and simplifies the above two command.
 The ra.VI system could parse the general add command to different add commands according to the user current directory level.
-Format: `add <module code or task description>` <br>
-Example of usage: <br>
-* `add CS2101` <br>
-* `add read a book` <br>
+Format: `add <module code or task description>`
+Example of usage:
+* `add CS2101`
+* `add read a book`
 
 Example of output:
-* Module has been added <br>
-* Task has been added <br>
+* Module has been added
+* Task has been added
 
 ### 6.3 Undo `undo`
 Recover the data from the previous "Data-changed" operations.
 
-**Note:** <br>
+**Note:**
 "Data-changed" operations refer to Add, Edit, Delete operations only.
 
 Example of usage:
@@ -682,7 +683,7 @@ Example of usage:
 2. `undo`
 
 Example of output:
-* Undo Successfully <br>
+* Undo Successfully
 
 ### 6.4 Week Command  `week`
 A window will pop out and the task number on the each day of the upcoming week will be listed.
