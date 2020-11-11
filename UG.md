@@ -94,17 +94,11 @@ Tasks are the one of the main features of ra.VI. Every modern student has tasks 
 You can add a task to ra.VI by using the format below.
 Format: `add -t <task_name> [-by <deadline>]`
 
-<div class="container-lg clearfix">
-  <div class="col-6 float-left border p-4">
-    ```
-    add -t read chapter 1
-    add -t read chapter 1 -by 30-12-2020 1800
-    ```
-  </div>
-  <div class="col-6 float-right border p-4">
-    {OUTPUT}
-  </div>
-</div>
+|Command|Expected Output|
+|-|-|
+|`add -t read chapter 1`|`Your task has been added successfully.`|
+
+
 
 
 Examples of the possible outputs:
