@@ -227,16 +227,12 @@ You can add a module that you are currently taking into ra.VI.
 `add -m <module_code>`
 
 **Example Usage:**
-Let’s say you are taking the module {:.bg-yellow-dark.text-white}CS1010 Programming Methodology
+Let’s say you are taking the module {:.bg-yellow-dark.text-white} CS1010 Programming Methodology
 
-To add a task into ra.VI:
-1. Type `add -t`, followed by your task name, `read chapter 1`.
-2. The full command would be `add -t read chapter 1`.
+To add a module into ra.VI:
+1. Type `add -m`, followed by your module, `CS1010`.
+2. The full command would be `add -m CS1010`.
 3. Then, simply press the Enter key to execute it.
-
-Now, let’s say you have to add a deadline `30-12-2020 1800` (i.e. 30th of December 2020, 6pm).
-1. You can add this optional deadline to the task by adding `-by`, followed by the deadline for your task, but don’t forget to press enter to execute!
-2. The full command would be `add -t read chapter 1 -by 30-12-2020 1800`.
 
 **Outcome:**
 ra.VI will display the message saying that your task has been added successfully! What you would expect to see is shown below.
@@ -247,7 +243,7 @@ After you add your task, you may want to check if it is there. You will learn ho
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`add -t read chapter 1`|![Add Task]()|
+|`add -m CS1010`|![Add Modul]()|
 |`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline]()|
 
 #### Grade an existing module
@@ -261,7 +257,7 @@ Let’s say it is the end of the semester and results are out.
 You may assign the achieved grade and its relevant module credits to the module in your personalised module list by executing the `grade` command.
 
 To assign a grade and module credits to the module:
-T
+1. Type `grade` into the command box, followed by the module to be graded in list of modules, its respective module credits and finally the grade achieved for that  
 
 
 
