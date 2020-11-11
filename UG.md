@@ -85,7 +85,7 @@ Some example commands you can try:
 
 ### Tasks
 
-Tasks are the one of the main features of ra.VI. Every modern student has tasks to do, and ra.VI helps you to manage your to-do list
+Tasks are the one of the main features of ra.VI. Every modern student has tasks to do, and ra.VI helps you to manage your to-do list. This section will show you all you need to know about managing your tasks with ra.VI.
 
 #### Adding a task: `add -t [-by]`
 
@@ -93,8 +93,9 @@ Tasks are the one of the main features of ra.VI. Every modern student has tasks 
 Format: `add -t <task_name> [-by <deadline>]`
 ```
 To add a task into ra.VI:
-Type `add -t` followed by your task name, one example would be `add -t read chapter 1`
-You may also add a deadline by typing `-by` followed by the deadline.
+Type `add -t`, followed by your task name and press Enter to execute it.
+You may also add an optional deadline to the task by adding `-by`, followed by the deadline for your task, but don’t forget to also press enter to execute!
+Outcome: The result box will display the message that your task has been added successfully!
 
 |Command|Expected Output|
 |-|-|
