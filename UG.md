@@ -27,7 +27,7 @@ A task refers to something that you would like to get done. This refers to readi
 
 **Deadline**
 
-A deadline refers to a date and time associated with a task. This is in the format: DAY-MONTH-YEAR TIME_24H, e.g. `23-12-2020 1400` or `1-2-2000 0800`
+A deadline refers to a date and time associated with a task. This is in the format: DAY-MONTH-YEAR TIME_24H, e.g. `23-12-2020 1400` or `1-2-2000 0800`.
 
 **Modules**
 
@@ -56,7 +56,7 @@ NUS’s semesters last for 6 weeks, followed by Recess Week, then another 6 week
 **Day**
 
 Some commands have a `day` field for you to specify a certain day. Here are the accepted values:\
-`MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
+`MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`.
 
 ```warning
 This format must be followed exactly! Fully spelled out in uppercase. `Monday`, `Mon`, `monday` are examples of what will **not** work. If you want to specify Monday, only `MONDAY` will work.
@@ -65,7 +65,7 @@ This format must be followed exactly! Fully spelled out in uppercase. `Monday`, 
 **Lesson Type**
 
 Some commands have a `lesson_type` field for you to specify a certain type of lesson. Here are the accepted values:\
-`TUTORIAL`, `LECTURE`, `SEMINAR`, `LAB`, `RECITATION`, `SESSION`
+`TUTORIAL`, `LECTURE`, `SEMINAR`, `LAB`, `RECITATION`, `SESSION`.
 
 ```warning
 Similar to the `day` field, this format must be followed exactly! It has to be fully spelled out as shown here, and entirely in uppercase.
@@ -627,15 +627,15 @@ ra.VI saves all data and says goodbye to you before shutting down!
 | Delete a module | `del -m <module_code>` |
 | Edit a module | `edit -m <module_code> <new_module_code>` |
 | List all modules | `list -m` |
-| Grade and allocated MCs to a module | `grade <module_code> <grade>` |
-| Calculate cap | `cap` |
-| Add lesson to timetable | `timetable -add <module_code> <day> <start_time> <end_time> <lesson_type> <repeat>` |
-| Delete lesson from timetable | `timetable -del <day> <lesson_index>` |   
-| View day's timetable | `timetable -day` |
-| View week's timetable | `timetable -week` |
-| Filter timetable | `timetable -filter <module> <day> <start time> <end time> <lesson type>` |
-| Reset timetable | `timetable -reset` |
-| Undo previous action | `undo` |
+| Grade and allocate MCs to a module | `grade <module_code> <grade>` |
+| Calculate CAP | `cap` |
+| Add a lesson | `timetable -add <module_code> <day> <start_time> <end_time> <lesson_type> <repeat>` |
+| Delete a lesson | `timetable -del <day> <lesson_index>` |   
+| View today's timetable | `timetable -day` |
+| View current week's timetable | `timetable -week` |
+| Filter the timetable | `timetable -filter <module> <day> <start time> <end time> <lesson type>` |
+| Reset the timetable | `timetable -reset` |
+| Undo previous change | `undo` |
 | Get list of commands | `help` |
 | Get detailed help message for each command | `help <command_word>` |
 | Exit ra.VI | `bye` |
