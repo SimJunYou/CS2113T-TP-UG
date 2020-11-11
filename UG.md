@@ -109,7 +109,7 @@ After you add your task, you may want to check if it’s there. You will learn h
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`add -t read chapter 1`|![Add Task](https://github.com/AY2021S1-CS2113T-T09-2/tp/blob/master/docs/diagrams/MainSequenceDiagramLoopSd.png?raw=true)|
+|`add -t read chapter 1`|![Add Task](https://github.com/AY2021S1-CS2113T-T09-2/tp/blob/master/docs/diagrams/MainSequenceDiagramLoopSd.png?raw=true){:width="600px"}|
 |`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline](https://github.com/AY2021S1-CS2113T-T09-2/tp/blob/master/docs/diagrams/MainSequenceDiagramLoopSd.png?raw=true)|
 
 
