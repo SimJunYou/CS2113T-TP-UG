@@ -1,21 +1,21 @@
-<span style="font-size:150%'">ra.VI User Guide</span>
+# ra.VI User Guide
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
 
-# Introduction
+## Introduction
 
 Repository Assistant with a Versatile Interface (ra.VI) is a desktop app for managing tasks, deadlines, and timetable, optimized for use via a Command Line Interface (CLI). If you can type fast, ra.VI can manage your tasks and timetable faster than traditional GUI apps.
 
 This user guide aims to provide you with a clear documentation of ra.VI's features. In addition, the quick start guide provides an start-to-end setup process to begin tracking your tasks, modules, and lessons with ra.VI.
 
-## Product Overview
+### Product Overview
 
 ra.VI is targeted at you - the NUS freshman. As a freshman, there are many documents and new procedures that you must get familiar with. This may be daunting for you but ra.VI will provide you with the assistance you need.
 By helping you keep track of your tasks and deadlines, you will be able to keep on top of deadlines.
 Moreover, the timetable feature helps you to schedule your lessons, allowing you to be more prepared for lessons.
 Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep tabs on how well you are doing, motivating you towards that elusive CAP 5.0.
 
-## Keywords
+### Keywords
 
 **Command-Line Interface**
 
@@ -98,13 +98,13 @@ Some commands edit your tasks, modules, and lessons. All commands that edit your
 * Resetting the timetable
 * Grading a module
 
-## ra.VI’s Interface
+### ra.VI’s Interface
 
 ![Interface with arrows and labels]()
 
 ra.VI is a CLI application, which means you control it entirely with text commands. ra.VI will “talk” to you with lines of text, as indicated in the diagram.
 
-# Quick Start
+## Quick Start
 
 1. Ensure that you have Java 11 or above installed.
 2. Download the latest version of `ra.VI` from [here](https://github.com/AY2021S1-CS2113T-T09-2/tp/releases/tag/v2.1).
@@ -118,13 +118,13 @@ ra.VI is a CLI application, which means you control it entirely with text comman
   1. For example, typing `help` and pressing the Enter key will show you the help message, with a list of all of ra.VI’s commands.
 7. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
 
-# Features
+## Features
 
-## Tasks
+### Tasks
 
 Tasks are the one of the main features of ra.VI. Every modern student has tasks to do, and ra.VI helps you to manage your to-do list. This section will show you all you need to know about managing your tasks with ra.VI.
 
-### Adding a task
+#### Adding a task
 You can add a task into ra.VI to keep you on top of your tasks.
 
 **Format:**
@@ -154,7 +154,7 @@ After you add your task, you may want to check if it is there. You will learn ho
 |`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline]()|
 |`add -t read chapter 1 -by 30-12-2020 800`|![Add Task W Wrong Deadline]()|
 
-#### Listing all tasks
+##### Listing all tasks
 You have a whole list of tasks now, but you need a way to view them. ra.VI can help with that.
 
 **Format:**
@@ -176,7 +176,7 @@ You will need the task indexes for `del`, `edit`, and `done` commands!
 |--------------|--------------|
 |`list -t`|With one task in your list: ![List Task]()|
 
-### Deleting a task
+#### Deleting a task
 If your teacher cancels that last minute assignment, ra.VI can help remove a task from your task list.
 
 **Format:**
@@ -200,7 +200,7 @@ After you delete your task, you may want to check if it is there. You will be ab
 |`del -t 1`|![Delete Task]()|
 |`del -t 0`|![Delete Task wrong index]()|
 
-### Marking a task as done
+#### Marking a task as done
 Already completed your assignments and cleaned the dishes? You can mark your tasks as completed with ra.VI.
 
 **Format:**
@@ -220,7 +220,7 @@ To mark a task as done:
 **Outcome:**
 ra.VI will display the message saying that your task has been marked done! Your task will now be marked with a tick.
 
-### Editing a task description
+#### Editing a task description
 Put `CS2113 homework` instead of `CS2113 homework`? You can edit the task descriptions of existing tasks.
 
 **Format:**
@@ -243,7 +243,7 @@ You can find the index of the tasks by using `list -t`.
 |--------------|----------|--------------|
 |`edit -t 1 individual project`|You have a task `individual project` at index 1 in the list|![Edit Task]()|
 
-### Viewing task summary `summary`
+#### Viewing task summary `summary`
 To view all of your tasks
 
 **Format:**
@@ -257,11 +257,11 @@ To view your task summary:
 **Outcome:**
 ra.VI will display a neat summary of all your tasks, grouped into three categories.
 
-## Modules
+### Modules
 
 Modules are the one of the main features of ra.VI. Every NUS student takes modules, and ra.VI helps you to manage all of your modules. This section will show you all you need to know about managing your modules with ra.VI.
 
-### Adding a module
+#### Adding a module
 You can add a module that you are currently taking into ra.VI.
 
 **Format:**
@@ -292,7 +292,7 @@ You will only be able to add modules that are offered at NUS.
 |`add -m CS2113T`|![Add CS2113T]()|
 |`add -m CS`|![Add CS]()|
 
-### Listing all modules
+#### Listing all modules
 You have a whole list of modules now, but you need a way to view them. ra.VI can help with that.
 
 **Format:**
@@ -314,7 +314,7 @@ You will usually use this only to check the status of the modules and their resp
 |--------------|--------------|
 |`list -m`|With CS1010 in your list: ![List CS1010]()|
 
-### Deleting a module
+#### Deleting a module
 If you have accidentally added a module, you can either choose to use the `undo` command (which we will be going through later) or the `del` command.
 
 **Format:**
@@ -338,7 +338,7 @@ After you delete your module, you may want to check if it is there. You will be 
 |`del -m CS1010`|CS1010 is a module in your module list|![Delete CS1010 Success]()|
 |`del -m CS2113T`|CS2113T is not in your module list|![Delete CS2113T Failure]()|
 
-### Editing a module
+#### Editing a module
 Put `CS2113` instead of `CS2101`? You can edit the module code of specific modules in your module list.
 
 **Format:**
@@ -363,7 +363,7 @@ You can check your module list by using `list -m` to check if the module has bee
 |`edit -m CS2113 CS2101`|You have `CS2113` in your module list|![Edit Module]()|
 |`edit -m CG2271 CS2101`|You do not have `CG2271` in your module list|![Edit Missing Module]()|
 
-### Grade an existing module
+#### Grade an existing module
 Assign a grade and its relevant module credits to a module in the Scheduler.
 
 **Format:**
@@ -397,7 +397,7 @@ ra.VI will display the message saying that your module has been successfully gra
 |`grade CS2101 4 A+`|CS2101 has been successfully graded|![Grade CS2101 Success]()|
 |`grade ACC1002 4 C+`|ACC1002 is not in your module list|![Grade ACC1002 Failure]()|
 
-## Calculate your current CAP
+### Calculate your current CAP
 Curious to know your current CAP before,during or after the semester?
 You may have the flexibility of calculating your current cap anytime.
 
@@ -425,7 +425,7 @@ ra.VI will display the current calculated CAP to you.
 |`cap`|CAP calculated successfully|![CAP calculated Success]()|
 
 
-## Undo
+### Undo
 Deleted a task when you didn’t mean to? You can undo your previous action.
 
 **Format:**
@@ -440,10 +440,10 @@ To undo an action:
 **Outcome:**
 ra.VI will display the message saying that your last action has been undone!
 
-## Timetable
+### Timetable
 Every NUS student has lessons to take, whether they are lectures, labs or tutorials, just to name a few. These lessons are usually at regular intervals throughout the semester. ra.VI will help you arrange your lessons into a timetable, allowing you to view all of your lessons in one place.
 
-### Adding a lesson
+#### Adding a lesson
 Every student has lessons. Too many lessons, even. Let ra.VI help you keep track of them all with this command.
 
 **Format:**
@@ -475,7 +475,7 @@ ra.VI will display a message saying that your lesson has been added!
 |`timetable -add CS2113T TUESDAY 0800 1000 LECTURE 2`|Overlapping lesson times|![Timetable add Overlap Failure]()|
 |`timetable -add CS1010 THURSDAY LECTURE 2`|Missing parameters|![Timetable add Missing Parameters Failure]()|
 
-### Viewing your timetable
+#### Viewing your timetable
 Now that you have your lessons in your timetable, you can view them too!
 
 **Format:**
@@ -498,7 +498,7 @@ ra.VI will display your timetable, containing the lessons and their indexes, for
 |`timetable -day`|View day’s timetable|![Timetable view day]()|
 |`timetable -week`|View week’s timetable|![Timetable view week]()|
 
-### Deleting a lesson
+#### Deleting a lesson
 
 Made a mistake adding the wrong entry to your timetable? Delete the entry by executing the `timetable -del` command.
 
@@ -523,7 +523,7 @@ You will need the lesson indexes for `timetable -del`! Use `timetable -day` or `
 |`timetable -del MONDAY 1`|Lesson on Monday with an index of 1|![Timetable Del Success]()|
 |`timetable -del FRIDAY 3`|No lessons on Friday with an index of 3|![Timetable Del Failure]()|
 
-### Filtering lessons in your timetable
+#### Filtering lessons in your timetable
 
 Let’s say that you have a cluttered timetable and would only like to view your `CG2271` lessons. You would use the `timetable -filter` command.
 
@@ -547,7 +547,7 @@ If you want to skip using certain criteria, you can use a dash (`-`) in the plac
 |`timetable -del MONDAY 1`|Lesson on Monday with an index of 1|![Timetable Del Success]()|
 |`timetable -del FRIDAY 3`|No lessons on Friday with an index of 3|![Timetable Del Failure]()|
 
-### Resetting your timetable
+#### Resetting your timetable
 As you move to the next semester, you can continue to use ra.VI. In fact, we would appreciate it if you could use ra.VI all the way until your graduation!
 
 **Format:**
@@ -571,7 +571,7 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 |--------------|--------------|
 |`timetable -reset`|![Reset the timetable]()|
 
-## Exit
+### Exit
 Done using ra.VI? You can save your data and safely exit ra.VI.
 
 **Format:**
@@ -589,7 +589,7 @@ ra.VI saves all data and exits.
 |--------------|--------------|
 |`bye`|![bye success]()|
 
-# FAQ
+## FAQ
 
 **Q**: Can I use ra.VI on operating system other than Windows?\
 **A**: Yes. ra.VI is compatible with Windows, macOS and Linux.
@@ -608,7 +608,7 @@ ra.VI saves all data and exits.
 
 ---
 
-# Command Summary
+## Command Summary
 
 | Function | Command |
 |--------|---------------------------------------|
@@ -637,9 +637,9 @@ ra.VI saves all data and exits.
 
 ---
 
-# v3.0 Graphical User Interface
+## v3.0 Graphical User Interface
 
-## Change Directory Command `cd`
+### Change Directory Command `cd`
 Traverse to the target directory.
 
 **Note:** <br>
@@ -656,7 +656,7 @@ Example of output:
 * `CS2101` <br>
 * `Root` <br>
 
-## 6.2 General Add `add`
+### 6.2 General Add `add`
 The generic way to add a module or a task to the system.
 
 **Note:** <br>
@@ -672,7 +672,7 @@ Example of output:
 * Module has been added <br>
 * Task has been added <br>
 
-## 6.3 Undo `undo`
+### 6.3 Undo `undo`
 Recover the data from the previous "Data-changed" operations.
 
 **Note:** <br>
@@ -685,13 +685,13 @@ Example of usage:
 Example of output:
 * Undo Successfully <br>
 
-## 6.4 Week Command  `week`
+### 6.4 Week Command  `week`
 A window will pop out and the task number on the each day of the upcoming week will be listed.
 
 Example of usage:
 * `week`
 
-## 6.5 Directory Command  `dir`
+### 6.5 Directory Command  `dir`
 A window will pop out and all module with related tasks will be listed.
 
 Example of usage:
