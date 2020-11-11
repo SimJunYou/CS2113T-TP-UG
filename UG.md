@@ -6,8 +6,6 @@ Welcome to the ra.VI User Guide! Choose a section from the table of contents on 
 
 Repository Assistant with a Versatile Interface (ra.VI) is a desktop app for managing tasks, deadlines, and timetable, optimized for use via a Command Line Interface (CLI). If you can type fast, ra.VI can manage your tasks and timetable faster than traditional GUI apps.
 
-### About
-
 This user guide aims to provide you with a clear documentation of ra.VI's features. In addition, the quick start guide provides an end-to-end setup process to begin tracking your tasks and timetable with ra.VI.
 
 ### Product Overview
@@ -91,40 +89,38 @@ Tasks are the one of the main features of ra.VI. Every modern student has tasks 
 
 #### Adding a task: `add -t [-by]`
 
-You can add a task to ra.VI by using the format below.
+```tip
 Format: `add -t <task_name> [-by <deadline>]`
+```
+To add a task into ra.VI:
+Type `add -t` followed by your task name, one example would be `add -t read chapter 1`
+You may also add a deadline by typing `-by` followed by the deadline.
 
 |Command|Expected Output|
 |-|-|
-|`add -t read chapter 1`|`Your task has been added successfully.`|
+|`add -t read chapter 1`|![Add Task](diagrams/AddTask.png)|
+|`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline](diagrams/AddTaskWDeadline.png?raw=true)|
+
+#### Deleting a task: `del -t`
+You can remove a task from ra.VI by using the following format.\
+Format: `del -t <task_index>`
+
+#### Editing a task description: `edit -t <task_index> <task_description>`
+
+#### Listing all tasks `list -t`
+
+#### Viewing task summary `summary`
 
 
+### Modules
 
+### Undo
 
-Examples of the possible outputs:
-```
-Command:
-⋗	add -t read a book
-════════════════════════════════════════════════════════════════════════════════
-Your task has been added successfully.
-Your new task:
-'read a book [x]'
+### Summary
 
-════════════════════════════════════════════════════════════════════════════════
-```
+### Timetable
 
-```
-Command:
-⋗	add -t read a book -by 02-02-2020 1900
-════════════════════════════════════════════════════════════════════════════════
-Your task has been added successfully.
-Your new task:
-'read a book [x], by 07:00PM, Sunday, 02 Feb 2020'
-
-════════════════════════════════════════════════════════════════════════════════
-```
-
-
+### Exit
 
 ## FAQ
 
