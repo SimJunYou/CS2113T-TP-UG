@@ -1,5 +1,5 @@
 # ra.VI User Guide
-
+1
 Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
 
 ## Introduction
@@ -16,10 +16,16 @@ Moreover, the timetable feature helps you to schedule your lessons, allowing you
 Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep tabs on how well you are doing, motivating you towards that elusive CAP 5.0.
 
 ### Keywords
-
-**Tasks**
-
-A task refers to something that you would like to get done. This refers to reading a book or doing an assignment. Tasks can be created with or without a deadline. <br>
+<dl>
+    <dt>Tasks</dt>
+    <dd>A task refers to something that you would like to get done. This refers to reading a book or doing an assignment. Tasks can be created with or without a deadline.</dd>
+    <dt>A deadline refers to a date and time associated with a task. This is in the format: DAY-MONTH-YEAR TIME_24H, e.g. `23-12-2020 1400` or `1-2-2000 0800`</dt>
+    <dd>1952</dd>
+    <dt>Birthplace</dt>
+    <dd>Japan</dd>
+    <dt>Color</dt>
+    <dd>Green</dd>
+</dl>
 
 **Deadline**
 
@@ -227,7 +233,7 @@ You can add a module that you are currently taking into ra.VI.
 `add -m <module_code>`
 
 **Example Usage:**
-Let’s say you are taking the module {:.bg-yellow-dark.text-white} CS1010 Programming Methodology
+Let’s say you are taking the module CS1010 Programming Methodology
 
 To add a module into ra.VI:
 1. Type `add -m`, followed by your module, `CS1010`.
@@ -235,16 +241,17 @@ To add a module into ra.VI:
 3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
-ra.VI will display the message saying that your task has been added successfully! What you would expect to see is shown below.
+ra.VI will display the message saying that your module has been added successfully! What you would expect to see is shown below.
 
 ```note
-After you add your task, you may want to check if it is there. You will learn how to view your tasks using the `list` command later on!
+After you add your module, you may want to check if it is there. You will learn how to view your modules using the `list` command later on!
 ```
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`add -m CS1010`|![Add Modul]()|
-|`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline]()|
+|`add -m CS1010`|![Add CS1010]()|
+|`add -m CS2113T`|![Add CS2113T]()|
+|`add -m CS`|![Add CS]()|
 
 #### Grade an existing module
 Assign a grade and its relevant module credits to a module in the Scheduler.
@@ -257,13 +264,28 @@ Let’s say it is the end of the semester and results are out.
 You may assign the achieved grade and its relevant module credits to the module in your personalised module list by executing the `grade` command.
 
 To assign a grade and module credits to the module:
-1. Type `grade` into the command box, followed by the module to be graded in list of modules, its respective module credits and finally the grade achieved for that  
-
+1. Type `grade` into the command box, followed by the module code of the module to be graded.
+2. Subsequently, type in the respective module credits and the grade achieved for that module, and press `Enter
 
 
 ### Undo
+Deleted a task when you didn’t mean to? You can undo your previous action.
+
+**Format:**
+`undo`
+
+**Example Usage:**
+Let’s say you have accidentally deleted an important task.
+To undo an action:
+1. Type `undo`.
+2. Then, simply press the Enter key to execute it.
+
+**Outcome:**
+ra.VI will display the message saying that your last action has been undone!
 
 ### Timetable
+
+####
 
 ### Exit
 
