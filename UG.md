@@ -1,67 +1,23 @@
 # ra.VI User Guide
 
-Welcome to the ra.VI User Guide! Choose a section from the table of contents below, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
+Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
 
-1. TOC
-{:toc}
-
-## Table of contents
-[1. **Introduction**](#1-introduction) <br>
-&nbsp;&nbsp;[1.1 About](#11-about) <br>
-&nbsp;&nbsp;[1.2 Product Overview](#12-product-overview) <br>
-&nbsp;&nbsp;[1.3 Keywords](#13-keywords)<br>
-[2. **Quick Start**](#2-quick-start)<br>
-[3. **Features**](#3-features) <br>
-&nbsp;&nbsp;[3.1 Viewing help](#31-viewing-help-help) <br>
-&nbsp;&nbsp;[3.1.1 Viewing help for a specific command](#311-viewing-help-for-a-specific-command-help-command_word) <br>
-&nbsp;&nbsp;[3.2 Add an item](#32-adding-an-item-add-opt-args) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.2.1 Add a task](#321-adding-a-task-add--t--by) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.2.2 Add a module](#322-adding-a-module-add--m) <br>
-&nbsp;&nbsp;[3.3 Edit an item](#33-editing-an-item-edit-opt-args) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.3.1 Edit a task description](#331-editing-a-task-description-edit--t)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.3.2 Editing a module](#332-editing-a-module-edit--m) <br>
-&nbsp;&nbsp;[3.4 Delete an item](#34-deleting-an-item-del-opt-args) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.4.1 Delete a task](#341-deleting-a-task-del--t) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.4.2 Delete a module](#342-deleting-a-module-del--m) <br>
-&nbsp;&nbsp;[3.5 List items](#35-listing-all-items-list-opt-args) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.5.1 List tasks](#351-listing-all-tasks-list--t) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.5.2 List modules](#352-listing-all-modules-list--m)  <br>
-&nbsp;&nbsp;[3.6 Grade a module](#36-grade-a-existing-module-grade) <br>
-&nbsp;&nbsp;[3.7 Calculate CAP](#37-calculate-your-cap-cap) <br>
-&nbsp;&nbsp;[3.8 Mark task as done](#38-mark-as-done-done-task_index) <br>
-&nbsp;&nbsp;[3.9 Undo previous command](#39-undo-a-command-undo) <br>
-&nbsp;&nbsp;[3.10 Summary](#310-summary-summary) <br>
-&nbsp;&nbsp;[3.11 Timetable](#311-timetable-timetable-opt-args) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.11.1 View timetable](#3111-view-the-timetable-timetable-args) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.11.2 Add a lesson](#3112-add-a-lesson-timetable--add) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.11.3 Delete a lesson](#3113-delete-a-lesson-timetable--del) <br>
-&nbsp;&nbsp;&nbsp;&nbsp;[3.11.4 Reset timetable](#3114-reset-the-timetable-timetable--reset) <br>
-&nbsp;&nbsp;[3.12 Exit](#312-exiting-the-program-bye) <br>
-[4. **FAQ**](#4-faq) <br>
-[5. **Command Summary**](#5-command-summary) <br>
-[6. **v3.0 Graphical User Interface**](#6-graphical_user_interface) <br>
-&nbsp;&nbsp;[6.1 Change Directory Command](#61-change-directory-command-cd) <br>
-&nbsp;&nbsp;[6.2 General Add `add`](#62-general-add-add) <br>
-&nbsp;&nbsp;[6.3 Undo `undo`](#63-undo--undo) <br>
-&nbsp;&nbsp;[6.4 Week Command `week`](#64-week-command--week) <br>
-&nbsp;&nbsp;[6.5 Directory Command](#65-directory-command--dir) <br>
-
-### 1 Introduction
+## Introduction
 
 Repository Assistant with a Versatile Interface (ra.VI) is a desktop app for managing tasks, deadlines, and timetable, optimized for use via a Command Line Interface (CLI). If you can type fast, ra.VI can manage your tasks and timetable faster than traditional GUI apps.
 
-### 1.1 About
+### About
 
 This user guide aims to provide you with a clear documentation of ra.VI's features. In addition, the quick start guide provides an end-to-end setup process to begin tracking your tasks and timetable with ra.VI.
 
-### 1.2 Product Overview
+### Product Overview
 
 ra.VI is targeted at you - the NUS freshman. As a freshman, there are many documents and new procedures that you must get familiar with. This may be daunting for you but ra.VI will provide you with the assistance you need.
 By helping you keep track of your tasks and deadlines, you will be able to keep on top of deadlines.
 Moreover, the timetable feature helps you to schedule your lessons, allowing you to be more prepared for lessons.
 Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep tabs on how well you are doing, motivating you towards that elusive CAP 5.0.
 
-### 1.3 Keywords
+### Keywords
 
 <span style="color: blue;">**Tasks**</span>
 
@@ -113,7 +69,7 @@ Commands that can be undone:
 * Edit tasks / modules
 * Grade a module
 
-### 2 Quick Start
+## Quick Start
 
 1. Ensure that you have Java 11 or above installed.
 2. Download the latest version of `ra.VI` from [here](https://github.com/AY2021S1-CS2113T-T09-2/tp/releases/tag/v2.1).
@@ -127,13 +83,13 @@ Some example commands you can try:
 * `bye`: Exit the program
 6. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
 
-## 3 Features
+## Features
 
-### 3.1 Viewing help: `help` (Amalina)
+### Viewing help: `help` (Amalina)
 
 Shows a message with the list of available commands and functions.
 
-#### 3.1.1 Viewing help for a specific command: `help <command_word>`
+#### Viewing help for a specific command: `help <command_word>`
 
 Example of usage:
 * `help`
@@ -187,11 +143,11 @@ Add a module from NUSMods to the scheduler.
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-### 3.2 Adding an item: `add <opt> <args>` (Sean)
+### Adding an item: `add <opt> <args>` (Sean)
 
 Items that can be added are either [<span style="color: blue;">tasks</span> or <span style="color: blue;">modules</span>](#13-keywords).
 
-#### 3.2.1 Adding a task: `add -t [-by]`
+#### Adding a task: `add -t [-by]`
 
 You can add a <span style="color: blue;">task</span> to ra.VI by using the format below.
 <span style="color: green;">Format:</span> `add -t <task_name> [-by <deadline>]`
@@ -223,7 +179,7 @@ Your new task:
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.2.2 Adding a module: `add -m`
+#### Adding a module: `add -m`
 
 You can add a <span style="color: blue;">module</span> to ra.VI by using the format below.
 <span style="color: green;">Format:</span> `add -m <module_code>`
@@ -243,9 +199,9 @@ Your new module:
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-### 3.3 Editing an item: `edit <opt> <args>` (Amalina)
+### Editing an item: `edit <opt> <args>` (Amalina)
 
-#### 3.3.1 Editing a task description: `edit -t`
+#### Editing a task description: `edit -t`
 
 You can edit a task description to ra.VI by using the format below.
 Format: `edit -t <task_index> <task_name>`
@@ -268,7 +224,7 @@ Your task after editing  - 'buy stuff [x]'
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.3.2 Editing a module: `edit -m`
+#### Editing a module: `edit -m`
 
 Edit a module code in the scheduler.  
 Format: `edit -m <module_code> <new_module_code>`
@@ -288,9 +244,9 @@ Your module after editing  - 'ACC1002: Financial Accounting (0.0MC) (Grade: No g
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-### 3.4 Deleting an item: `del <opt> <args>` (Sean)
+### Deleting an item: `del <opt> <args>` (Sean)
 
-#### 3.4.1 Deleting a <span style="color: blue;">task:</span> `del -t`
+#### Deleting a <span style="color: blue;">task:</span> `del -t`
 
 Remove a <span style="color: blue;">task</span> from the scheduler.  
 <span style="color: green;">Format:</span> `del -t <task_index>`
@@ -309,7 +265,7 @@ Your deleted task - 'buy stuff [x]'
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.4.2 Deleting a module: `del -m`
+#### Deleting a module: `del -m`
 
 Remove a module from the scheduler.  
 <span style="color: green;">Format:</span> `del -m <module_code>`
@@ -329,9 +285,9 @@ Your deleted module - 'CG2271: Real-Time Operating Systems (4.0MC) (Grade: CS)'
 ```
 
 
-### 3.5 Listing all items: `list <opt> <args>` (Amalina)
+### Listing all items: `list <opt> <args>` (Amalina)
 
-#### 3.5.1 Listing all tasks: `list -t`
+#### Listing all tasks: `list -t`
 
 List all tasks in the scheduler.   
 Format: `list -t`
@@ -349,7 +305,7 @@ Here's your list:
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.5.2 Listing all modules: `list -m`
+#### Listing all modules: `list -m`
 
 List all modules in the scheduler.  
 Format: `list -m`
@@ -372,7 +328,7 @@ Here's your list:
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.6 Grade a existing module: `grade` (Tobias)
+#### Grade a existing module: `grade` (Tobias)
 
 Assign a grade and its relevant module credits to a module in the Scheduler.
 Format: `grade <module Code> <module credit> <grade>`
@@ -401,7 +357,7 @@ The module - 'CS2101: Effective Communication for Computing Professionals (4.0MC
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.7 Calculate your cap: `cap` (Tobias)
+#### Calculate your cap: `cap` (Tobias)
 
 Calculate your new updated cap, accumulated from past semesters.
 Format: `cap`
@@ -420,7 +376,7 @@ Your current CAP is
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-### 3.8 Mark as done: `done <task_index>` (Amalina)
+### Mark as done: `done <task_index>` (Amalina)
 
 Mark a task in the scheduler as done.  
 Format: `done <task_index>`
@@ -442,7 +398,7 @@ Your completed task - 'buy new stuff [√]'
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-### 3.9 Undo a command: `undo` (Sean)
+### Undo a command: `undo` (Sean)
 
 <span style="color: blue;">Undo</span> takes the latest command that affects the save files of ra.VI and reverts its changes. You can look at [keywords](#13-keywords) for more details on the types of commands that will be reverted by undo.\
 Requirement: The previous command to be undone must be a command that affects the data files. e.g. [add](#32-adding-an-item-add-opt-args), [del](#34-deleting-an-item-del-opt-args), [edit](#33-editing-an-item-edit-opt-args), [done](#38-mark-as-done-done-task_index), [grade](#36-grade-a-existing-module-grade), [timetable -add](#3112-add-a-lesson-timetable--add), [timetable -del](#3113-delete-a-lesson-timetable--del), [timetable -reset](#3114-reset-the-timetable-timetable--reset)
@@ -463,7 +419,7 @@ Command undone - 'done 1'
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-### 3.10 Summary: `summary` (Amalina)
+### Summary: `summary` (Amalina)
 
 Gets an overall view of the tasks.
 Format: `summary`
@@ -490,9 +446,9 @@ Your list is empty.
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-### 3.11 TimeTable: `timetable <opt> <args>` (Jun you)
+### Timetable: `timetable <opt> <args>` (Jun you)
 
-#### 3.11.1 View the timetable: `timetable <args>`
+#### View the timetable: `timetable <args>`
 
 View the timetable for the day or for the week.\
 `<args>` : Must be one of the following : `-day` or `-week`
@@ -551,7 +507,7 @@ No lessons on SUNDAY, 08-11-20.
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.11.2 Add a lesson: `timetable -add`
+#### Add a lesson: `timetable -add`
 
 Adds a lesson to the timetable.\
 Format: `timetable -add <module> <day> <start time> <end time> <lesson type> <repeat>` <br>
@@ -578,7 +534,7 @@ Added to: every week.
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.11.3 Delete a lesson: `timetable -del`
+#### Delete a lesson: `timetable -del`
 
 Deletes a lesson from the timetable.<br>
 Format: `timetable -del <day> <lesson index>` <br>
@@ -599,7 +555,7 @@ Your deleted lesson - 'CG1111 Lab: MONDAY 900-1200'
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-#### 3.11.4 Reset the timetable: `timetable -reset`
+#### Reset the timetable: `timetable -reset`
 
 Clears the current timetable and creates a new timetable.\
 Format: `timetable -reset`
@@ -626,7 +582,7 @@ Timetable reset successful.
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-### 3.12 Exiting the program: `bye` (Sean)
+### Exiting the program: `bye` (Sean)
 
 Exits ra.VI.\
 <span style="color: blue;">Format:</span> `bye`
@@ -640,7 +596,7 @@ Goodbye, hope to see you soon!
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-:exclamation_mark:## 4 FAQ
+## FAQ
 
 :question:**Q**: Can I use ra.VI on operating system other than Windows?\
 :a:**A**: Yes. ra.VI is compatible with Windows, macOS and Linux.
@@ -657,7 +613,9 @@ Goodbye, hope to see you soon!
 :question:**Q**: Can I force close ra.VI?\
 :a:**A**: It is not advised to force close ra.VI. If you decide to do so, the changes made during that current session may get corrupted. To close ra.VI, please enter `bye`.
 
-:exclamation_mark:## 5 Command Summary
+---
+
+## Command Summary
 
 | Function | Command |
 |--------|---------------------------------------|
@@ -684,9 +642,11 @@ Goodbye, hope to see you soon!
 | Get detailed help message for each command | `help <command_word>` |
 | Exit ra.VI | `bye` |
 
-## 6 v3.0 Graphical User Interface
+---
 
-### 6.1 Change Directory Command `cd`
+## v3.0 Graphical User Interface
+
+### Change Directory Command `cd`
 Traverse to the target directory.
 
 **Note:** <br>
