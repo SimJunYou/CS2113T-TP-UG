@@ -95,10 +95,10 @@ Tasks are the one of the main features of ra.VI. Every modern student has tasks 
 **Example Usage:**
 Let’s say you have a task `read chapter 1`.
 To add a task into ra.VI:
-Type `add -t`, followed by your task name, `read chapter 1`. The full command would be `add -t read chapter 1`.
-Then, simply press Enter to execute it.
-You may also add an optional deadline to the task by adding `-by`, followed by the deadline for your task, but don’t forget to also press enter to execute!
-For example, if you wanted to give your task `read chapter 1` a deadline `30-12-2020 1800` (i.e. 30th of December 2020, 6pm), the full command would be `add -t read chapter 1 -by 30-12-2020 1800`.
+1. Type `add -t`, followed by your task name, `read chapter 1`. The full command would be `add -t read chapter 1`.
+2. Then, simply press Enter to execute it.
+3. You may also add an optional deadline to the task by adding `-by`, followed by the deadline for your task, but don’t forget to also press enter to execute!
+	1. For example, if you wanted to give your task `read chapter 1` a deadline `30-12-2020 1800` (i.e. 30th of December 2020, 6pm), the full command would be `add -t read chapter 1 -by 30-12-2020 1800`.
 
 **Outcome:**
 ra.VI will display the message saying that your task has been added successfully!
@@ -109,8 +109,9 @@ After you add your task, you may want to check if it’s there. You will learn h
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`add -t read chapter 1`|![Add Task](diagrams/AddTask.png)|
-|`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline](diagrams/AddTaskWDeadline.png)|
+|`add -t read chapter 1`|![Add Task](https://github.com/AY2021S1-CS2113T-T09-2/tp/blob/master/docs/diagrams/MainSequenceDiagramLoopSd.png?raw=true)|
+|`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline](https://github.com/AY2021S1-CS2113T-T09-2/tp/blob/master/docs/diagrams/MainSequenceDiagramLoopSd.png?raw=true)|
+
 
 #### Deleting a task: `del -t`
 You can remove a task from ra.VI by using the following format.\
