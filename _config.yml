@@ -6,3 +6,4 @@ markdown: kramdown
 
 plugins:
   - jemoji
+  - jekyll-include-cache
