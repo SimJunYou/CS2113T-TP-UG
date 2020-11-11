@@ -74,7 +74,7 @@ Commands that can be undone:
 3. Copy the file to the folder you want to use as the home folder for `ra.VI`.
 4. Open a command prompt in the folder from step 3 and enter `java -jar ravi.jar`.
 5. Enter the current NUS week number as prompted.
-5. Type the command in the command box and press Enter to execute it. e.g. typing help and pressing Enter will show the help message.
+5. Type the command in the command box and press the Enter key to execute it. e.g. typing help and pressing the Enter key will show the help message.
 Some example commands you can try:
 * `add -t`: Add a task
 * `list -t`: List all tasks
@@ -87,7 +87,8 @@ Some example commands you can try:
 
 Tasks are the one of the main features of ra.VI. Every modern student has tasks to do, and ra.VI helps you to manage your to-do list. This section will show you all you need to know about managing your tasks with ra.VI.
 
-#### Adding a task: `add -t [-by]`
+#### Adding a task
+You can add a task into ra.VI to keep you on top of your tasks.
 
 **Format:**
 `add -t <task_name> [-by <deadline>]`
@@ -95,40 +96,176 @@ Tasks are the one of the main features of ra.VI. Every modern student has tasks 
 **Example Usage:**
 Let’s say you have a task `read chapter 1`.
 To add a task into ra.VI:
-1. Type `add -t`, followed by your task name, `read chapter 1`. The full command would be `add -t read chapter 1`.
-2. Then, simply press Enter to execute it.
-3. You may also add an optional deadline to the task by adding `-by`, followed by the deadline for your task, but don’t forget to also press enter to execute!
-	1. For example, if you wanted to give your task `read chapter 1` a deadline `30-12-2020 1800` (i.e. 30th of December 2020, 6pm), the full command would be `add -t read chapter 1 -by 30-12-2020 1800`.
+1. Type `add -t`, followed by your task name, `read chapter 1`.
+2. The full command would be `add -t read chapter 1`.
+3. Then, simply press the Enter key to execute it.
+
+Now, let’s say you have to add a deadline `30-12-2020 1800` (i.e. 30th of December 2020, 6pm).
+1. You can add this optional deadline to the task by adding `-by`, followed by the deadline for your task, but don’t forget to press enter to execute!
+2. The full command would be `add -t read chapter 1 -by 30-12-2020 1800`.
 
 **Outcome:**
-ra.VI will display the message saying that your task has been added successfully!
+ra.VI will display the message saying that your task has been added successfully! What you would expect to see is shown below.
 
 ```note
-After you add your task, you may want to check if it’s there. You will learn how to view your tasks using the `list` command later on!
+After you add your task, you may want to check if it is there. You will learn how to view your tasks using the `list -t` command later on!
 ```
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`add -t read chapter 1`|![Add Task](https://github.com/AY2021S1-CS2113T-T09-2/tp/blob/master/docs/diagrams/MainSequenceDiagramLoopSd.png?raw=true){:width="600px"}|
-|`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline](https://github.com/AY2021S1-CS2113T-T09-2/tp/blob/master/docs/diagrams/MainSequenceDiagramLoopSd.png?raw=true)|
+|`add -t read chapter 1`|![Add Task]()|
+|`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline]()|
+|`add -t read chapter 1 -by 30-12-2020 800`|![Add Task W Wrong Deadline]()|
 
+#### Listing all tasks
+You have a whole list of tasks now, but you need a way to view them. ra.VI can help with that.
 
-#### Deleting a task: `del -t`
-You can remove a task from ra.VI by using the following format.\
-Format: `del -t <task_index>`
+**Format:**
+`list -t`
 
-#### Editing a task description: `edit -t <task_index> <task_description>`
+**Example Usage:**
+To view your task list:
+1. Type `list -t`
+2. Then, simply press the Enter key to execute it.
 
-#### Listing all tasks `list -t`
+**Outcome:**
+ra.VI will display the list of tasks and their indexes.
+
+```tip
+You will need the task indexes for `del`, `edit`, and `done` commands!
+```
+
+|Example Commands|Expected Output|
+|--------------|--------------|
+|`list -t`|With one task in your list: ![List Task]()|
+
+#### Deleting a task
+If your teacher cancels that last minute assignment (hooray!), ra.VI can help remove a task from your task list.
+
+**Format:**
+`del -t <task_index>`
+
+**Example Usage:**
+Let’s say you have a task `read chapter 1` of index 1 (seen from your `list -t` command), and you would like to remove it from your list.
+To delete a task from ra.VI:
+1. Type `del -t`, followed by the task index of the task you want to delete., `1`. The full command would be `del -t 1`.
+2. Then, simply press the Enter key to execute it.
+
+|Example Commands|Expected Output|
+|--------------|--------------|
+|`del -t 1`|![Delete Task]()|
+|`del -t 0`|![Delete Task wrong index]()|
+
+**Outcome:**
+ra.VI will display the message saying that your task has been deleted successfully!
+
+#### Marking a task as done
+Already completed your assignments and cleaned the dishes? You can mark your tasks as completed with ra.VI.
+
+**Format:**
+`done <task_index>`
+
+**Example Usage:**
+Let’s say you have a task `return book` of index 1 (seen from your `list -t` command), and you have completed it.
+To mark a task as done:
+1. Type `done`, followed by the task index of the task you want to delete, `1`. The full command would be `done 1`.
+2. Then, simply press the Enter key to execute it.
+
+|Example Commands|Expected Output|
+|--------------|--------------|
+|`done 1`|![Done Task]()|
+|`done 0`|![Delete Task wrong index]()|
+
+**Outcome:**
+ra.VI will display the message saying that your task has been marked done! Your task will now be marked with a tick.
+
+#### Editing a task description
+Put `CS2113 homework` instead of `CS2113 homework`? You can edit the task descriptions of existing tasks.
+
+**Format:**
+`edit -t <task_index> <task_description>`
+
+**Example Usage:**
+Let’s say you have a task `Team project` of index 1 (seen from your `list -t` command), and you have completed it.
+To edit a task’s description:
+1. Type `edit -t`, followed by the task index of the task you want to edit, `1`, and the new task description, `Individual project`. The full command would be `edit -t 1 individual project`.
+2. Then, simply press the Enter key to execute it.
+
+**Outcome:**
+ra.VI will display the message saying that your task has been edited successfully! Your task will now be marked with a tick.
+
+```tip
+You can find the index of the tasks by using `list -t`.
+```
+
+|Example Commands|Context|Expected Output|
+|--------------|----------|--------------|
+|`edit -t 1 individual project`|You have a task `individual project` at index 1 in the list|![Edit Task]()|
 
 #### Viewing task summary `summary`
+To view all of your tasks
 
+**Format:**
+`summary`
+
+**Example Usage:**
+To view your task summary:
+1. Type `summary`.
+2. Then, simply press the Enter key to execute it.
+
+**Outcome:**
+ra.VI will display a neat summary of all your tasks, grouped into three categories.
 
 ### Modules
 
-### Undo
+Modules are the one of the main features of ra.VI. Every NUS student takes modules, and ra.VI helps you to manage all of your modules. This section will show you all you need to know about managing your modules with ra.VI.
 
-### Summary
+#### Adding a module
+You can add a module that you are currently taking into ra.VI.
+
+**Format:**
+`add -m <module_code>`
+
+**Example Usage:**
+Let’s say you are taking the module {:.bg-yellow-dark.text-white}CS1010 Programming Methodology
+
+To add a task into ra.VI:
+1. Type `add -t`, followed by your task name, `read chapter 1`.
+2. The full command would be `add -t read chapter 1`.
+3. Then, simply press the Enter key to execute it.
+
+Now, let’s say you have to add a deadline `30-12-2020 1800` (i.e. 30th of December 2020, 6pm).
+1. You can add this optional deadline to the task by adding `-by`, followed by the deadline for your task, but don’t forget to press enter to execute!
+2. The full command would be `add -t read chapter 1 -by 30-12-2020 1800`.
+
+**Outcome:**
+ra.VI will display the message saying that your task has been added successfully! What you would expect to see is shown below.
+
+```note
+After you add your task, you may want to check if it is there. You will learn how to view your tasks using the `list` command later on!
+```
+
+|Example Commands|Expected Output|
+|--------------|--------------|
+|`add -t read chapter 1`|![Add Task]()|
+|`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline]()|
+
+#### Grade an existing module
+Assign a grade and its relevant module credits to a module in the Scheduler.
+
+**Format:**
+ `grade <module Code> <module credit> <grade>`
+
+**Example Usage.**
+Let’s say it is the end of the semester and results are out.
+You may assign the achieved grade and its relevant module credits to the module in your personalised module list by executing the `grade` command.
+
+To assign a grade and module credits to the module:
+T
+
+
+
+### Undo
 
 ### Timetable
 
