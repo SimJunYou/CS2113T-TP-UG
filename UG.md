@@ -1,30 +1,3 @@
-1. 	Clear and concise statement of the purpose of the document, and the target audience
-2. 	Clear and concise user-centric statement of product information, e.g. product description and overview of main features
-3. 	Clear and complete information about how to use the document, e.g. how to navigate the document,               	meaning of icons/formatting used.
-4. 	Clear and complete information about how to get started, e.g. installation instructions, parts of the GUI, tutorial on how to use CLI, etc.
-5. 	Shows reader consideration by going the extra mile to provide other necessary information, or to make this section welcoming and appealing to the reader.
-
-1. 	Clear and user-centric description of purpose of feature/function/command
-2. 	Clear and easy-to-follow step-by-step instructions for at least one example
-3. 	Clear, relevant, and helpful graphics. Visual and/or textual cues are used to indicate which graphic(s) go with which set of instructions.
-4. 	Heading, instructions and examples are customized to the application
-5. 	Highly considerate of user’ needs by providing other relevant and helpful information e.g. warnings, tips, important note.
-6. 	Highly considerate of users’ needs by using formatting (font style, size and color, mark-ups, callouts, bold, italics, etc) and layout (white space, alignment, etc.) to maximize readability.
-7. 	Well-chosen, accurate and reader-focused language.
-
-1. 	Consistent terminology throughout the document.
-2. 	Consistent formatting (symbols/icons, font type and size, colors, image size, use of mark-ups and callouts, bullets, etc.) and layout (alignment of text and graphics, white space, paragraphing, etc.) throughout the document.
-3. 	Easy to navigate (e.g. provides hyperlinks where necessary or expected, Table of Contents is accurate, etc.)
-
-1. 	Consistent phrasing of headings and sub-headings throughout the document
-2. 	All headings and sub-headings clearly and accurately indicate content of each section
-3. 	Consistent user-centric style and tone throughout the document, e.g. you-language, active tense, short sentences, etc.
-4. 	Correct grammar, punctuation, spelling, mechanics throughout the document
-
-1. 	Document is highly attractive, pleasant to read, and easy to understand.
-2. 	The document leaves the reader with a highly positive impression of the product and the team.
-
-
 # ra.VI User Guide
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents below, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
@@ -76,59 +49,59 @@ Repository Assistant with a Versatile Interface (ra.VI) is a desktop app for man
 
 ### 1.1 About
 
-This user guide provides a clear documentation of ra.VI's features. In addition, the quick start guide provides an end-to-end setup process to begin tracking your tasks and timetable with ra.VI. 
+This user guide aims to provide you with a clear documentation of ra.VI's features. In addition, the quick start guide provides an end-to-end setup process to begin tracking your tasks and timetable with ra.VI.
 
 ### 1.2 Product Overview
 
-ra.VI is targeted at the NUS freshman. As a freshman, there are many documents and new procedures that you must get familiar with. This may be daunting for you but ra.VI will provide you with the assistance you need. 
-By helping you keep track of your tasks and deadlines, you will be able to keep on top of deadlines. 
+ra.VI is targeted at you - the NUS freshman. As a freshman, there are many documents and new procedures that you must get familiar with. This may be daunting for you but ra.VI will provide you with the assistance you need.
+By helping you keep track of your tasks and deadlines, you will be able to keep on top of deadlines.
 Moreover, the timetable feature helps you to schedule your lessons, allowing you to be more prepared for lessons.
 Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep tabs on how well you are doing, motivating you towards that elusive CAP 5.0.
 
 ### 1.3 Keywords
 
-**Tasks**
+<span style="color: blue;">**Tasks**</span>
 
 A task refers to something that you would like to get done. This refers to reading a book or doing an assignment. Tasks can be created with or without a deadline. <br>
 
-**Deadline**
+<span style="color: blue;">**Deadline**</span>
 
 A deadline refers to a date and time associated with a task. This is in the format: DAY-MONTH-YEAR TIME_24H, e.g. `23-12-2020 1400` or `1-2-2000 0800` <br>
 
-**Modules**
+<span style="color: blue;">**Modules**</span>
 
 A module refers to a module taken under NUS. Entered modules will be checked against the list of NUS modules. <br>
 
-**CAP**
+<span style="color: blue;">**CAP**</span>
 
 CAP refers to Cumulative Average Point, which is the grading system used by NUS. CAP will be calculated based on your modules. <br>
 
-**Done**
+<span style="color: blue;">**Done**</span>
 
 A task can be marked as done. This will signify completion of the task so that you can get an easy view of any remaining tasks. <br>
 
-**Timetable**
+<span style="color: blue;">**Timetable**</span>
 
 The timetable is specific to you. It allows you to add lessons to your timetable with respect to the modules that you are taking. After setting the timetable up the first time, you do not need to go through the set up again. <br>
 
-**Day**
+<span style="color: blue;">**Day**</span>
 
 Values for `<day>`:\
 `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`
 
-**Lesson Type**
+<span style="color: blue;">**Lesson Type**</span>
 
 Values for `<lesson type>`:\
 `TUTORIAL`, `LECTURE`, `SEMINAR`, `LAB`, `RECITATION`, `SESSION`
 
-**Time**
+<span style="color: blue;">**Time**</span>
 
 Format of `<time>`:\
 Must be in the 24h format e.g. `0900`, `1415`
 
-**Undo**
+<span style="color: blue;">**Undo**</span>
 
-Commands that can be undone:\
+Commands that can be undone:
 * Add / Delete tasks
 * Done tasks
 * Add / Delete modules
@@ -151,7 +124,7 @@ Some example commands you can try:
 * `bye`: Exit the program
 6. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
 
-## 3 Features 
+## 3 Features
 
 ### 3.1 Viewing help: `help` (Amalina)
 
@@ -159,7 +132,7 @@ Shows a message with the list of available commands and functions.
 
 #### 3.1.1 Viewing help for a specific command: `help <command_word>`
 
-Example of usage: 
+Example of usage:
 * `help`
 * `help timetable`
 * `help add`
@@ -168,7 +141,7 @@ Get detailed help message for each command
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	help
 ════════════════════════════════════════════════════════════════════════════════
 Hello! I'm ra.VI, your personal NUS assistant.
@@ -197,7 +170,7 @@ Utility commands:
 ```
 
 ```
-Command: 
+Command:
 ⋗	help add
 ════════════════════════════════════════════════════════════════════════════════
 Add a task to the scheduler.
@@ -213,18 +186,20 @@ Add a module from NUSMods to the scheduler.
 
 ### 3.2 Adding an item: `add <opt> <args>` (Sean)
 
+Items that can be added are either [<span style="color: blue;">tasks</span> or <span style="color: blue;">modules</span>](#13-keywords).
+
 #### 3.2.1 Adding a task: `add -t [-by]`
 
-Add a task to the scheduler.  
-Format: `add -t <task_name> [-by <deadline>]`
+You can add a <span style="color: blue;">task</span> to ra.VI by using the format below.
+<span style="color: green;">Format:</span> `add -t <task_name> [-by <deadline>]`
 
-Example of usage: 
+Example of usage:
 * `add -t read chapter 1`
 * `add -t read chapter 1 -by 30-12-2020 1800`
 
-Example of output:
+Examples of the possible outputs:
 ```
-Command: 
+Command:
 ⋗	add -t read a book
 ════════════════════════════════════════════════════════════════════════════════
 Your task has been added successfully.
@@ -235,7 +210,7 @@ Your new task:
 ```
 
 ```
-Command: 
+Command:
 ⋗	add -t read a book -by 02-02-2020 1900
 ════════════════════════════════════════════════════════════════════════════════
 Your task has been added successfully.
@@ -247,15 +222,15 @@ Your new task:
 
 #### 3.2.2 Adding a module: `add -m`
 
-Add a module to the scheduler.  
-Format: `add -m <module_code>`
+You can add a <span style="color: blue;">module</span> to ra.VI by using the format below.
+<span style="color: green;">Format:</span> `add -m <module_code>`
 
-Example of usage: 
+Example of usage:
 * `add -m CS1231`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	add -m CS1010s
 ════════════════════════════════════════════════════════════════════════════════
 Your module has been added successfully.
@@ -269,10 +244,10 @@ Your new module:
 
 #### 3.3.1 Editing a task description: `edit -t`
 
-Edit a task description in the scheduler.  
+You can edit a task description to ra.VI by using the format below.
 Format: `edit -t <task_index> <task_name>`
 
-Example of usage: 
+Example of usage:
 * `edit -t 3 revise for CS2113`
 
 **Note:** <br>
@@ -280,7 +255,7 @@ Example of usage:
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	edit -t 1 buy stuff
 ════════════════════════════════════════════════════════════════════════════════
 Your task has been edited successfully.
@@ -295,12 +270,12 @@ Your task after editing  - 'buy stuff [x]'
 Edit a module code in the scheduler.  
 Format: `edit -m <module_code> <new_module_code>`
 
-Example of usage: 
+Example of usage:
 * `edit -m CS2113 CS2113T`
 
 Example of output:
 ```
-Command: 
+Command:
 »	edit -m CG1112 ACC1002
 ════════════════════════════════════════════════════════════════════════════════
 Your module has been edited successfully.
@@ -312,17 +287,17 @@ Your module after editing  - 'ACC1002: Financial Accounting (0.0MC) (Grade: No g
 
 ### 3.4 Deleting an item: `del <opt> <args>` (Sean)
 
-#### 3.4.1 Deleting a task: `del -t`
+#### 3.4.1 Deleting a <span style="color: blue;">task:</span> `del -t`
 
-Remove a task from the scheduler.  
-Format: `del -t <task_index>`
+Remove a <span style="color: blue;">task</span> from the scheduler.  
+<span style="color: green;">Format:</span> `del -t <task_index>`
 
-Example of usage: 
+Example of usage:
 * `del -t 1`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	del -t 1
 ════════════════════════════════════════════════════════════════════════════════
 Your task has been deleted successfully.
@@ -334,14 +309,14 @@ Your deleted task - 'buy stuff [x]'
 #### 3.4.2 Deleting a module: `del -m`
 
 Remove a module from the scheduler.  
-Format: `del -m <module_code>`
+<span style="color: green;">Format:</span> `del -m <module_code>`
 
-Example of usage: 
-* `del -m CS1010` 
+Example of usage:
+* `del -m CS1010`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	del -m CG1112
 ════════════════════════════════════════════════════════════════════════════════
 Your module has been deleted successfully.
@@ -360,7 +335,7 @@ Format: `list -t`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	list -t
 ════════════════════════════════════════════════════════════════════════════════
 Here's your list:
@@ -378,7 +353,7 @@ Format: `list -m`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	list -m
 ════════════════════════════════════════════════════════════════════════════════
 Here's your list:
@@ -396,26 +371,29 @@ Here's your list:
 
 #### 3.6 Grade a existing module: `grade` (Tobias)
 
-Assign a grade to a module in the Scheduler.
+Assign a grade and its relevant module credits to a module in the Scheduler.
 Format: `grade <module Code> <module credit> <grade>`
 
 **Note:** <br>
-&nbsp;&nbsp;&nbsp;&nbsp;CS & CU are covered in the cap calculator <br>
-&nbsp;&nbsp;&nbsp;&nbsp;All grades input must be in Caps. ie `A+`
+&nbsp;&nbsp;&nbsp;&nbsp;1. CS & CU are covered in the cap calculator <br>
+&nbsp;&nbsp;&nbsp;&nbsp;2. All grades input will accept both lower case and upper case. ie `A+` or `a+`.
+
+**Warning:** <br>
+*
 
 Example of usage (step-by-step) :
-Firstly, add in a module taken this semester.
-Command: `add -m CS2101`
-After the grade has been attained at the end of the semester, assign a grade to the respective module.
-`grade CS2101 4 B+`
+Add in a module taken this semester by following the add command format mentioned earlier above.
+ ie. `add -m CS2101`
+After the grade has been attained at the end of the semester, assign a grade to the respective module by following the grade format above.
+ie. `grade CS2101 4 B+`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	grade CS2101 4 A-
 ════════════════════════════════════════════════════════════════════════════════
 Your module has been graded successfully.
-The module - 'CS2101: Effective Communication for Computing Professionals (4.0MC) (Grade: A-)'. 
+The module - 'CS2101: Effective Communication for Computing Professionals (4.0MC) (Grade: A-)'.
 
 ════════════════════════════════════════════════════════════════════════════════
 ```
@@ -430,10 +408,10 @@ Example of usage:
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	cap
 ════════════════════════════════════════════════════════════════════════════════
-Your current CAP is 
+Your current CAP is
 4.31
 
 ════════════════════════════════════════════════════════════════════════════════
@@ -444,7 +422,7 @@ Your current CAP is
 Mark a task in the scheduler as done.  
 Format: `done <task_index>`
 
-Example of usage: 
+Example of usage:
 * `done 1`
 
 **Note:** <br>
@@ -452,7 +430,7 @@ Example of usage:
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	done 1
 ════════════════════════════════════════════════════════════════════════════════
 The task has been successfully marked as complete.
@@ -463,17 +441,17 @@ Your completed task - 'buy new stuff [√]'
 
 ### 3.9 Undo a command: `undo` (Sean)
 
-Takes the latest command that affects the data files and revert its changes. See [keywords](#13-keywords) for more details.\
+<span style="color: blue;">Undo</span> takes the latest command that affects the save files of ra.VI and reverts its changes. You can look at [keywords](#13-keywords) for more details on the types of commands that will be reverted by undo.\
 Requirement: The previous command to be undone must be a command that affects the data files. e.g. [add](#32-adding-an-item-add-opt-args), [del](#34-deleting-an-item-del-opt-args), [edit](#33-editing-an-item-edit-opt-args), [done](#38-mark-as-done-done-task_index), [grade](#36-grade-a-existing-module-grade), [timetable -add](#3112-add-a-lesson-timetable--add), [timetable -del](#3113-delete-a-lesson-timetable--del), [timetable -reset](#3114-reset-the-timetable-timetable--reset)
-Format: `undo`
+<span style="color: green;">Format:</span> `undo`
 
-Example of usage: 
+Example of usage:
 1. `add -m CS2113T`
 2. `undo`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	undo
 ════════════════════════════════════════════════════════════════════════════════
 Undo is successful.
@@ -487,12 +465,12 @@ Command undone - 'done 1'
 Gets an overall view of the tasks.
 Format: `summary`
 
-Example of usage: 
+Example of usage:
 * `summary`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	summary
 ════════════════════════════════════════════════════════════════════════════════
 Here's a summary of your latest tasks...
@@ -516,13 +494,13 @@ Your list is empty.
 View the timetable for the day or for the week.\
 `<args>` : Must be one of the following : `-day` or `-week`
 
-Example of usage: 
+Example of usage:
 * `timetable -day`
 * `timetable -week`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	timetable -day
 ════════════════════════════════════════════════════════════════════════════════
 Current NUS Week: 1
@@ -538,7 +516,7 @@ TUESDAY, 03-11-20:
 ```
 
 ```
-Command: 
+Command:
 ⋗	timetable -week
 ════════════════════════════════════════════════════════════════════════════════
 Current NUS Week: 1
@@ -581,13 +559,13 @@ Format: `timetable -add <module> <day> <start time> <end time> <lesson type> <re
 `<lesson type>` : Must be one of the following : `TUTORIAL`, `LECTURE`, `SEMINAR`, `LAB`, `RECITATION`, `SESSION` <br>
 `<repeat>` : 0 : One time lesson ; 1 : Once a week ; 2 : Every even week ; 3 : Every odd week
 
-Example of usage: 
+Example of usage:
 * `timetable -add CS2101 TUESDAY 0800 1000 LECTURE 0`
 * `timetable -add CS2113T MONDAY 1300 1500 LAB 1`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	timetable -add cg1111 MONDAY 0900 1200 LAB 1
 ════════════════════════════════════════════════════════════════════════════════
 Your lesson has been added successfully.
@@ -599,17 +577,17 @@ Added to: every week.
 
 #### 3.11.3 Delete a lesson: `timetable -del`
 
-Deletes a lesson from the timetable.<br> 
-Format: `timetable -del <day> <lesson index>` <br> 
+Deletes a lesson from the timetable.<br>
+Format: `timetable -del <day> <lesson index>` <br>
 `<day>` : Must be one of the following : `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY` <br>
 `<lesson index>` : Index of the lesson to be deleted. See timetable and the indexes with `timetable -day` or `timetable -week` <br>
 
-Example of usage: 
+Example of usage:
 * `timetable -del MONDAY 1`
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	timetable -del MONDAY 1
 ════════════════════════════════════════════════════════════════════════════════
 Your lesson has been deleted successfully from all weeks.
@@ -632,11 +610,11 @@ Example of usage: <br>
 
 Example of output:
 ```
-Command: 
+Command:
 ⋗	timetable -reset
 ════════════════════════════════════════════════════════════════════════════════
 Please enter the current week num e.g. 1 - 14 where 7 is recess week.
-In ra.Vi, NUS week 7 onwards is week 8 onwards. 
+In ra.Vi, NUS week 7 onwards is week 8 onwards.
 For example, in Academic week 9, please input the current week num to be 10
 ════════════════════════════════════════════════════════════════════════════════
 3
@@ -648,35 +626,35 @@ Timetable reset successful.
 ### 3.12 Exiting the program: `bye` (Sean)
 
 Exits ra.VI.\
-Format: `bye`
+<span style="color: blue;">Format:</span> `bye`
 
-Example of output:
+<span style="color: green;">Example</span> of output:
 ```
-Command: 
+Command:
 ⋗	bye
 ════════════════════════════════════════════════════════════════════════════════
 Goodbye, hope to see you soon!
 ════════════════════════════════════════════════════════════════════════════════
 ```
 
-## 4 FAQ
+:exclamation_mark:## 4 FAQ
 
-**Q**: Can I use ra.VI on operating system other than Windows?\
-**A**: Yes. ra.VI is compatible with Windows, macOS and Linux.
+:question:**Q**: Can I use ra.VI on operating system other than Windows?\
+:a:**A**: Yes. ra.VI is compatible with Windows, macOS and Linux.
 
-**Q**: Can I use ra.VI throughout my time in NUS?\
-**A**: Yes! In fact, we strongly encourage using ra.VI for your time at NUS. ra.VI is robust enough to handle the trials of time.
+:question:**Q**: Can I use ra.VI throughout my time in NUS?\
+:a:**A**: Yes! In fact, we strongly encourage using ra.VI for your time at NUS. ra.VI is robust enough to handle the trials of time.
 
-**Q**: How do I transfer my data to another computer?\
-**A**: Zip the folder where you have installed ra.VI on and transfer the zip file to the other computer. Unzip the folder on the new computer, and you are good to go!
+:question:**Q**: How do I transfer my data to another computer?\
+:a:**A**: Zip the folder where you have installed ra.VI on and transfer the zip file to the other computer. Unzip the folder on the new computer, and you are good to go!
 
-**Q**: Can I edit the files created by ra.VI?\
-**A**: It is not advised to edit the files created by ra.VI with any other software.
+:question:**Q**: Can I edit the files created by ra.VI?\
+:a:**A**: It is not advised to edit the files created by ra.VI with any other software.
 
-**Q**: Can I force close ra.VI?\
-**A**: It is not advised to force close ra.VI. If you decide to do so, the changes made during that current session may get corrupted. To close ra.VI, please enter `bye`.
+:question:**Q**: Can I force close ra.VI?\
+:a:**A**: It is not advised to force close ra.VI. If you decide to do so, the changes made during that current session may get corrupted. To close ra.VI, please enter `bye`.
 
-## 5 Command Summary
+:exclamation_mark:## 5 Command Summary
 
 | Function | Command |
 |--------|---------------------------------------|
@@ -687,9 +665,9 @@ Goodbye, hope to see you soon!
 | Edit a task | `edit -t <task_index> <task_name>` |
 | Edit a module | `edit -m <module_code> <new_module_code>` |
 | Mark task as Done | `done <task_index>` |
-| Grade and allocated MCs to a module | `grade <module_code> <grade>` | 
+| Grade and allocated MCs to a module | `grade <module_code> <grade>` |
 | Calculate cap | `cap <total mc taken> <current cap>` |
-| Undo previous action | `undo` | 
+| Undo previous action | `undo` |
 | Add lesson to timetable | `timetable -add <module> <day> <start time> <end time> <lesson type> <repeat>` |
 | Delete lesson from timetable | `timetable -del <day> <lesson index>` |   
 | List all tasks | `list -t` |
@@ -711,9 +689,9 @@ Traverse to the target directory.
 **Note:** <br>
 All the modules and tasks are treated as directories, like the folders in the Window OS.
 To create a task related to Module CS2101, the user need to go into the Directory CS2101, to create the task.
-Format: `cd <module code>` <br> 
-        `cd ..` <br> 
-        
+Format: `cd <module code>` <br>
+        `cd ..` <br>
+
 Example of usage: <br>
 * `cd CS2101` <br>
 * `cd ..` <br>
@@ -729,7 +707,7 @@ The generic way to add a module or a task to the system.
 There are two types of add commands in the system: add a module and add a task.
 The general add command combines and simplifies the above two command.
 The ra.VI system could parse the general add command to different add commands according to the user current directory level.
-Format: `add <module code or task description>` <br> 
+Format: `add <module code or task description>` <br>
 Example of usage: <br>
 * `add CS2101` <br>
 * `add read a book` <br>
@@ -744,7 +722,7 @@ Recover the data from the previous "Data-changed" operations.
 **Note:** <br>
 "Data-changed" operations refer to Add, Edit, Delete operations only.
 
-Example of usage: 
+Example of usage:
 1. `add -m CS2113T`
 2. `undo`
 
@@ -754,13 +732,11 @@ Example of output:
 ### 6.4 Week Command  `week`
 A window will pop out and the task number on the each day of the upcoming week will be listed.
 
-Example of usage: 
+Example of usage:
 * `week`
 
 ### 6.5 Directory Command  `dir`
 A window will pop out and all module with related tasks will be listed.
 
-Example of usage: 
+Example of usage:
 * `dir`
-
-
