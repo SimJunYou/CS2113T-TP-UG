@@ -2,6 +2,9 @@
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents below, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
 
+1. TOC
+{:toc}
+
 ## Table of contents
 [1. **Introduction**](#1-introduction) <br>
 &nbsp;&nbsp;[1.1 About](#11-about) <br>
