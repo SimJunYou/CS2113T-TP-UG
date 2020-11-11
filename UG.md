@@ -154,7 +154,7 @@ After you add your task, you may want to check if it is there. You will learn ho
 |`add -t read chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline]()|
 |`add -t read chapter 1 -by 30-12-2020 800`|![Add Task W Wrong Deadline]()|
 
-##### Listing all tasks
+#### Listing all tasks
 You have a whole list of tasks now, but you need a way to view them. ra.VI can help with that.
 
 **Format:**
@@ -397,7 +397,7 @@ ra.VI will display the message saying that your module has been successfully gra
 |`grade CS2101 4 A+`|CS2101 has been successfully graded|![Grade CS2101 Success]()|
 |`grade ACC1002 4 C+`|ACC1002 is not in your module list|![Grade ACC1002 Failure]()|
 
-### Calculate your current CAP
+#### Calculate your current CAP
 Curious to know your current CAP before,during or after the semester?
 You may have the flexibility of calculating your current cap anytime.
 
@@ -423,22 +423,6 @@ ra.VI will display the current calculated CAP to you.
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
 |`cap`|CAP calculated successfully|![CAP calculated Success]()|
-
-
-### Undo
-Deleted a task when you didn’t mean to? You can undo your previous action.
-
-**Format:**
-`undo`
-
-**Example Usage:**
-Let’s say you have accidentally deleted an important task.
-To undo an action:
-1. Type `undo`.
-2. Then, simply press the Enter key to execute it.
-
-**Outcome:**
-ra.VI will display the message saying that your last action has been undone!
 
 ### Timetable
 Every NUS student has lessons to take, whether they are lectures, labs or tutorials, just to name a few. These lessons are usually at regular intervals throughout the semester. ra.VI will help you arrange your lessons into a timetable, allowing you to view all of your lessons in one place.
@@ -539,7 +523,7 @@ Let’s say that you want to see all your CG2271 lectures this week on Monday be
 ra.VI will display a message saying that your lesson has been deleted.
 
 ```tip
-If you want to skip using certain criteria, you can use a dash (`-`) in the place of that field! For example, if you only want to filter all lessons on Monday, you could do `timetable -filter - MONDAY - - -`, only filling in the `<day>` field and using `-` to ignore the other fields. **Any combination of fields is possible!**
+If you want to skip using certain criteria, you can use a dash (`-`) in the place of that field! For example, if you only want to filter all lessons on Monday, you could do `timetable -filter - MONDAY - - -`, only filling in the `day` field and using `-` to ignore the other fields. **Any combination of fields is possible!**
 ```
 
 |Example Commands|Context|Expected Output|
@@ -571,8 +555,23 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 |--------------|--------------|
 |`timetable -reset`|![Reset the timetable]()|
 
+### Undo
+Deleted a task when you didn’t mean to? You can undo your previous action.
+
+**Format:**
+`undo`
+
+**Example Usage:**
+Let’s say you have accidentally deleted an important task.
+To undo an action:
+1. Type `undo`.
+2. Then, simply press the Enter key to execute it.
+
+**Outcome:**
+ra.VI will display the message saying that your last action has been undone!
+
 ### Exit
-Done using ra.VI? You can save your data and safely exit ra.VI.
+Done using ra.VI? You can save your data and safely exit with this command.
 
 **Format:**
 `bye`
