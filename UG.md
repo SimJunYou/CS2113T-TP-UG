@@ -191,7 +191,7 @@ You have a whole list of tasks now, but you need a way to view them. ra.VI can h
 
 **Example Usage:**
 To view your task list:
-1. Type `list -t`
+1. Type `list -t`. That is the full command.
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
@@ -214,8 +214,9 @@ If your teacher cancels that last minute assignment, ra.VI can help remove a tas
 **Example Usage:**
 Let’s say you have a task "read Chapter 1" of index `1` (seen from your `list -t` command), and you would like to remove it from your list.
 To delete a task from ra.VI:
-1. Type `del -t`, followed by the task index of the task you want to delete, `1`. The full command would be `del -t 1`.
-2. Then, simply press the Enter key to execute it.
+1. Type `del -t`, followed by the task index of the task you want to delete, `1`.
+2. The full command would be `del -t 1`.
+3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
 ra.VI will display the message saying that your task has been deleted successfully!
@@ -238,8 +239,9 @@ Already completed your assignments and cleaned the dishes? You can mark your tas
 **Example Usage:**
 Let’s say you have a task "return book" of index `1` (seen from your `list -t` command), and you have completed it.
 To mark a task as done:
-1. Type `done`, followed by the task index of the task you want to delete, `1`. The full command would be `done 1`.
-2. Then, simply press the Enter key to execute it.
+1. Type `done`, followed by the task index of the task you want to delete, `1`.
+2. The full command would be `done 1`.
+3. Then, simply press the Enter key to execute it.
 
 |Example Commands|Expected Output|
 |--------------|--------------|
@@ -250,7 +252,7 @@ To mark a task as done:
 ra.VI will display the message saying that your task has been marked done! Your task will now be marked with a tick.
 
 #### Editing a task description
-Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descriptions of existing tasks.
+Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descriptions and deadlines of existing tasks.
 
 **Format:**
 `edit -t <task_index> <task_description>`
@@ -258,12 +260,13 @@ Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descr
 **Example Usage:**
 Let’s say you have a task called "Team Project", with task index `1` (seen from your `list -t` command), and you want to change the description to "Individual Project" instead.
 To edit a task’s description:
-1. Type `edit -t`, followed by the task index of the task you want to edit, `1`, and the new task description, `Individual Project`. The full command would be `edit -t 1 Individual Project`.
-2. Then, simply press the Enter key to execute it.
+1. Type `edit -t`, followed by the task index of the task you want to edit, `1`, and the new task description, `Individual Project`.
+2. The full command would be `edit -t 1 Individual Project`.
+3. Then, simply press the Enter key to execute it.
 
 Additionally, let’s say you want to add/edit the deadline of your task to `30-12-2020 1800` (i.e. 30th of December 2020, 6pm).
 1. You can add this optional deadline to the task by adding `-by`, followed by the deadline for your task.
-2. The full command would be `edit -t Individual Project -by 30-12-2020 1800`.
+2. The full command would be `edit -t 1 Individual Project -by 30-12-2020 1800`.
 
 **Outcome:**
 ra.VI will display the message saying that your task has been edited successfully! Your task will now have the new description
@@ -274,8 +277,8 @@ You can find the index of the tasks by using `list -t`.
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`edit -t 1 individual project`|You have a task `Team Project` at index 1 in the list|![Edit Task](images/edittask/1.png)|
-|`edit -t 1 individual project -by 29-11-2021 2000`|You have a task `Team Project` at index 1 in the list|![Edit Task](images/edittask/2.png)|
+|`edit -t 1 Individual Project`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/1.png)|
+|`edit -t 1 Individual Project -by 30-12-2020 1800`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
 #### Viewing task summary `summary`
 If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
@@ -297,7 +300,7 @@ To view your task summary:
 
 
 **Outcome:**
-ra.VI will display a neat summary of all your tasks, grouped into three categories.
+ra.VI will display a neat summary of all your tasks, grouped into three categories. The three categories are “Incomplete tasks with deadline”, “Incomplete tasks with no deadline” and “Completed tasks”.
 
 ### Modules
 
@@ -343,7 +346,7 @@ You have a whole list of modules now, but you need a way to view them. ra.VI can
 
 **Example Usage:**
 To view your module list:
-1. Type `list -m`
+1. Type `list -m`. That is the full command.
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
@@ -354,7 +357,7 @@ ra.VI will display the list of modules with their modular credits and attained g
 |`list -m`|With CS1010 in your list: ![List CS1010](images/listmodule/1.png)|
 
 #### Deleting a module
-If you have accidentally added a module, you can use the `del -m` command.
+If you have accidentally added the wrong module, you can use the `del -m` command.
 
 **Format:**
 `del -m <module_code>`
@@ -362,8 +365,9 @@ If you have accidentally added a module, you can use the `del -m` command.
 **Example Usage:**
 Let’s say you have a module CS1010 in your list (seen from your `list -m` command), and you would like to remove it from your list.
 To delete a module from ra.VI:
-1. Type `del -m`, followed by the module code of the module you want to delete, `CS1010`. The full command would be `del -m CS1010`.
-2. Then, simply press the Enter key to execute it.
+1. Type `del -m`, followed by the module code of the module you want to delete, `CS1010`.
+2. The full command would be `del -m CS1010`.
+3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
 ra.VI will display the message saying that your module has been deleted successfully!
@@ -387,14 +391,15 @@ Put `CS2113` instead of `CS2101`? You can edit the module code of specific modul
 Let’s say you have a module CS2113 in your module list (seen from your `list -t` command).
 
 To edit a module:
-1. Type `edit -m`, followed by the module code you want to edit, `CS2113`, and the new module code, `CS2101`. The full command would be `edit -m CS2113 CS2101`.
-2. Then, simply press the Enter key to execute it.
+1. Type `edit -m`, followed by the module code you want to edit, `CS2113`, and the new module code, `CS2101`.
+2. The full command would be `edit -m CS2113 CS2101`.
+3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
 ra.VI will display the message saying that your module has been edited successfully!
 
 ```tip
-You can check your module list by using `list -m` to check if the module has been edited.
+You can check your module list by using `list -m` to check if the module has been edited correctly.
 ```
 
 |Example Commands|Context|Expected Output|
@@ -402,26 +407,23 @@ You can check your module list by using `list -m` to check if the module has bee
 |`edit -m CS2113 CS2101`|You have `CS2113` in your module list|![Edit Module](images/editmodule/1.png)|
 |`edit -m CG2271 CS2101`|You do not have `CG2271` in your module list|![Edit Missing Module](images/editmodule/2.png)|
 
-### Grade an existing module
-Assign a grade and its relevant module credits to a module in the Scheduler.
+#### Grade an existing module
+Assign a grade and its relevant module credits to a module in ra.VI.
 
 **Format:**
  `grade <module_code> <module_credit> <grade>`
 
 **Example Usage.**
-Let’s say it is the end of the semester and results are out.
-You may assign the achieved grade and its relevant module credits to the module in your personalised module list by executing the `grade` command.
+Let’s say it is the end of the semester and results are out. You got an A+ for your CS1010, great job! To add the grade into ra.VI:
+1. Type `grade` into the command box, followed by the module code of the module to be graded, `CS1010`.
+2. Then, type in the respective module credits, `4`, and the grade achieved for that module, `A+`.
+3. The full command would be `grade CS2101 4 A+`.
+4. Then, simply press the Enter key to execute it.
 
 ```note
 * ra.VI will accept both _lowercase_ and _uppercase_. ie `A+` or `a+`.
 * Relevant module information, such as the number of module credits for the relevant module, can be found at [NUSMods](https://nusmods.com/modules).
 ```
-
-To assign a grade and module credits to the module:
-1. Type `grade` into the command box, followed by the module code of the module to be graded.
-2. Subsequently, type in the respective module credits and the grade achieved for that module.
-3. The full command would be `grade CS2101 4 A+` if CS2101 had 4MCs and you got an A+ for it.
-4. Then, simply press the Enter key to execute it.
 
 **Outcome:**
 ra.VI will display the message saying that your module has been successfully graded!
@@ -452,13 +454,13 @@ Please ensure the relevant modules in the module list have been graded, for ra.V
 However, **not all modules** need to be graded for CAP to be calculated.
 ```
 
-To calculate your current cap:
+To calculate your current CAP:
 1. Simply type in the command `cap`
 2. The full command would be `cap`.
 3. Then simply press the Enter key to execute it.
 
 **Outcome:**
-ra.VI will display the current calculated CAP to you.
+Based on the grades that you have given to each module in the module list, ra.VI will display the calculated CAP.
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
@@ -484,18 +486,19 @@ The format for <start_time> and <end_time> are both explained in the "Time" sect
 **Example Usage:**
 Let’s say you have a lecture for CS2101 at 8AM to 10AM on every Tuesday, and you would like to add it to your timetable.
 To add a lesson to your timetable:
-1. Type `timetable -add`, followed by the lesson’s details, `CS2101 TUESDAY 0800 1000 LECTURE 2`. For example, `timetable -add CS2101 TUESDAY 0800 1000 LECTURE 2`.
-2. Then, simply press the Enter key to execute it.
+1. Type `timetable -add`, followed by the lesson’s details, `CS2101 TUESDAY 0800 1000 LECTURE 1`.
+2. The full command would be `timetable -add CS2101 TUESDAY 0800 1000 LECTURE 1`.
+3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
 ra.VI will display a message saying that your lesson has been added!
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -add CS2101 TUESDAY 0800 1000 LECTURE 2`|CS2101 is a module in your module list|![Timetable add CS2101 Success](images/timetableadd/1.png)|
+|`timetable -add CS2101 TUESDAY 0800 1000 LECTURE 1`|CS2101 is in your module list|![Timetable add CS2101 Success](images/timetableadd/1.png)|
 |`timetable -add CS1010 WEDNESDAY 1200 1400 LECTURE 2`|CS1010 is not in your module list|![Timetable add CS1010 Failure](images/timetableadd/2.png)|
 |`timetable -add CS2113T TUESDAY 0800 1000 LECTURE 2`|Overlapping lesson times|![Timetable add Overlap Failure](images/timetableadd/3.png)|
-|`timetable -add CS1010 THURSDAY LECTURE 2`|Missing parameters|![Timetable add Missing Parameters Failure](images/timetableadd/4.png)|
+|`timetable -add CS1010 THURSDAY LECTURE 0`|Missing parameters|![Timetable add Missing Parameters Failure](images/timetableadd/4.png)|
 
 #### Viewing your timetable
 Now that you have your lessons in your timetable, you can view them too!
@@ -521,7 +524,6 @@ ra.VI will display your timetable, containing the lessons and their indexes, for
 |`timetable -week`|View week’s timetable|![Timetable view week](images/timetableweek/1.png)|
 
 #### Deleting a lesson
-
 Made a mistake adding the wrong entry to your timetable? Delete the entry by executing the `timetable -del` command.
 
 **Format:**
@@ -553,21 +555,27 @@ Let’s say that you have a cluttered timetable and would only like to view cert
 `timetable -filter <module> <day> <start_time> <end_time> <lesson_type>`
 
 **Example Usage:**
-Let’s say that you want to see all your CG2271 lectures this week on Monday between 10AM and 1PM. To filter out these lessons from your timetable:
-1. Type `timetable -filter`, followed by the lesson’s details, `CG2271 MONDAY 1000 1300 LECTURE`. The whole command would be `timetable -filter CG2271 MONDAY 1000 1300 LECTURE`.
-2. Then, simply press the Enter key to execute it.
+Let’s say that you want to see all your lessons on Thursday this week. To filter out these lessons from your timetable:
+1. Type `timetable -filter`, followed by the lesson’s details, `- THURSDAY - - -`.
+2. The whole command would be `timetable -filter - THURSDAY - - -`.
+3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
 ra.VI will display a message saying that your lesson has been deleted.
 
 ```tip
-If you want to skip using certain criteria, you can use a dash (`-`) in the place of that field! For example, if you only want to filter all lessons on Monday, you could do `timetable -filter - MONDAY - - -`, only filling in the `day` field and using `-` to ignore the other fields. **Any combination of fields is possible!**
+Confused by the `-` symbol? If you want to skip using certain criteria, you can use a dash (`-`) in the place of that field! For example, if you only want to filter all lessons on Monday, you could do `timetable -filter - MONDAY - - -`, only filling in the `day` field and using `-` to ignore the other fields. **Any combination of fields is possible!**
 ```
+
+Here is the timetable without any filtering:
+![Timetable before filter](images/timetablefilter/1.png)
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -del MONDAY 1`|Lesson on Monday with an index of 1|![Timetable Del Success](images/timetablefilter/1.png)|
-|`timetable -del FRIDAY 3`|No lessons on Friday with an index of 3|![Timetable Del Failure](images/timetablefilter/2.png)|
+|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png)|
+|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png)|
+|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png)|
+|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png)|
 
 #### Resetting your timetable
 As you move to the next semester, you can still continue to use ra.VI. In fact, we would appreciate it if you could use ra.VI all the way until your graduation!
@@ -670,7 +678,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 | Delete a lesson | `timetable -del <day> <lesson_index>` |   
 | View today's timetable | `timetable -day` |
 | View current week's timetable | `timetable -week` |
-| Filter the timetable | `timetable -filter <module> <day> <start time> <end time> <lesson type>` |
+| Filter the timetable | `timetable -filter <module> <day> <start_time> <end_time> <lesson_type>` |
 | Reset the timetable | `timetable -reset` |
 | Undo previous change | `undo` |
 | Get list of commands | `help` |
