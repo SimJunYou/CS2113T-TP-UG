@@ -15,8 +15,10 @@ This user guide aims to provide you with a clear documentation of ra.VI's featur
 ### Product Overview
 
 ra.VI is targeted at you - the NUS freshman. As a freshman, there are many documents and new procedures that you must get familiar with. This may be daunting for you but ra.VI will provide you with the assistance you need.
+
 By helping you keep track of your tasks and deadlines, you will be able to keep on top of deadlines.
 Moreover, the timetable feature helps you to schedule your lessons, allowing you to be more prepared for lessons.
+
 Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep tabs on how well you are doing, motivating you towards that elusive CAP 5.0.
 
 ---
