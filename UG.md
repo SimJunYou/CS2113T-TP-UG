@@ -109,21 +109,17 @@ ra.VI is a CLI application, which means you control it entirely with text comman
 
 1. Ensure that you have Java 11 or above installed.
 2. Download the latest version of `ra.VI` from [here](https://github.com/AY2021S1-CS2113T-T09-2/tp/releases/tag/v2.1).
-3. Copy the file to the folder you want to use as the home folder for `ra.VI`.
-
+3. Copy the file to the folder you want to use as the home folder for `ra.VI`.\
 ![Jar file in folder](images/quickstart1.png)
-
-4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.
-
-![Console with start jar command]()
-
-5. ra.VI will be launched, and you will be greeted with the welcome screen! Enter the current NUS week number as prompted.
-
-![Welcome screen]()
-
-6. Type the command in the command box and press the Enter key to execute it.
+4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.\
+![Console with start jar command](images/quickstart2.png)
+5. ra.VI will be launched, and you will be greeted with the welcome screen!\
+![Welcome screen](images/quickstart3.png)
+6. Enter the current NUS week number as prompted. You will then see the prompt for your command.\
+![Command Prompt](images/quickstart4.png)
+7. Type the command in the command prompt and press the Enter key to execute it.
   1. For example, typing `help` and pressing the Enter key will show you the help message, with a list of all of ra.VI’s commands.
-7. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
+8. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
 
 ## Features
 
