@@ -23,52 +23,43 @@ Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep
 
 ### Keywords
 
-**Command-Line Interface**
+#### Command-Line Interface
 
 The Command-Line Interface (or CLI for short) is a type of user interface which lets a user control a computer program like ra.VI. Instead of the Graphical User Interface (GUI) with buttons and menus like you are probably used to, the CLI is entirely text-based. This makes it less intuitive but far faster to use, especially if you are a fast typer!
 
-**Tasks**
+#### Tasks
 
 A task refers to something that you would like to get done. This refers to reading a book or doing an assignment. Tasks can be created with or without a deadline.
 
-**Deadline**
+#### Deadline
 
-A deadline refers to a date and time associated with a task. This is in the format: DAY-MONTH-YEAR TIME_24H, e.g. `23-12-2020 1400` or `1-2-2000 0800`.
+A deadline refers to a date and time associated with a task. This is in the format: `DAY-MONTH-YEAR TIME_24H`, e.g. `23-12-2020 1400` or `1-2-2000 0800`.
 
-**Modules**
+#### Modules
 
 A module refers to a module taken under NUS. Entered modules will be checked against the list of NUS modules taken from [NUSMods](https://nusmods.com/timetable/sem-1).
 
-**Module Code**
+#### Module Code
 
 A module code refers to the **official** module code of the module you are trying to refer to. As with modules, ra.VI will be taking reference from [NUSMods](https://nusmods.com/timetable/sem-1).
 
-**CAP**
+#### CAP
 
 CAP refers to Cumulative Average Point, which is the [grading system used by NUS](http://www.nus.edu.sg/registrar/academic-information-policies/graduate/modular-system). The CAP will be calculated based on your modules and the grades you have assigned to them.
 
-**Done**
+#### Done
 
 Any task can be marked as “done”. This will signify completion of the task so that you can get an easy view of any remaining tasks.
 
-**Timetable**
+#### Timetable
 
 The timetable holds all the lessons you take. It allows you to add lessons for modules you are taking.
 
-**NUS Week Number**
+#### NUS Week Number
 
 NUS’s semesters last for 6 weeks, followed by Recess Week, then another 6 weeks, and finally Reading Week for a total of 14 weeks. When you first use ra.VI, you will be asked to tell ra.VI the current NUS week number. After setting the timetable up the first time, you do not need to go through the set up again.
 
-**Day**
-
-Some commands have a `day` field for you to specify a certain day. Here are the accepted values:\
-`MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`.
-
-```warning
-This format must be followed exactly! Fully spelled out in uppercase. `Monday`, `Mon`, `monday` are examples of what will **not** work. If you want to specify Monday, only `MONDAY` will work.
-```
-
-**Lesson Type**
+#### Lesson Type
 
 Some commands have a `lesson_type` field for you to specify a certain type of lesson. Here are the accepted values:\
 `TUTORIAL`, `LECTURE`, `SEMINAR`, `LAB`, `RECITATION`, `SESSION`.
@@ -77,7 +68,7 @@ Some commands have a `lesson_type` field for you to specify a certain type of le
 Similar to the `day` field, this format must be followed exactly! It has to be fully spelled out as shown here, and entirely in uppercase.
 ```
 
-**Repeat**
+#### Repeat
 
 `repeat` is a field to specify how often lessons should repeat.
 * `0` - Does not repeat.
@@ -85,17 +76,26 @@ Similar to the `day` field, this format must be followed exactly! It has to be f
 * `2` - Repeats every **even** week.
 * `3` - Repeats every **odd** week.
 
-**Time**
+#### Day
+
+Some commands have a `day` field for you to specify a certain day. Here are the accepted values:\
+`MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`, `FRIDAY`, `SATURDAY`, `SUNDAY`.
+
+```warning
+This format must be followed exactly! Fully spelled out in uppercase. `Monday`, `Mon`, `monday` are examples of what will **not** work. If you want to specify Monday, only `MONDAY` will work.
+```
+
+#### Time
 
 Some commands require you to enter a time. The `time` field requires the hours and minutes of the time you want to specify, in the [24H format](https://en.wikipedia.org/wiki/24-hour_clock). For example, 9AM would be `0900` and 2:15PM would be `1415`.
 
-**Deadline**
+#### Deadline
 
 Some commands require you to enter a date and time for a deadline. The date portion should have the day, month, and year written in numbers and separated with dashes.
 
 For example, 30 December 2020 would be `30-12-2020`. The time portion is the same as described in the **Time** explanation above. A full deadline of “15 February 2021 3:30AM” would be `15-02-2021 0330`.
 
-**Undo**
+#### Undo
 
 Some commands edit your tasks, modules, and lessons. All commands that edit your information can be undone! Here’s a list:
 * Adding / deleting / editing tasks.
@@ -292,7 +292,7 @@ You can find the index of the tasks by using `list -t`.
 |`edit -t 1 Individual Project`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/1.png)|
 |`edit -t 1 Individual Project -by 30-12-2020 1800`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
-#### Viewing task summary `summary`
+#### Viewing task summary
 If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
 1. Incomplete tasks with deadlines. These tasks will be sorted with the most pressing deadline on top.
 2. Incomplete tasks without deadlines.
@@ -308,6 +308,10 @@ To view your task summary:
 
 **Outcome:**
 ra.VI will display a neat summary of all your tasks, grouped into three categories. The three categories are “Incomplete tasks with deadline”, “Incomplete tasks with no deadline” and “Completed tasks”.
+
+```tip
+Your "Incomplete tasks with deadlines" will be sorted by date, with the current closest deadline at the top and the furthest deadline at the bottom.
+```
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
@@ -365,9 +369,9 @@ To view your module list:
 **Outcome:**
 ra.VI will display the list of modules with their modular credits and attained grades, which we will talk about in our `grade` command later on!
 
-|Example Commands|Expected Output|
-|--------------|--------------|
-|`list -m`|With CS1010 in your list: ![List CS1010](images/listmodule/1.PNG)|
+|Example Commands|Context|Expected Output|
+|--------------|----------|--------------|
+|`list -m`|With CS1010 in your list|![List CS1010](images/listmodule/1.PNG)|
 
 #### Deleting a module
 If you have accidentally added the wrong module, you can use the `del -m` command.
@@ -436,6 +440,7 @@ Let’s say it is the end of the semester and results are out. You got an A+ for
 ```note
 * ra.VI will accept both _lowercase_ and _uppercase_. ie `A+` or `a+`.
 * Relevant module information, such as the number of module credits for the relevant module, can be found at [NUSMods](https://nusmods.com/modules).
+* If you have [SU-ed your module](http://www.nus.edu.sg/registrar/academic-activities/satisfactory-unsatisfactory-(s-u)-option), use `CS` or `CU` as the grade accordingly.
 ```
 
 **Outcome:**
@@ -463,8 +468,7 @@ You have the flexibility of calculating your current CAP at any time.
 With all of the relevant modules in the module list graded, you may calculate your current CAP by executing the `cap` command.
 
 ```note
-Please ensure the relevant modules in the module list have been graded, for ra.VI to calculate the CAP accurately.
-However, **not all modules** need to be graded for CAP to be calculated.
+Please ensure the relevant modules in the module list have been graded, for ra.VI to calculate the CAP accurately. However, **not all modules** need to be graded for CAP to be calculated.
 ```
 
 To calculate your current CAP:
@@ -491,11 +495,11 @@ Every student has lessons. Too many lessons, even. Let ra.VI help you keep track
 `timetable -add <module_code> <day> <start_time> <end_time> <lesson_type> <repeat>`
 
 ```warning
-These fields must follow this order strictly, and also must follow certain requirements. You can check the [Keywords]() section above for details on these fields!
+These fields must follow this order strictly, and also must follow certain requirements. You can check the [Keywords](#keywords) section above for details on these fields!
 
-For <module_code>, the module code must be in your module list. See your module list with `list -m`.
+For `module_code`, the module code must be in your module list. See your module list with `list -m`.
 
-The format for <start_time> and <end_time> are both explained in the "Time" section of the Keywords section above. <start_time> must be chronologically before <end_time>. For example, `1800 1700` would not work, but `1700 1800` would.
+The format for `start_time` and `end_time` are both explained in the "Time" section of the Keywords section above. `start_time` must be chronologically before `end_time`. For example, `1800 1700` would not work, but `1700 1800` would.
 ```
 
 **Example Usage:**
@@ -615,7 +619,7 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`timetable -reset`|![Reset the timetable](images/timetablereset/1.jpg)|
+|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG)|
 
 ---
 
@@ -747,7 +751,7 @@ Example of output:
 ### 6.3 Undo `undo`
 Recover the data from the previous "Data-changed" operations.
 
-**Note:**
+**Note:
 "Data-changed" operations refer to Add, Edit, Delete operations only.
 
 Example of usage:
