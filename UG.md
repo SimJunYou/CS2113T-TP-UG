@@ -111,7 +111,7 @@ ra.VI is a CLI application, which means you control it entirely with text comman
 2. Download the latest version of `ra.VI` from [here](https://github.com/AY2021S1-CS2113T-T09-2/tp/releases/tag/v2.1).
 3. Copy the file to the folder you want to use as the home folder for `ra.VI`.
 
-![Jar file in folder]()
+![Jar file in folder](images/quickstart1.png)
 
 4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.
 
