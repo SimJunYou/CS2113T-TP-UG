@@ -101,25 +101,51 @@ Some commands edit your tasks, modules, and lessons. All commands that edit your
 
 ### ra.VI’s Interface
 
-![Interface with arrows and labels]()
+![Interface with arrows and labels](images/interface/1.png)
 
-ra.VI is a CLI application, which means you control it entirely with text commands. ra.VI will “talk” to you with lines of text, as indicated in the diagram.
+ra.VI is a CLI application, which means you control it entirely with text commands. This is the start screen of ra.VI, after you've used it at least once and initialised ra.VI with the current NUS week number. ra.VI shows you the loading statuses of your data in the welcome message. Your data can either be successfully loaded, skipped (if you have no data), or corrupted if something is wrong with the file.
+
+```note
+All your data is saved in the `data` folder that will be created when ra.VI first runs! There will be 4 save files:
+* `mod_data.json`
+* `task_data.json`
+* `timetable_data.json`
+* `nus_mod_data.json`
+
+If any of these files are corrupted (unreadable by ra.VI), ra.VI will rename them with a ".bak" at the end to indicate that it is no longer in use as a save file. For example, "mod_data.json" would become "mod_data.json.bak".
+```
+
+![Initialisation interface with arrows and labels](images/interface/2.png)
+
+This is what you should first see when you launch ra.VI. As you can see from the picture, all the data files' statuses are "skipped" since you have no data saved. It's your first time using ra.VI after all! ra.VI also tells you that it has downloaded the latest data from NUSMods to provide you with useful module information.
+
+![Command prompt interface explanation](images/interface/3.png)
+
+ra.VI will “talk” to you with lines of text, as you can see from the diagram. Your previous command entered will be shown on top of the **output** (the result) for that command. You will always be able to type in the next command at the bottom of the window, as shown in the image.
+
+Just type in whatever command you wish to use with the appropriate syntax and press the Enter key. It's really that simple!
 
 ## Quick Start
+
+New to using ra.VI? Here's how to get ra.VI up and functional in a few simple steps.
 
 1. Ensure that you have Java 11 or above installed.
 2. Download the latest version of `ra.VI` from [here](https://github.com/AY2021S1-CS2113T-T09-2/tp/releases/tag/v2.1).
 3. Copy the file to the folder you want to use as the home folder for `ra.VI`.\
-![Jar file in folder](images/quickstart1.png)
+![Jar file in folder](images/quickstart/1.png)
 4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.\
-![Console with start jar command](images/quickstart2.png)
+![Console with start jar command](images/quickstart/2.png)
 5. ra.VI will be launched, and you will be greeted with the welcome screen!\
-![Welcome screen](images/quickstart3.png)
+![Welcome screen](images/quickstart/3.png)
 6. Enter the current NUS week number as prompted. You will then see the prompt for your command.\
-![Command Prompt](images/quickstart4.png)
+![Command Prompt](images/quickstart/4.png)
 7. Type the command in the command prompt and press the Enter key to execute it.
   1. For example, typing `help` and pressing the Enter key will show you the help message, with a list of all of ra.VI’s commands.
 8. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
+
+```warning
+It is highly recommended that you have a working internet connection when you first launch ra.VI, as ra.vI will try to download the latest data from NUSMods the first time you use it. If it is not possible, ra.VI has some backup NUSMods data that it can use that is bundled with it, but it may be prone to inaccuracies as it cannot be updated as frequently.
+```
 
 ## Features
 
@@ -153,9 +179,9 @@ After you add your task, you may want to check if it is there. You will learn ho
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`add -t read Chapter 1`|![Add Task]()|
-|`add -t read Chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline]()|
-|`add -t read Chapter 1 -by 30-12-2020 800`|![Add Task W Wrong Deadline]()|
+|`add -t read Chapter 1`|![Add Task](images/addtask/1.png)|
+|`add -t read Chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline](images/addtask/2.png)|
+|`add -t read Chapter 1 -by 30-12-2020 800`|![Add Task W Wrong Deadline](images/addtask/3.png)|
 
 #### Listing all tasks
 You have a whole list of tasks now, but you need a way to view them. ra.VI can help with that.
@@ -177,7 +203,7 @@ You will need the task indexes for `del`, `edit`, and `done` commands!
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`list -t`|With one task in your list: ![List Task]()|
+|`list -t`|With one task in your list: ![List Task](images/listtask/1.png)|
 
 #### Deleting a task
 If your teacher cancels that last minute assignment, ra.VI can help remove a task from your task list.
@@ -200,8 +226,8 @@ After you delete your task, you may want to check if it is there. You will be ab
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`del -t 1`|![Delete Task]()|
-|`del -t 0`|![Delete Task wrong index]()|
+|`del -t 1`|![Delete Task](images/deletetask/1.png)|
+|`del -t 0`|![Delete Task wrong index](images/deletetask/2.png)|
 
 #### Marking a task as done
 Already completed your assignments and cleaned the dishes? You can mark your tasks as completed with ra.VI.
@@ -217,8 +243,8 @@ To mark a task as done:
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`done 1`|![Done Task]()|
-|`done 0`|![Delete Task wrong index]()|
+|`done 1`|![Done Task](images/donetask/1.png)|
+|`done 0`|![Delete Task wrong index](images/donetask/2.png)|
 
 **Outcome:**
 ra.VI will display the message saying that your task has been marked done! Your task will now be marked with a tick.
@@ -248,10 +274,14 @@ You can find the index of the tasks by using `list -t`.
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`edit -t 1 individual project`|You have a task `individual project` at index 1 in the list|![Edit Task]()|
+|`edit -t 1 individual project`|You have a task `Team Project` at index 1 in the list|![Edit Task](images/edittask/1.png)|
+|`edit -t 1 individual project -by 29-11-2021 2000`|You have a task `Team Project` at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
 #### Viewing task summary `summary`
-To view all of your tasks
+If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
+1. Incomplete tasks with deadlines. These tasks will be sorted with the most pressing deadline on top.
+2. Incomplete tasks without deadlines.
+3. Completed tasks (with or without deadlines).
 
 **Format:**
 `summary`
@@ -260,6 +290,11 @@ To view all of your tasks
 To view your task summary:
 1. Type `summary`.
 2. Then, simply press the Enter key to execute it.
+
+|Example Commands|Context|Expected Output|
+|--------------|----------|--------------|
+|`summary`|You have 2 tasks with a deadline, 1 task without deadline, and one completed task|![Edit Task](images/summary/1.png)|
+
 
 **Outcome:**
 ra.VI will display a neat summary of all your tasks, grouped into three categories.
@@ -283,7 +318,8 @@ To add a module into ra.VI:
 3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
-ra.VI will display the message saying that your module has been added successfully! What you would expect to see is shown below.
+ra.VI will display the message saying that your module has been added successfully!
+What you would expect to see is shown below.
 
 ```note
 After you add your module, you may want to check if it is there. You will learn how to view your modules using the `list` command later on!
@@ -295,9 +331,9 @@ You will only be able to add modules that are offered at NUS.
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`add -m CS1010`|![Add CS1010]()|
-|`add -m CS2113T`|![Add CS2113T]()|
-|`add -m CS`|![Add CS]()|
+|`add -m CS1010`|![Add CS1010](images/addmodule/1.png)|
+|`add -m CS2113T`|![Add CS2113T](images/addmodule/2.png)|
+|`add -m CS`|![Add CS](images/addmodule/3.png)|
 
 #### Listing all modules
 You have a whole list of modules now, but you need a way to view them. ra.VI can help with that.
@@ -315,7 +351,7 @@ ra.VI will display the list of modules with their modular credits and attained g
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`list -m`|With CS1010 in your list: ![List CS1010]()|
+|`list -m`|With CS1010 in your list: ![List CS1010](images/listmodule/1.png)|
 
 #### Deleting a module
 If you have accidentally added a module, you can use the `del -m` command.
@@ -338,8 +374,8 @@ After you delete your module, you may want to check if it is still there. You wi
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`del -m CS1010`|CS1010 is a module in your module list|![Delete CS1010 Success]()|
-|`del -m CS2113T`|CS2113T is not in your module list|![Delete CS2113T Failure]()|
+|`del -m CS1010`|CS1010 is a module in your module list|![Delete CS1010 Success](images/delmodule/1.png)|
+|`del -m CS2113T`|CS2113T is not in your module list|![Delete CS2113T Failure](images/delmodule/2.png)|
 
 #### Editing a module
 Put `CS2113` instead of `CS2101`? You can edit the module code of specific modules in your module list.
@@ -363,8 +399,8 @@ You can check your module list by using `list -m` to check if the module has bee
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`edit -m CS2113 CS2101`|You have `CS2113` in your module list|![Edit Module]()|
-|`edit -m CG2271 CS2101`|You do not have `CG2271` in your module list|![Edit Missing Module]()|
+|`edit -m CS2113 CS2101`|You have `CS2113` in your module list|![Edit Module](images/editmodule/1.png)|
+|`edit -m CG2271 CS2101`|You do not have `CG2271` in your module list|![Edit Missing Module](images/editmodule/2.png)|
 
 ### Grade an existing module
 Assign a grade and its relevant module credits to a module in the Scheduler.
@@ -397,8 +433,8 @@ ra.VI will display the message saying that your module has been successfully gra
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`grade CS2101 4 A+`|CS2101 has been successfully graded|![Grade CS2101 Success]()|
-|`grade ACC1002 4 C+`|ACC1002 is not in your module list|![Grade ACC1002 Failure]()|
+|`grade CS2101 4 A+`|CS2101 has been successfully graded|![Grade CS2101 Success](images/grademodule/1.png)|
+|`grade ACC1002 4 C+`|ACC1002 is not in your module list|![Grade ACC1002 Failure](images/grademodule/2.png)|
 
 
 #### Calculate your current CAP
@@ -426,7 +462,7 @@ ra.VI will display the current calculated CAP to you.
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`cap`|CAP calculated successfully|![CAP calculated Success]()|
+|`cap`|CAP calculated successfully|![CAP calculated Success](images/cap/1.png)|
 
 ### Timetable
 Every NUS student has lessons to take, whether they are lectures, labs or tutorials, just to name a few. These lessons are usually at regular intervals throughout the semester. ra.VI will help you arrange your lessons into a timetable, allowing you to view all of your lessons in one place.
@@ -456,10 +492,10 @@ ra.VI will display a message saying that your lesson has been added!
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -add CS2101 TUESDAY 0800 1000 LECTURE 2`|CS2101 is a module in your module list|![Timetable add CS2101 Success]()|
-|`timetable -add CS1010 WEDNESDAY 1200 1400 LECTURE 2`|CS1010 is not in your module list|![Timetable add CS1010 Failure]()|
-|`timetable -add CS2113T TUESDAY 0800 1000 LECTURE 2`|Overlapping lesson times|![Timetable add Overlap Failure]()|
-|`timetable -add CS1010 THURSDAY LECTURE 2`|Missing parameters|![Timetable add Missing Parameters Failure]()|
+|`timetable -add CS2101 TUESDAY 0800 1000 LECTURE 2`|CS2101 is a module in your module list|![Timetable add CS2101 Success](images/timetableadd/1.png)|
+|`timetable -add CS1010 WEDNESDAY 1200 1400 LECTURE 2`|CS1010 is not in your module list|![Timetable add CS1010 Failure](images/timetableadd/2.png)|
+|`timetable -add CS2113T TUESDAY 0800 1000 LECTURE 2`|Overlapping lesson times|![Timetable add Overlap Failure](images/timetableadd/3.png)|
+|`timetable -add CS1010 THURSDAY LECTURE 2`|Missing parameters|![Timetable add Missing Parameters Failure](images/timetableadd/4.png)|
 
 #### Viewing your timetable
 Now that you have your lessons in your timetable, you can view them too!
@@ -481,8 +517,8 @@ ra.VI will display your timetable, containing the lessons and their indexes, for
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -day`|View day’s timetable|![Timetable view day]()|
-|`timetable -week`|View week’s timetable|![Timetable view week]()|
+|`timetable -day`|View day’s timetable|![Timetable view day](images/timetableday/1.jpg)|
+|`timetable -week`|View week’s timetable|![Timetable view week](images/timetableweek/1.png)|
 
 #### Deleting a lesson
 
@@ -506,15 +542,15 @@ You will need the lesson indexes for `timetable -del`! Use `timetable -day` or `
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -del MONDAY 1`|Lesson on Monday with an index of 1|![Timetable Del Success]()|
-|`timetable -del FRIDAY 3`|No lessons on Friday with an index of 3|![Timetable Del Failure]()|
+|`timetable -del MONDAY 1`|Lesson on Monday with an index of 1|![Timetable Del Success](images/timetabledel/1.png)|
+|`timetable -del FRIDAY 3`|No lessons on Friday with an index of 3|![Timetable Del Failure](images/timetabledel/2.png)|
 
 #### Filtering lessons in your timetable
 
 Let’s say that you have a cluttered timetable and would only like to view certain lessons out of all of your lessons. You would use the `timetable -filter` command.
 
 **Format:**
-`timetable -filter <module> <day> <start time> <end time> <lesson type>`
+`timetable -filter <module> <day> <start_time> <end_time> <lesson_type>`
 
 **Example Usage:**
 Let’s say that you want to see all your CG2271 lectures this week on Monday between 10AM and 1PM. To filter out these lessons from your timetable:
@@ -530,8 +566,8 @@ If you want to skip using certain criteria, you can use a dash (`-`) in the plac
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -del MONDAY 1`|Lesson on Monday with an index of 1|![Timetable Del Success]()|
-|`timetable -del FRIDAY 3`|No lessons on Friday with an index of 3|![Timetable Del Failure]()|
+|`timetable -del MONDAY 1`|Lesson on Monday with an index of 1|![Timetable Del Success](images/timetablefilter/1.png)|
+|`timetable -del FRIDAY 3`|No lessons on Friday with an index of 3|![Timetable Del Failure](images/timetablefilter/2.png)|
 
 #### Resetting your timetable
 As you move to the next semester, you can still continue to use ra.VI. In fact, we would appreciate it if you could use ra.VI all the way until your graduation!
@@ -555,7 +591,7 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`timetable -reset`|![Reset the timetable]()|
+|`timetable -reset`|![Reset the timetable](images/timetablereset/1.jpg)|
 
 ### Undo
 Deleted a task when you didn’t mean to? Accidentally reset your timetable? You can undo your previous action!
@@ -571,6 +607,11 @@ To undo an action:
 
 **Outcome:**
 ra.VI will display the message saying that your last action has been undone!
+
+|Example Commands|Context|Expected Output|
+|--------------|----------|--------------|
+|`undo`|You used a command to change data right before|![bye success](images/undo/1.png)|
+|`undo`|You just launched ra.VI and did not change any data with commands|![bye failure](images/undo/2.png)|
 
 ### Exit
 Done using ra.VI? You can save your data and safely exit with this command.
