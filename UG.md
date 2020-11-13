@@ -1,4 +1,7 @@
 # ra.VI User Guide
+{:refdef: style="text-align: center;"}
+![our lord and saviour ravi](images/ravi.jpeg)
+{: refdef}
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
 
@@ -22,28 +25,6 @@ Moreover, the timetable feature helps you to schedule your lessons, allowing you
 Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep tabs on how well you are doing, motivating you towards that elusive CAP 5.0.
 
 ---
-
-### How to use this Guide
-
-This user guide will give you a step-by-guide tutorial on how to use each of the commands provided in ra.VI. To aid this, this guide is written with specific formatting to help you understand how to use ra.VI better.
-
-`Grey highlighted font` like this indicate a command or a keyword. For example, `help` or `list -t`.
-
-Keywords like `<day>` and `<lesson_type>` are surrounded by angle brackets ("<" and ">"), and they indicate the positions of extra information you need to provide to the command. For example, `add -m <module_code>` means that you need to fill in the module code you want in the place of the `<module_code>`. It would look something like `add -m CS2113T`.
-
-We also have some special text boxes to help you understand how to use ra.VI!
-
-```tip
-This box shows you information that isn't necessary, but will be helpful.
-```
-
-```info
-This box shows you useful information that you will need to know.
-```
-
-```warning
-This box tells you about things you need to be alert about. If you're not careful, you might end up with an error!
-```
 
 ### Keywords
 
@@ -166,13 +147,13 @@ New to using ra.VI? Here's how to get ra.VI up and functional in a few simple st
 1. Ensure that you have Java 11 or above installed.
 2. Download the latest version of `ra.VI` from [here](https://github.com/AY2021S1-CS2113T-T09-2/tp/releases/tag/v2.1).
 3. Copy the file to the folder you want to use as the home folder for `ra.VI`.\
-![Jar file in folder](images/quickstart/1.png){:.hover-grow height="50%" width="50%"}
+![Jar file in folder](images/quickstart/1.png)
 4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.\
-![Console with start jar command](images/quickstart/2.png){:height="50%" width="50%"}
+![Console with start jar command](images/quickstart/2.png)
 5. ra.VI will be launched, and you will be greeted with the welcome screen!\
-![Welcome screen](images/quickstart/3.png){:height="50%" width="50%"}
+![Welcome screen](images/quickstart/3.png)
 6. Enter the current NUS week number as prompted. You will then see the prompt for your command.\
-![Command Prompt](images/quickstart/4.png){:height="50%" width="50%"}
+![Command Prompt](images/quickstart/4.png)
 7. Type the command in the command prompt and press the Enter key to execute it.
   1. For example, typing `help` and pressing the Enter key will show you the help message, with a list of all of ra.VI’s commands.
 8. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
@@ -180,11 +161,6 @@ New to using ra.VI? Here's how to get ra.VI up and functional in a few simple st
 ```warning
 It is highly recommended that you have a working internet connection when you first launch ra.VI, as ra.vI will try to download the latest data from NUSMods the first time you use it. If it is not possible, ra.VI has some backup NUSMods data that it can use that is bundled with it, but it may be prone to inaccuracies as it cannot be updated as frequently.
 ```
-
-<details class="details-overlay">
-  <summary class="btn">More</summary>
-  <div class="border p-3 mt-2">AHHH</div>
-</details>
 
 ---
 
@@ -668,9 +644,13 @@ To undo an action:
 **Outcome:**
 ra.VI will display the message saying that your last action has been undone!
 
+```tip
+Refer to the [Undo](#undo) in the [Keywords](#keywords) section above for the commands that can be undone.
+```
+
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`undo`|You have previously entered a command that amended the save files|![bye success](images/undo/1.png)|
+|`undo`|You have previously entered a command that can be undone|![bye success](images/undo/1.png)|
 |`undo`|You just launched ra.VI and did not change any data with commands|![bye failure](images/undo/2.png)|
 
 ---
