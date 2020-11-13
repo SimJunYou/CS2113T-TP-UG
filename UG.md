@@ -1,4 +1,3 @@
-{::options parse_block_html="true" /}
 # ra.VI User Guide
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
@@ -10,65 +9,6 @@ Welcome to the ra.VI User Guide! Choose a section from the table of contents on 
 Repository Assistant with a Versatile Interface (ra.VI) is a desktop app for managing tasks, deadlines, and timetable, optimised for use via a Command Line Interface (CLI). If you can type fast, ra.VI can manage your tasks and timetable faster than traditional GUI apps.
 
 This user guide aims to provide you with a clear documentation of ra.VI's features. In addition, the quick start guide provides an start-to-end setup process to begin tracking your tasks, modules, and lessons with ra.VI!
-
-<div class="AvatarStack AvatarStack--three-plus AvatarStack--right">
-  <div
-    class="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1"
-    aria-label="octocat, octocat, and octocat"
-  >
-    <img
-      class="avatar"
-      height="20"
-      alt="@f0fz"
-      src="https://github.com/f0fz.png"
-      width="20"
-    />
-    <img
-      class="avatar"
-      height="20"
-      alt="@aseanseen"
-      src="https://github.com/aseanseen.png"
-      width="20"
-    />
-    <img
-      class="avatar"
-      height="20"
-      alt="@amalinasani"
-      src="https://github.com/amalinasani.png"
-      width="20"
-    />
-    <img
-      class="avatar"
-      height="20"
-      alt="@tobiasceg"
-      src="https://github.com/tobiasceg.png"
-      width="20"
-    />
-    <img
-      class="avatar"
-      height="20"
-      alt="@wangqinNick"
-      src="https://github.com/wangqinNick.png"
-      width="20"
-    />
-  </div>
-</div>
-
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/f0fz.png" %>"  alt="Jun You" class="CircleBadge-icon">
-</div>
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/aseanseen.png" %>"  alt="Sean Lim" class="CircleBadge-icon">
-</div>
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/amalinasani.png" %>"  alt="Amalina" class="CircleBadge-icon">
-</div>
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/tobiasceg.png" %>"  alt="Tobias" class="CircleBadge-icon">
-</div>
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/wangqinNick.png" %>"  alt="Wang Qin" class="CircleBadge-icon">
-</div>
 
 ---
 
@@ -677,7 +617,7 @@ Need help with the `<module> <day> <start_time> <end_time> <lesson_type>`? Refer
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png){:height="50%" width="50%"}
+![Timetable before filter](images/timetablefilter/1.png){:height="75%" width="75%"}
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
@@ -707,7 +647,7 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 ```
 
 |Example Commands|Expected Output|
-|--------------|--------------:|
+|--------------|--------------|
 |`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="75%" width="75%"}|
 
 ---
@@ -806,68 +746,62 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
-[:poop:](https://github.com/wangqinNick)
+v3.0 Graphical User Interface (Wang Qin)
 
-<details class="details-overlay">
-  <summary class="btn">v3.0 Graphical User Interface (Wang Qin)</summary>
-  <div class="border p-3 mt-2">
-    ### Change Directory Command `cd`
-    Traverse to the target directory.
+  ### Change Directory Command `cd`
+  Traverse to the target directory.
 
+  **Note:**
+  All the modules and tasks are treated as directories, like the folders in the Window OS.
+  To create a task related to Module CS2101, the user need to go into the Directory CS2101, to create the task.
+  Format: `cd <module code>`
+          `cd ..`
 
-    **Note:**
-    All the modules and tasks are treated as directories, like the folders in the Window OS.
-    To create a task related to Module CS2101, the user need to go into the Directory CS2101, to create the task.
-    Format: `cd <module code>`
-            `cd ..`
+  Example of usage:
+  * `cd CS2101`
+  * `cd ..`
 
-    Example of usage:
-    * `cd CS2101`
-    * `cd ..`
+  Example of output:
+  * `CS2101`
+  * `Root`
 
-    Example of output:
-    * `CS2101`
-    * `Root`
+  ### 6.2 General Add `add`
+  The generic way to add a module or a task to the system.
 
-    ### 6.2 General Add `add`
-    The generic way to add a module or a task to the system.
+  **Note:**
+  There are two types of add commands in the system: add a module and add a task.
+  The general add command combines and simplifies the above two command.
+  The ra.VI system could parse the general add command to different add commands according to the user current directory level.
+  Format: `add <module code or task description>`
+  Example of usage:
+  * `add CS2101`
+  * `add read a book`
 
-    **Note:**
-    There are two types of add commands in the system: add a module and add a task.
-    The general add command combines and simplifies the above two command.
-    The ra.VI system could parse the general add command to different add commands according to the user current directory level.
-    Format: `add <module code or task description>`
-    Example of usage:
-    * `add CS2101`
-    * `add read a book`
+  Example of output:
+  * Module has been added
+  * Task has been added
 
-    Example of output:
-    * Module has been added
-    * Task has been added
+  ### 6.3 Undo `undo`
+  Recover the data from the previous "Data-changed" operations.
 
-    ### 6.3 Undo `undo`
-    Recover the data from the previous "Data-changed" operations.
+  **Note:
+  "Data-changed" operations refer to Add, Edit, Delete operations only.
 
-    **Note:
-    "Data-changed" operations refer to Add, Edit, Delete operations only.
+  Example of usage:
+  1. `add -m CS2113T`
+  2. `undo`
 
-    Example of usage:
-    1. `add -m CS2113T`
-    2. `undo`
+  Example of output:
+  * Undo Successfully
 
-    Example of output:
-    * Undo Successfully
+  ### 6.4 Week Command  `week`
+  A window will pop out and the task number on the each day of the upcoming week will be listed.
 
-    ### 6.4 Week Command  `week`
-    A window will pop out and the task number on the each day of the upcoming week will be listed.
+  Example of usage:
+  * `week`
 
-    Example of usage:
-    * `week`
+  ### 6.5 Directory Command  `dir`
+  A window will pop out and all module with related tasks will be listed.
 
-    ### 6.5 Directory Command  `dir`
-    A window will pop out and all module with related tasks will be listed.
-
-    Example of usage:
-    * `dir`
-  </div>
-</details>
+  Example of usage:
+  * `dir`
