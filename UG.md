@@ -26,6 +26,30 @@ Adding on, ra.VI also allows you to keep track of your CAP, so that you can keep
 
 ---
 
+### How to use this Guide
+
+This user guide will give you a step-by-guide tutorial on how to use each of the commands provided in ra.VI. To aid this, this guide is written with specific formatting to help you understand how to use ra.VI better.
+
+`Grey highlighted font` like this indicate a command or a keyword. For example, `help` or `list -t`.
+
+Keywords like `<day>` and `<lesson_type>` are surrounded by angle brackets ("<" and ">"), and they indicate the positions of extra information you need to provide to the command. For example, `add -m <module_code>` means that you need to fill in the module code you want in the place of the `<module_code>`. It would look something like `add -m CS2113T`.
+
+We also have some special text boxes to help you understand how to use ra.VI!
+
+```tip
+This box shows you information that isn't necessary, but will be helpful.
+```
+
+```note
+This box shows you useful information that you will need to know.
+```
+
+```warning
+This box tells you about things you need to be alert about. If you're not careful, you might end up with an error!
+```
+
+---
+
 ### Keywords
 
 #### Command-Line Interface
@@ -147,7 +171,11 @@ New to using ra.VI? Here's how to get ra.VI up and functional in a few simple st
 1. Ensure that you have Java 11 or above installed.
 2. Download the latest version of `ra.VI` from [here](https://github.com/AY2021S1-CS2113T-T09-2/tp/releases/tag/v2.1).
 3. Copy the file to the folder you want to use as the home folder for `ra.VI`.\
+<<<<<<< HEAD
 ![Jar file in folder](images/quickstart/1.png)
+=======
+![Jar file in folder](images/quickstart/1.png){:height="50%" width="50%"}
+>>>>>>> 82ffade47a1bdc205d4fccf9522d38b9509c99ff
 4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.\
 ![Console with start jar command](images/quickstart/2.png)
 5. ra.VI will be launched, and you will be greeted with the welcome screen!\
@@ -598,10 +626,10 @@ Confused by the `-` symbol? If you want to skip using certain criteria, you can 
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png)|
-|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png)|
-|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png)|
-|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png)|
+|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png){:height="75%" width="75%"}|
+|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png){:height="75%" width="75%"}|
+|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png){:height="75%" width="75%"}|
+|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png){:height="75%" width="75%"}|
 
 #### Resetting your timetable (Sean)
 As you move to the next semester, you can still continue to use ra.VI. In fact, we would appreciate it if you could use ra.VI all the way until your graduation!
@@ -625,7 +653,7 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 
 |Example Commands|Expected Output|
 |--------------|--------------|
-|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG)|
+|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="75%" width="75%"}|
 
 ---
 
@@ -723,62 +751,66 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
-## v3.0 Graphical User Interface (Wang Qin)
 
-### Change Directory Command `cd`
-Traverse to the target directory.
+<details class="details-overlay">
+  <summary class="btn">v3.0 Graphical User Interface (Wang Qin)</summary>
+  <div class="border p-3 mt-2">
 
-**Note:**
-All the modules and tasks are treated as directories, like the folders in the Window OS.
-To create a task related to Module CS2101, the user need to go into the Directory CS2101, to create the task.
-Format: `cd <module code>`
-        `cd ..`
+  ### Change Directory Command `cd`
+  Traverse to the target directory.
 
-Example of usage:
-* `cd CS2101`
-* `cd ..`
+  **Note:**
+  All the modules and tasks are treated as directories, like the folders in the Window OS.
+  To create a task related to Module CS2101, the user need to go into the Directory CS2101, to create the task.
+  Format: `cd <module code>`
+          `cd ..`
 
-Example of output:
-* `CS2101`
-* `Root`
+  Example of usage:
+  * `cd CS2101`
+  * `cd ..`
 
-### 6.2 General Add `add`
-The generic way to add a module or a task to the system.
+  Example of output:
+  * `CS2101`
+  * `Root`
 
-**Note:**
-There are two types of add commands in the system: add a module and add a task.
-The general add command combines and simplifies the above two command.
-The ra.VI system could parse the general add command to different add commands according to the user current directory level.
-Format: `add <module code or task description>`
-Example of usage:
-* `add CS2101`
-* `add read a book`
+  ### 6.2 General Add `add`
+  The generic way to add a module or a task to the system.
 
-Example of output:
-* Module has been added
-* Task has been added
+  **Note:**
+  There are two types of add commands in the system: add a module and add a task.
+  The general add command combines and simplifies the above two command.
+  The ra.VI system could parse the general add command to different add commands according to the user current directory level.
+  Format: `add <module code or task description>`
+  Example of usage:
+  * `add CS2101`
+  * `add read a book`
 
-### 6.3 Undo `undo`
-Recover the data from the previous "Data-changed" operations.
+  Example of output:
+  * Module has been added
+  * Task has been added
 
-**Note:
-"Data-changed" operations refer to Add, Edit, Delete operations only.
+  ### 6.3 Undo `undo`
+  Recover the data from the previous "Data-changed" operations.
 
-Example of usage:
-1. `add -m CS2113T`
-2. `undo`
+  **Note:
+  "Data-changed" operations refer to Add, Edit, Delete operations only.
 
-Example of output:
-* Undo Successfully
+  Example of usage:
+  1. `add -m CS2113T`
+  2. `undo`
 
-### 6.4 Week Command  `week`
-A window will pop out and the task number on the each day of the upcoming week will be listed.
+  Example of output:
+  * Undo Successfully
 
-Example of usage:
-* `week`
+  ### 6.4 Week Command  `week`
+  A window will pop out and the task number on the each day of the upcoming week will be listed.
 
-### 6.5 Directory Command  `dir`
-A window will pop out and all module with related tasks will be listed.
+  Example of usage:
+  * `week`
 
-Example of usage:
-* `dir`
+  ### 6.5 Directory Command  `dir`
+  A window will pop out and all module with related tasks will be listed.
+
+  Example of usage:
+  * `dir`</div>
+</details>
