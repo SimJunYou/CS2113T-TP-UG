@@ -318,7 +318,7 @@ You can find the index of the tasks by using `list -t`.
 |`edit -t 1 Individual Project`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/1.png)|
 |`edit -t 1 Individual Project -by 30-12-2020 1800`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
-#### Viewing task summary
+#### Viewing task summary (Jun You)
 If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
 1. Incomplete tasks with deadlines. These tasks will be sorted with the most pressing deadline on top.
 2. Incomplete tasks without deadlines.
