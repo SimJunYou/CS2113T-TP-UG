@@ -289,7 +289,7 @@ ra.VI will display the message saying that your task has been marked done! Your 
 |`done 1`|![Done Task](images/donetask/1.png)|
 |`done 0`|![Delete Task wrong index](images/donetask/2.png)|
 
-#### Editing a task description
+#### Editing a task description (Amalina)
 Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descriptions and deadlines of existing tasks.
 
 **Format:**
@@ -617,7 +617,7 @@ Need help with the `<module> <day> <start_time> <end_time> <lesson_type>`? Refer
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png)
+![Timetable before filter](images/timetablefilter/1.png){:height="75%" width="75%"}
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
