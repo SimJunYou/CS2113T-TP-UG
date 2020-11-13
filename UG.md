@@ -171,11 +171,7 @@ New to using ra.VI? Here's how to get ra.VI up and functional in a few simple st
 1. Ensure that you have Java 11 or above installed.
 2. Download the latest version of `ra.VI` from [here](https://github.com/AY2021S1-CS2113T-T09-2/tp/releases/tag/v2.1).
 3. Copy the file to the folder you want to use as the home folder for `ra.VI`.\
-<<<<<<< HEAD
-![Jar file in folder](images/quickstart/1.png)
-=======
 ![Jar file in folder](images/quickstart/1.png){:height="50%" width="50%"}
->>>>>>> 82ffade47a1bdc205d4fccf9522d38b9509c99ff
 4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.\
 ![Console with start jar command](images/quickstart/2.png)
 5. ra.VI will be launched, and you will be greeted with the welcome screen!\
@@ -296,7 +292,7 @@ ra.VI will display the message saying that your task has been marked done! Your 
 |`done 1`|![Done Task](images/donetask/1.png)|
 |`done 0`|![Delete Task wrong index](images/donetask/2.png)|
 
-#### Editing a task description (Amalina) 
+#### Editing a task description
 Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descriptions and deadlines of existing tasks.
 
 **Format:**
@@ -325,7 +321,7 @@ You can find the index of the tasks by using `list -t`.
 |`edit -t 1 Individual Project`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/1.png)|
 |`edit -t 1 Individual Project -by 30-12-2020 1800`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
-#### Viewing task summary (Amalina)
+#### Viewing task summary
 If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
 1. Incomplete tasks with deadlines. These tasks will be sorted with the most pressing deadline on top.
 2. Incomplete tasks without deadlines.
@@ -622,14 +618,14 @@ Confused by the `-` symbol? If you want to skip using certain criteria, you can 
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png){:height="50%" width="50%"}
+![Timetable before filter](images/timetablefilter/1.png)
 
-|`     Example Commands     `|Context|Expected Output|
+|Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png){:height="50%" width="50%"}|
-|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png){:height="50%" width="50%"}|
-|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png){:height="50%" width="50%"}|
-|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png){:height="50%" width="50%"}|
+|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png){:height="75%" width="75%"}|
+|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png){:height="75%" width="75%"}|
+|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png){:height="75%" width="75%"}|
+|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png){:height="75%" width="75%"}|
 
 #### Resetting your timetable (Sean)
 As you move to the next semester, you can still continue to use ra.VI. In fact, we would appreciate it if you could use ra.VI all the way until your graduation!
@@ -651,9 +647,9 @@ ra.VI will prompt you for the current NUS week, just like when you used ra.VI fo
 Once you reset your timetable and exit ra.VI, there is no going back! You can only undo your timetable reset before you exit ra.VI, so do make sure that you truly want to reset your timetable and that you will not lose any valuable information.
 ```
 
-|`     Example Commands     `|Expected Output|
+|Example Commands|Expected Output|
 |--------------|--------------|
-|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="50%" width="50%"}|
+|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="75%" width="75%"}|
 
 ---
 
