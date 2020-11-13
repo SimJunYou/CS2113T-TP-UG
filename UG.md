@@ -292,7 +292,7 @@ ra.VI will display the message saying that your task has been marked done! Your 
 |`done 1`|![Done Task](images/donetask/1.png)|
 |`done 0`|![Delete Task wrong index](images/donetask/2.png)|
 
-#### Editing a task description
+#### Editing a task description (Amalina) 
 Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descriptions and deadlines of existing tasks.
 
 **Format:**
@@ -321,7 +321,7 @@ You can find the index of the tasks by using `list -t`.
 |`edit -t 1 Individual Project`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/1.png)|
 |`edit -t 1 Individual Project -by 30-12-2020 1800`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
-#### Viewing task summary
+#### Viewing task summary (Amalina)
 If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
 1. Incomplete tasks with deadlines. These tasks will be sorted with the most pressing deadline on top.
 2. Incomplete tasks without deadlines.
