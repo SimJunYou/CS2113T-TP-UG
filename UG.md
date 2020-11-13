@@ -170,7 +170,7 @@ It is highly recommended that you have a working internet connection when you fi
 
 Tasks are the one of the main features of ra.VI. Every modern student has tasks to do, and ra.VI helps you to manage your to-do list. This section will show you all you need to know about managing your tasks with ra.VI.
 
-#### Adding a task
+#### Adding a task (Sean)
 You can add a task into ra.VI to keep you on top of your tasks.
 
 **Format:**
@@ -200,7 +200,7 @@ After you add your task, you may want to check if it is there. You will learn ho
 |`add -t read Chapter 1 -by 30-12-2020 1800`|![Add Task W Deadline](images/addtask/2.png)|
 |`add -t read Chapter 1 -by 30-12-2020 800`|![Add Task W Wrong Deadline](images/addtask/3.png)|
 
-#### Listing all tasks
+#### Listing all tasks (Amalina)
 You have a whole list of tasks now, but you need a way to view them. ra.VI can help with that.
 
 **Format:**
@@ -222,7 +222,7 @@ You will need the task indexes for `del`, `edit`, and `done` commands!
 |--------------|----|--------------|
 |`list -t`|With one task in your list|![List Task](images/listtask/1.png)|
 
-#### Deleting a task
+#### Deleting a task (Tobias)
 If your teacher cancels that last minute assignment, ra.VI can help remove a task from your task list.
 
 **Format:**
@@ -247,7 +247,7 @@ After you delete your task, you may want to check if it is there. You will be ab
 |`del -t 1`|![Delete Task](images/deletetask/1.png)|
 |`del -t 0`|![Delete Task wrong index](images/deletetask/2.png)|
 
-#### Marking a task as done
+#### Marking a task as done (Amalina)
 Already completed your assignments and cleaned the dishes? You can mark your tasks as completed with ra.VI.
 
 **Format:**
@@ -328,7 +328,7 @@ Your "Incomplete tasks with deadlines" will be sorted by date, with the current 
 
 Modules are the one of the main features of ra.VI. Every NUS student takes modules, and ra.VI helps you to manage all of your modules. This section will show you all you need to know about managing your modules with ra.VI.
 
-#### Adding a module
+#### Adding a module (Sean)
 You can add a module that you are currently taking into ra.VI.
 
 **Format:**
@@ -360,7 +360,7 @@ You will only be able to add modules that are offered at NUS.
 |`add -m CS2113T`|![Add CS2113T](images/addmodule/2.PNG)|
 |`add -m CS`|![Add CS](images/addmodule/3.PNG)|
 
-#### Listing all modules
+#### Listing all modules (Amalina)
 You have a whole list of modules now, but you need a way to view them. ra.VI can help with that.
 
 **Format:**
@@ -378,8 +378,8 @@ ra.VI will display the list of modules with their modular credits and attained g
 |--------------|----------|--------------|
 |`list -m`|With CS1010 in your list|![List CS1010](images/listmodule/1.PNG)|
 
-#### Deleting a module
-If you have accidentally added the wrong module, you can use the `del -m` command.
+#### Deleting a module (Tobias)
+Even if you have unintentionally added the wrong module, ra.VI can delete it for you.
 
 **Format:**
 `del -m <module_code>`
@@ -403,8 +403,8 @@ After you delete your module, you may want to check if it is still there. You wi
 |`del -m CS1010`|CS1010 is a module in your module list|![Delete CS1010 Success](images/delmodule/1.PNG)|
 |`del -m CS2113T`|CS2113T is not in your module list|![Delete CS2113T Failure](images/delmodule/2.PNG)|
 
-#### Editing a module
-Put `CS2113` instead of `CS2101`? You can edit the module code of specific modules in your module list.
+#### Editing a module (Amalina)
+Put CS2113 instead of CS2101? You can edit the module code of specific modules in your module list.
 
 **Format:**
 `edit -m <module_code> <new_module_code>`
@@ -429,7 +429,7 @@ You can check your module list by using `list -m` to check if the module has bee
 |`edit -m CS2113 CS2101`|You have `CS2113` in your module list|![Edit Module](images/editmodule/1.png)|
 |`edit -m CG2271 CS2101`|You do not have `CG2271` in your module list|![Edit Missing Module](images/editmodule/2.PNG)|
 
-#### Grade an existing module
+#### Grade an existing module (Tobias)
 Assign a grade and its relevant module credits to a module in ra.VI.
 
 **Format:**
@@ -452,7 +452,7 @@ Let’s say it is the end of the semester and results are out. You got an A+ for
 ra.VI will display the message saying that your module has been successfully graded!
 
 ```warning
-* Please ensure that the grade assigned is compliant to the [NUS grade schematic](http://www.nus.edu.sg/registrar/academic-information-policies/non-graduating/modular-system)  
+* Please ensure that the grade assigned is compliant with the [NUS grade schematic](http://www.nus.edu.sg/registrar/academic-information-policies/non-graduating/modular-system)  
 * The module to be graded must first **exist** in the list of modules, to be assigned a grade.
 ```
 
@@ -462,7 +462,7 @@ ra.VI will display the message saying that your module has been successfully gra
 |`grade ACC1002 4 C+`|ACC1002 is not in your module list|![Grade ACC1002 Failure](images/grademodule/2.PNG)|
 
 
-#### Calculate your current CAP
+#### Calculate your current CAP (Tobias)
 Curious to know your current CAP before, during or after the semester?
 You have the flexibility of calculating your current CAP at any time.
 
@@ -473,7 +473,7 @@ You have the flexibility of calculating your current CAP at any time.
 With all of the relevant modules in the module list graded, you may calculate your current CAP by executing the `cap` command.
 
 ```note
-Please ensure the relevant modules in the module list have been graded, for ra.VI to calculate the CAP accurately. However, **not all modules** need to be graded for CAP to be calculated.
+Please ensure the relevant modules in the module list have been graded, for ra.VI to calculate your CAP accurately. However, CAP is calculated only by considering the modules that you have entered a grade for.
 ```
 
 To calculate your current CAP:
@@ -493,7 +493,7 @@ Based on the grades that you have given to each module in the module list, ra.VI
 ### Timetable
 Every NUS student has lessons to take, whether they are lectures, labs or tutorials, just to name a few. These lessons are usually at regular intervals throughout the semester. ra.VI will help you arrange your lessons into a timetable, allowing you to view all of your lessons in one place.
 
-#### Adding a lesson
+#### Adding a lesson (Jun You)
 Every student has lessons. Too many lessons, even. Let ra.VI help you keep track of them all with this command.
 
 **Format:**
@@ -524,7 +524,7 @@ ra.VI will display a message saying that your lesson has been added!
 |`timetable -add CS2113T TUESDAY 0800 1000 LECTURE 2`|Overlapping lesson times|![Timetable add Overlap Failure](images/timetableadd/3.png)|
 |`timetable -add CS1010 THURSDAY LECTURE 0`|Missing parameters|![Timetable add Missing Parameters Failure](images/timetableadd/4.png)|
 
-#### Viewing your timetable
+#### Viewing your timetable (Jun You)
 Now that you have your lessons in your timetable, you can view them too!
 
 **Format:**
@@ -547,8 +547,8 @@ ra.VI will display your timetable, containing the lessons and their indexes, for
 |`timetable -day`|View day’s timetable|![Timetable view day](images/timetableday/1.JPG)|
 |`timetable -week`|View week’s timetable|![Timetable view week](images/timetableweek/1.PNG)|
 
-#### Deleting a lesson
-Made a mistake adding the wrong entry to your timetable? Delete the entry by executing the `timetable -del` command.
+#### Deleting a lesson (Jun You)
+Entered the wrong lessons to your timetable? ra.VI can help ypu delete them.
 
 **Format:**
 `timetable -del <day> <lesson_index>`
@@ -571,9 +571,9 @@ You will need the lesson indexes for `timetable -del`! Use `timetable -day` or `
 |`timetable -del MONDAY 1`|Lesson on Monday with an index of 1|![Timetable Del Success](images/timetabledel/1.PNG)|
 |`timetable -del FRIDAY 3`|No lessons on Friday with an index of 3|![Timetable Del Failure](images/timetabledel/2.PNG)|
 
-#### Filtering lessons in your timetable
+#### Filtering lessons in your timetable (Jun You)
 
-Let’s say that you have a cluttered timetable and would only like to view certain lessons out of all of your lessons. You would use the `timetable -filter` command.
+If you have a cluttered timetable and would only like to view certain lessons out of all of your lessons, ra.VI can filter them out for you.
 
 **Format:**
 `timetable -filter <module> <day> <start_time> <end_time> <lesson_type>`
@@ -602,7 +602,7 @@ Confused by the `-` symbol? If you want to skip using certain criteria, you can 
 |`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png)|
 |`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png)|
 
-#### Resetting your timetable
+#### Resetting your timetable (Sean)
 As you move to the next semester, you can still continue to use ra.VI. In fact, we would appreciate it if you could use ra.VI all the way until your graduation!
 
 **Format:**
@@ -628,7 +628,7 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 
 ---
 
-### Undo
+### Undo (Sean)
 Deleted a task when you didn’t mean to? Accidentally reset your timetable? You can undo your previous action!
 
 **Format:**
@@ -650,7 +650,7 @@ ra.VI will display the message saying that your last action has been undone!
 
 ---
 
-### Exit
+### Exit (Sean)
 Done using ra.VI? You can save your data and safely exit with this command.
 
 **Format:**
