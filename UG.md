@@ -806,11 +806,14 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
+[:poop:](https://github.com/wangqinNick)
+
 <details class="details-overlay">
   <summary class="btn">v3.0 Graphical User Interface (Wang Qin)</summary>
   <div class="border p-3 mt-2">
     ### Change Directory Command `cd`
     Traverse to the target directory.
+
 
     **Note:**
     All the modules and tasks are treated as directories, like the folders in the Window OS.
