@@ -746,7 +746,17 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
+<<<<<<< HEAD
 v3.0 Graphical User Interface (Wang Qin)
+=======
+[:poop:](https://github.com/wangqinNick)
+
+<details class="details-overlay">
+  <summary class="btn">v3.0 Graphical User Interface</summary>
+  <div class="border p-3 mt-2">
+    ### Change Directory Command `cd`
+    Traverse to the target directory.
+>>>>>>> 626d44d6f745627a7c47a0763232ce654b2b6308
 
   ### Change Directory Command `cd`
   Traverse to the target directory.
