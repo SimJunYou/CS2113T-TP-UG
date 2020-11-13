@@ -58,7 +58,7 @@ Any task can be marked as “done”. This will signify completion of the task s
 
 #### Timetable
 
-The timetable holds all the lessons you take. It allows you to add lessons for modules you are taking.
+The timetable holds all the lessons you take. It allows you to manage the lessons for the modules that you are taking.
 
 #### NUS Week Number
 
@@ -98,7 +98,7 @@ Some commands require you to enter a time. The `time` field requires the hours a
 
 Some commands require you to enter a date and time for a deadline. The date portion should have the day, month, and year written in numbers and separated with dashes.
 
-For example, 30 December 2020 would be `30-12-2020`. The time portion is the same as described in the **Time** explanation above. A full deadline of “15 February 2021 3:30AM” would be `15-02-2021 0330`.
+For example, 30 December 2020 would be `30-12-2020`. The time portion is the same as described in the [Time](#time) explanation above. A full deadline of “15 February 2021 3:30AM” would be `15-02-2021 0330`.
 
 #### Undo
 
@@ -248,7 +248,7 @@ After you delete your task, you may want to check if it is there. You will be ab
 |`del -t 0`|![Delete Task wrong index](images/deletetask/2.png)|
 
 #### Marking a task as done (Amalina)
-Already completed your assignments and cleaned the dishes? You can mark your tasks as completed with ra.VI.
+Already completed your assignments or finished your revision? You can mark your tasks as completed with ra.VI.
 
 **Format:**
 `done <task_index>`
@@ -712,7 +712,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 | Filter the timetable | `timetable -filter <module> <day> <start_time> <end_time> <lesson_type>` |
 | Reset the timetable | `timetable -reset` |
 | Undo previous change | `undo` |
-| Get list of commands | `help` |
+| Get help for commands | `help` |
 | Get detailed help message for each command | `help <command_word>` |
 | Exit ra.VI | `bye` |
 
