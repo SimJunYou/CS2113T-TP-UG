@@ -287,7 +287,7 @@ ra.VI will display the message saying that your task has been marked done! Your 
 |`done 1`|![Done Task](images/donetask/1.png)|
 |`done 0`|![Delete Task wrong index](images/donetask/2.png)|
 
-#### Editing a task description (Amalina) 
+#### Editing a task description (Amalina)
 Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descriptions and deadlines of existing tasks.
 
 **Format:**
@@ -615,7 +615,7 @@ Confused by the `-` symbol? If you want to skip using certain criteria, you can 
 
 ![Timetable before filter](images/timetablefilter/1.png){:height="50%" width="50%"}
 
-|`     Example Commands     `|Context|Expected Output|
+|Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
 |`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png){:height="50%" width="50%"}|
 |`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png){:height="50%" width="50%"}|
@@ -642,9 +642,9 @@ ra.VI will prompt you for the current NUS week, just like when you used ra.VI fo
 Once you reset your timetable and exit ra.VI, there is no going back! You can only undo your timetable reset before you exit ra.VI, so do make sure that you truly want to reset your timetable and that you will not lose any valuable information.
 ```
 
-|`     Example Commands     `|Expected Output|
+|Example Commands|Expected Output|
 |--------------|--------------|
-|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="50%" width="50%"}|
+|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="75%" width="75%"}|
 
 ---
 
@@ -801,3 +801,9 @@ ra.VI saves all data and says goodbye to you before shutting down!
   Example of usage:
   * `dir`</div>
 </details>
+
+<style>
+table {
+    width:75%;
+}
+</style>
