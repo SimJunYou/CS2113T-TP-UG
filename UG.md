@@ -10,6 +10,49 @@ Repository Assistant with a Versatile Interface (ra.VI) is a desktop app for man
 
 This user guide aims to provide you with a clear documentation of ra.VI's features. In addition, the quick start guide provides an start-to-end setup process to begin tracking your tasks, modules, and lessons with ra.VI!
 
+<div class="AvatarStack AvatarStack--three-plus AvatarStack--right">
+  <div
+    class="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1"
+    aria-label="octocat, octocat, and octocat"
+  >
+    <img
+      class="avatar"
+      height="20"
+      alt="@f0fz"
+      src="https://github.com/f0fz.png"
+      width="20"
+    />
+    <img
+      class="avatar"
+      height="20"
+      alt="@aseanseen"
+      src="https://github.com/aseanseen.png"
+      width="20"
+    />
+    <img
+      class="avatar"
+      height="20"
+      alt="@amalinasani"
+      src="https://github.com/amalinasani.png"
+      width="20"
+    />
+    <img
+      class="avatar"
+      height="20"
+      alt="@tobiasceg"
+      src="https://github.com/tobiasceg.png"
+      width="20"
+    />
+    <img
+      class="avatar"
+      height="20"
+      alt="@wangqinNick"
+      src="https://github.com/wangqinNick.png"
+      width="20"
+    />
+  </div>
+</div>
+
 ---
 
 ### Product Overview
