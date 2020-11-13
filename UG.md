@@ -784,7 +784,7 @@ Example of output:
 ### 6.3 Undo `undo`
 Recover the data from the previous "Data-changed" operations.
 
-**Note:
+**Note:**
 "Data-changed" operations refer to Add, Edit, Delete operations only.
 
 Example of usage:
