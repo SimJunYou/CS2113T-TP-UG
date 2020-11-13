@@ -11,6 +11,49 @@ Repository Assistant with a Versatile Interface (ra.VI) is a desktop app for man
 
 This user guide aims to provide you with a clear documentation of ra.VI's features. In addition, the quick start guide provides an start-to-end setup process to begin tracking your tasks, modules, and lessons with ra.VI!
 
+<div class="AvatarStack AvatarStack--three-plus AvatarStack--right">
+  <div
+    class="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1"
+    aria-label="octocat, octocat, and octocat"
+  >
+    <img
+      class="avatar"
+      height="20"
+      alt="@f0fz"
+      src="https://github.com/f0fz.png"
+      width="20"
+    />
+    <img
+      class="avatar"
+      height="20"
+      alt="@aseanseen"
+      src="https://github.com/aseanseen.png"
+      width="20"
+    />
+    <img
+      class="avatar"
+      height="20"
+      alt="@amalinasani"
+      src="https://github.com/amalinasani.png"
+      width="20"
+    />
+    <img
+      class="avatar"
+      height="20"
+      alt="@tobiasceg"
+      src="https://github.com/tobiasceg.png"
+      width="20"
+    />
+    <img
+      class="avatar"
+      height="20"
+      alt="@wangqinNick"
+      src="https://github.com/wangqinNick.png"
+      width="20"
+    />
+  </div>
+</div>
+
 ---
 
 ### Product Overview
@@ -319,7 +362,7 @@ You can find the index of the tasks by using `list -t`.
 |`edit -t 1 Individual Project`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/1.png)|
 |`edit -t 1 Individual Project -by 30-12-2020 1800`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
-#### Viewing task summary
+#### Viewing task summary (Jun You)
 If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
 1. Incomplete tasks with deadlines. These tasks will be sorted with the most pressing deadline on top.
 2. Incomplete tasks without deadlines.
@@ -612,6 +655,8 @@ ra.VI will display a message saying that your lesson has been deleted.
 
 ```tip
 Confused by the `-` symbol? If you want to skip using certain criteria, you can use a dash (`-`) in the place of that field! For example, if you only want to filter all lessons on Monday, you could do `timetable -filter - MONDAY - - -`, only filling in the `day` field and using `-` to ignore the other fields. **Any combination of fields is possible!**
+
+Need help with the `<module> <day> <start_time> <end_time> <lesson_type>`? Refer to the [Keywords](#keywords) section to find out more!
 ```
 
 **For some context,** here is the timetable without any filtering:
@@ -664,10 +709,10 @@ To undo an action:
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
-ra.VI will display the message saying that your last action has been undone!
+ra.VI will undo the command and display a success message with the details of the undone command!
 
 ```tip
-Refer to the [Undo](#undo) in the [Keywords](#keywords) section above for the commands that can be undone.
+Refer to the [Undo](#undo) in the [Keywords](#keywords) section above for the list of commands that can be undone.
 ```
 
 |Example Commands|Context|Expected Output|
@@ -709,7 +754,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 **A**: Zip the folder where you have installed ra.VI on and transfer the zip file to the other computer. Unzip the folder on the new computer, and you are good to go!
 
 **Q**: Can I edit the files created by ra.VI?\
-**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the JSON format can try their hand at manually editing the save files. (However, we <span style="color:red">**do not recommend this**</span> and we will <span style="color:red">**not be liable for any damages done**</span>. Consider yourself warned.)
+**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the [JSON](https://en.wikipedia.org/wiki/JSON) format can try their hand at manually editing the save files. (However, we <span style="color:red">**do not recommend this**</span> and we will <span style="color:red">**not be liable for any damages done**</span>. Consider yourself warned.)
 
 **Q**: Can I force close ra.VI?\
 **A**: It is not advised to force close ra.VI. If you decide to do so, the changes made during that current session may get corrupted. To close ra.VI, please enter `bye`.
@@ -745,10 +790,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
-
-<details class="details-overlay">
-  <summary class="btn">v3.0 Graphical User Interface (Wang Qin)</summary>
-  <div class="border p-3 mt-2">
+v3.0 Graphical User Interface (Wang Qin)
 
   ### Change Directory Command `cd`
   Traverse to the target directory.
