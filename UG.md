@@ -615,7 +615,7 @@ Confused by the `-` symbol? If you want to skip using certain criteria, you can 
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png)
+![Timetable before filter](images/timetablefilter/1.png){:height="75%" width="75%"}
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
@@ -810,6 +810,6 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 <style>
 table {
-    width:75%;
+    width:100%;
 }
 </style>
