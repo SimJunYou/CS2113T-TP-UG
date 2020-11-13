@@ -532,11 +532,11 @@ Now that you have your lessons in your timetable, you can view them too!
 
 **Example Usage:**
 To view your day’s timetable:
-1. Type `timetable -day`.
+1. Type `timetable -day`. That is the full command.
 2. Then, simply press the Enter key to execute it.
 
 To view the current week’s timetable:
-1. Type `timetable -week`.
+1. Type `timetable -week`. That is the full command.
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
@@ -613,7 +613,7 @@ As you move to the next semester, you can still continue to use ra.VI. In fact, 
 Let’s say that it is the start of a new semester and you would like to start with a new timetable.
 
 To reset your timetable:
-1. Type `timetable -reset`
+1. Type `timetable -reset`. That is the full command.
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
@@ -638,7 +638,7 @@ Deleted a task when you didn’t mean to? Accidentally reset your timetable? You
 **Example Usage:**
 Let’s say you have accidentally deleted an important task.
 To undo an action:
-1. Type `undo`.
+1. Type `undo`. That is the full command.
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
@@ -659,7 +659,7 @@ Done using ra.VI? You can save your data and safely exit with this command.
 
 **Example Usage:**
 To exit ra.VI:
-1. Type `bye`.
+1. Type `bye`. That is the full command.
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
@@ -683,7 +683,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 **A**: Zip the folder where you have installed ra.VI on and transfer the zip file to the other computer. Unzip the folder on the new computer, and you are good to go!
 
 **Q**: Can I edit the files created by ra.VI?\
-**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the JSON format can try their hand at manually editing the save files. (However, we <p style="color: red;">**do not recommend this**</p> and we will <p style="color: red;">**not be liable for any damages done**</p>. Consider yourself warned.)
+**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the JSON format can try their hand at manually editing the save files. (However, we <span style="color:red">**do not recommend this**</span> and we will <span style="color:red">**not be liable for any damages done**</span>. Consider yourself warned.)
 
 **Q**: Can I force close ra.VI?\
 **A**: It is not advised to force close ra.VI. If you decide to do so, the changes made during that current session may get corrupted. To close ra.VI, please enter `bye`.
