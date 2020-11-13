@@ -435,18 +435,18 @@ Assign a grade and its relevant module credits to a module in ra.VI.
 **Format:**
  `grade <module_code> <module_credit> <grade>`
 
+```note
+* ra.VI will accept both _lowercase_ and _uppercase_. ie `A+` or `a+`.
+* Relevant module information, such as the number of module credits for the relevant module, can be found at [NUSMods](https://nusmods.com/modules).
+* If you have [SU-ed your module](http://www.nus.edu.sg/registrar/academic-activities/satisfactory-unsatisfactory-(s-u)-option), use `CS` or `CU` as the grade accordingly.
+```
+
 **Example Usage.**
 Let’s say it is the end of the semester and results are out. You got an A+ for your CS1010, great job! To add the grade into ra.VI:
 1. Type `grade` into the command box, followed by the module code of the module to be graded, `CS1010`.
 2. Then, type in the respective module credits, `4`, and the grade achieved for that module, `A+`.
 3. The full command would be `grade CS2101 4 A+`.
 4. Then, simply press the Enter key to execute it.
-
-```note
-* ra.VI will accept both _lowercase_ and _uppercase_. ie `A+` or `a+`.
-* Relevant module information, such as the number of module credits for the relevant module, can be found at [NUSMods](https://nusmods.com/modules).
-* If you have [SU-ed your module](http://www.nus.edu.sg/registrar/academic-activities/satisfactory-unsatisfactory-(s-u)-option), use `CS` or `CU` as the grade accordingly.
-```
 
 **Outcome:**
 ra.VI will display the message saying that your module has been successfully graded!
@@ -469,12 +469,12 @@ You have the flexibility of calculating your current CAP at any time.
 **Format:**
 `cap`
 
-**Example Usage:**
-With all of the relevant modules in the module list graded, you may calculate your current CAP by executing the `cap` command.
-
 ```note
 Please ensure the relevant modules in the module list have been graded, for ra.VI to calculate your CAP accurately. However, CAP is calculated only by considering the modules that you have entered a grade for.
 ```
+
+**Example Usage:**
+With all of the relevant modules in the module list graded, you may calculate your current CAP by executing the `cap` command.
 
 To calculate your current CAP:
 1. Simply type in the command `cap`
@@ -504,7 +504,7 @@ These fields must follow this order strictly, and also must follow certain requi
 
 For `module_code`, the module code must be in your module list. See your module list with `list -m`.
 
-The format for `start_time` and `end_time` are both explained in the "Time" section of the Keywords section above. `start_time` must be chronologically before `end_time`. For example, `1800 1700` would not work, but `1700 1800` would.
+The format for `start_time` and `end_time` are both explained in the "Time" section of the [Keywords](#keywords) section above. `start_time` must be chronologically before `end_time`. For example, `1800 1700` is not accepted, but `1700 1800` is accepted.
 ```
 
 **Example Usage:**
@@ -556,8 +556,9 @@ Entered the wrong lessons to your timetable? ra.VI can help ypu delete them.
 **Example Usage:**
 Let’s say that you have a lesson on Tuesday, with the index of `1`.
 To remove a lesson from your timetable:
-1. Type `timetable -del`, followed by the lesson’s details, `TUESDAY 1`. The whole command would be `timetable -del TUESDAY 1`.
-2. Then, simply press the Enter key to execute it.
+1. Type `timetable -del`, followed by the lesson’s details, `TUESDAY 1`.
+2. The full command would be `timetable -del TUESDAY 1`.
+3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
 ra.VI will display a message saying that your lesson has been deleted.
@@ -581,7 +582,7 @@ If you have a cluttered timetable and would only like to view certain lessons ou
 **Example Usage:**
 Let’s say that you want to see all your lessons on Thursday this week. To filter out these lessons from your timetable:
 1. Type `timetable -filter`, followed by the lesson’s details, `- THURSDAY - - -`.
-2. The whole command would be `timetable -filter - THURSDAY - - -`.
+2. The full command would be `timetable -filter - THURSDAY - - -`.
 3. Then, simply press the Enter key to execute it.
 
 **Outcome:**
@@ -645,7 +646,7 @@ ra.VI will display the message saying that your last action has been undone!
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`undo`|You used a command to change data right before|![bye success](images/undo/1.png)|
+|`undo`|You have previously entered a command that amended the save files|![bye success](images/undo/1.png)|
 |`undo`|You just launched ra.VI and did not change any data with commands|![bye failure](images/undo/2.png)|
 
 ---
@@ -682,7 +683,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 **A**: Zip the folder where you have installed ra.VI on and transfer the zip file to the other computer. Unzip the folder on the new computer, and you are good to go!
 
 **Q**: Can I edit the files created by ra.VI?\
-**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the JSON format can try their hand at manually editing the save files. (However, we **do not recommend this** and we will **not be liable for any damages done**. Consider yourself warned.)
+**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the JSON format can try their hand at manually editing the save files. (However, we <p style="color: red;">**do not recommend this**</p> and we will <p style="color: red;">**not be liable for any damages done**</p>. Consider yourself warned.)
 
 **Q**: Can I force close ra.VI?\
 **A**: It is not advised to force close ra.VI. If you decide to do so, the changes made during that current session may get corrupted. To close ra.VI, please enter `bye`.
