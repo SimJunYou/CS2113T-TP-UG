@@ -613,14 +613,14 @@ Confused by the `-` symbol? If you want to skip using certain criteria, you can 
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png)
+![Timetable before filter](images/timetablefilter/1.png){:height="50%" width="50%"}
 
-|Example Commands|Context|Expected Output|
+|`     Example Commands     `|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png){:height="75%" width="75%"}|
-|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png){:height="75%" width="75%"}|
-|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png){:height="75%" width="75%"}|
-|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png){:height="75%" width="75%"}|
+|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png){:height="50%" width="50%"}|
+|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png){:height="50%" width="50%"}|
+|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png){:height="50%" width="50%"}|
+|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png){:height="50%" width="50%"}|
 
 #### Resetting your timetable (Sean)
 As you move to the next semester, you can still continue to use ra.VI. In fact, we would appreciate it if you could use ra.VI all the way until your graduation!
@@ -642,9 +642,9 @@ ra.VI will prompt you for the current NUS week, just like when you used ra.VI fo
 Once you reset your timetable and exit ra.VI, there is no going back! You can only undo your timetable reset before you exit ra.VI, so do make sure that you truly want to reset your timetable and that you will not lose any valuable information.
 ```
 
-|Example Commands|Expected Output|
+|`     Example Commands     `|Expected Output|
 |--------------|--------------|
-|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="75%" width="75%"}|
+|`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="50%" width="50%"}|
 
 ---
 
