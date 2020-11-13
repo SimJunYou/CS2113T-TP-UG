@@ -751,6 +751,9 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 <span class="anim-fade-in">
 <div class="Box">
+Test
+</div>
+</span>
 ## v3.0 Graphical User Interface (Wang Qin)
 
 ### Change Directory Command `cd`
@@ -810,5 +813,3 @@ A window will pop out and all module with related tasks will be listed.
 
 Example of usage:
 * `dir`
-</div>
-</span>
