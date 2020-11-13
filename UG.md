@@ -794,13 +794,13 @@ Example of usage:
 Example of output:
 * Undo Successfully
 
-### 6.4 Week Command  `week`
+### 6.4 Week Command `week`
 A window will pop out and the task number on the each day of the upcoming week will be listed.
 
 Example of usage:
 * `week`
 
-### 6.5 Directory Command  `dir`
+### 6.5 Directory Command `dir`
 A window will pop out and all module with related tasks will be listed.
 
 Example of usage:
