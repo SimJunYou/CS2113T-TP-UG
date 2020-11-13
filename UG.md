@@ -88,6 +88,8 @@ This box shows you useful information that you will need to know.
 This box tells you about things you need to be alert about. If you're not careful, you might end up with an error!
 ```
 
+---
+
 ### Keywords
 
 #### Command-Line Interface
@@ -211,11 +213,11 @@ New to using ra.VI? Here's how to get ra.VI up and functional in a few simple st
 3. Copy the file to the folder you want to use as the home folder for `ra.VI`.\
 ![Jar file in folder](images/quickstart/1.png){:height="50%" width="50%"}
 4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.\
-![Console with start jar command](images/quickstart/2.png){:height="50%" width="50%"}
+![Console with start jar command](images/quickstart/2.png)
 5. ra.VI will be launched, and you will be greeted with the welcome screen!\
-![Welcome screen](images/quickstart/3.png){:height="50%" width="50%"}
+![Welcome screen](images/quickstart/3.png)
 6. Enter the current NUS week number as prompted. You will then see the prompt for your command.\
-![Command Prompt](images/quickstart/4.png){:height="50%" width="50%"}
+![Command Prompt](images/quickstart/4.png)
 7. Type the command in the command prompt and press the Enter key to execute it.
   1. For example, typing `help` and pressing the Enter key will show you the help message, with a list of all of ra.VI’s commands.
 8. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
@@ -330,7 +332,7 @@ ra.VI will display the message saying that your task has been marked done! Your 
 |`done 1`|![Done Task](images/donetask/1.png)|
 |`done 0`|![Delete Task wrong index](images/donetask/2.png)|
 
-#### Editing a task description (Amalina) 
+#### Editing a task description (Amalina)
 Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descriptions and deadlines of existing tasks.
 
 **Format:**
@@ -359,7 +361,7 @@ You can find the index of the tasks by using `list -t`.
 |`edit -t 1 Individual Project`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/1.png)|
 |`edit -t 1 Individual Project -by 30-12-2020 1800`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
-#### Viewing task summary (Amalina)
+#### Viewing task summary
 If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
 1. Incomplete tasks with deadlines. These tasks will be sorted with the most pressing deadline on top.
 2. Incomplete tasks without deadlines.
@@ -652,11 +654,13 @@ ra.VI will display a message saying that your lesson has been deleted.
 
 ```tip
 Confused by the `-` symbol? If you want to skip using certain criteria, you can use a dash (`-`) in the place of that field! For example, if you only want to filter all lessons on Monday, you could do `timetable -filter - MONDAY - - -`, only filling in the `day` field and using `-` to ignore the other fields. **Any combination of fields is possible!**
+
+Need help with the `<module> <day> <start_time> <end_time> <lesson_type>`? Refer to the [Keywords](#keywords) section to find out more!
 ```
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png)
+![Timetable before filter](images/timetablefilter/1.png){:height="75%" width="75%"}
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
@@ -704,11 +708,15 @@ To undo an action:
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
-ra.VI will display the message saying that your last action has been undone!
+ra.VI will undo the command and display a success message with the details of the undone command!
+
+```tip
+Refer to the [Undo](#undo) in the [Keywords](#keywords) section above for the list of commands that can be undone.
+```
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`undo`|You have previously entered a command that amended the save files|![bye success](images/undo/1.png)|
+|`undo`|You have previously entered a command that can be undone|![bye success](images/undo/1.png)|
 |`undo`|You just launched ra.VI and did not change any data with commands|![bye failure](images/undo/2.png)|
 
 ---
@@ -745,7 +753,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 **A**: Zip the folder where you have installed ra.VI on and transfer the zip file to the other computer. Unzip the folder on the new computer, and you are good to go!
 
 **Q**: Can I edit the files created by ra.VI?\
-**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the JSON format can try their hand at manually editing the save files. (However, we <span style="color:red">**do not recommend this**</span> and we will <span style="color:red">**not be liable for any damages done**</span>. Consider yourself warned.)
+**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the [JSON](https://en.wikipedia.org/wiki/JSON) format can try their hand at manually editing the save files. (However, we <span style="color:red">**do not recommend this**</span> and we will <span style="color:red">**not be liable for any damages done**</span>. Consider yourself warned.)
 
 **Q**: Can I force close ra.VI?\
 **A**: It is not advised to force close ra.VI. If you decide to do so, the changes made during that current session may get corrupted. To close ra.VI, please enter `bye`.
@@ -781,10 +789,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
-
-<details class="details-overlay">
-  <summary class="btn">v3.0 Graphical User Interface (Wang Qin)</summary>
-  <div class="border p-3 mt-2">
+v3.0 Graphical User Interface (Wang Qin)
 
   ### Change Directory Command `cd`
   Traverse to the target directory.
@@ -842,5 +847,4 @@ ra.VI saves all data and says goodbye to you before shutting down!
   A window will pop out and all module with related tasks will be listed.
 
   Example of usage:
-  * `dir`</div>
-</details>
+  * `dir`
