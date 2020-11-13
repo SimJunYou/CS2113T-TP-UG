@@ -808,11 +808,9 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 [:poop:](https://github.com/wangqinNick)
 
-## v3.0 Graphical User Interface (Wang Qin)
-{:.no_toc}
+## v3.0 Graphical User Interface (Wang Qin) {:.no_toc}
 
-### Change Directory Command `cd`
-{:.no_toc}
+### Change Directory Command `cd` {:.no_toc}
 Traverse to the target directory.
 
 **Note:**
@@ -829,8 +827,7 @@ Example of output:
 * `CS2101`
 * `Root`
 
-### 6.2 General Add `add`
-{:.no_toc}
+### 6.2 General Add `add` {:.no_toc}
 The generic way to add a module or a task to the system.
 
 **Note:**
@@ -846,8 +843,7 @@ Example of output:
 * Module has been added
 * Task has been added
 
-### 6.3 Undo `undo`
-{:.no_toc}
+### 6.3 Undo `undo` {:.no_toc}
 Recover the data from the previous "Data-changed" operations.
 
 **Note:
@@ -860,15 +856,13 @@ Example of usage:
 Example of output:
 * Undo Successfully
 
-### 6.4 Week Command  `week`
-{:.no_toc}
+### 6.4 Week Command `week` {:.no_toc}
 A window will pop out and the task number on the each day of the upcoming week will be listed.
 
 Example of usage:
 * `week`
 
-### 6.5 Directory Command  `dir`
-{:.no_toc}
+### 6.5 Directory Command `dir` {:.no_toc}
 A window will pop out and all module with related tasks will be listed.
 
 Example of usage:
