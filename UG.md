@@ -748,12 +748,6 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
-
-<span class="anim-fade-in">
-<div class="Box">
-Test
-</div>
-</span>
 ## v3.0 Graphical User Interface (Wang Qin)
 
 ### Change Directory Command `cd`
