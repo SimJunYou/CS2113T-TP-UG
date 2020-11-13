@@ -790,63 +790,65 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
-v3.0 Graphical User Interface (Wang Qin)
+<details class="details-overlay">
+  <summary class="btn">v3.0 Graphical User Interface (Wang Qin)</summary>
+  <div class="border p-3 mt-2">
+    ### Change Directory Command `cd`
+    Traverse to the target directory.
 
-  ### Change Directory Command `cd`
-  Traverse to the target directory.
+    **Note:**
+    All the modules and tasks are treated as directories, like the folders in the Window OS.
+    To create a task related to Module CS2101, the user need to go into the Directory CS2101, to create the task.
+    Format: `cd <module code>`
+            `cd ..`
 
-  **Note:**
-  All the modules and tasks are treated as directories, like the folders in the Window OS.
-  To create a task related to Module CS2101, the user need to go into the Directory CS2101, to create the task.
-  Format: `cd <module code>`
-          `cd ..`
+    Example of usage:
+    * `cd CS2101`
+    * `cd ..`
 
-  Example of usage:
-  * `cd CS2101`
-  * `cd ..`
+    Example of output:
+    * `CS2101`
+    * `Root`
 
-  Example of output:
-  * `CS2101`
-  * `Root`
+    ### 6.2 General Add `add`
+    The generic way to add a module or a task to the system.
 
-  ### 6.2 General Add `add`
-  The generic way to add a module or a task to the system.
+    **Note:**
+    There are two types of add commands in the system: add a module and add a task.
+    The general add command combines and simplifies the above two command.
+    The ra.VI system could parse the general add command to different add commands according to the user current directory level.
+    Format: `add <module code or task description>`
+    Example of usage:
+    * `add CS2101`
+    * `add read a book`
 
-  **Note:**
-  There are two types of add commands in the system: add a module and add a task.
-  The general add command combines and simplifies the above two command.
-  The ra.VI system could parse the general add command to different add commands according to the user current directory level.
-  Format: `add <module code or task description>`
-  Example of usage:
-  * `add CS2101`
-  * `add read a book`
+    Example of output:
+    * Module has been added
+    * Task has been added
 
-  Example of output:
-  * Module has been added
-  * Task has been added
+    ### 6.3 Undo `undo`
+    Recover the data from the previous "Data-changed" operations.
 
-  ### 6.3 Undo `undo`
-  Recover the data from the previous "Data-changed" operations.
+    **Note:
+    "Data-changed" operations refer to Add, Edit, Delete operations only.
 
-  **Note:
-  "Data-changed" operations refer to Add, Edit, Delete operations only.
+    Example of usage:
+    1. `add -m CS2113T`
+    2. `undo`
 
-  Example of usage:
-  1. `add -m CS2113T`
-  2. `undo`
+    Example of output:
+    * Undo Successfully
 
-  Example of output:
-  * Undo Successfully
+    ### 6.4 Week Command  `week`
+    A window will pop out and the task number on the each day of the upcoming week will be listed.
 
-  ### 6.4 Week Command  `week`
-  A window will pop out and the task number on the each day of the upcoming week will be listed.
+    Example of usage:
+    * `week`
 
-  Example of usage:
-  * `week`
+    ### 6.5 Directory Command  `dir`
+    A window will pop out and all module with related tasks will be listed.
 
-  ### 6.5 Directory Command  `dir`
-  A window will pop out and all module with related tasks will be listed.
-
-  Example of usage:
-  * `dir`</div>
+    Example of usage:
+    * `dir`
+  </div>
 </details>
