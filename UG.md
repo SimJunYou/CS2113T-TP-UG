@@ -1,5 +1,3 @@
-{::options parse_block_html="true" /}
-
 # ra.VI User Guide
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
