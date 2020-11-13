@@ -1,3 +1,4 @@
+{::options parse_block_html="true" /}
 # ra.VI User Guide
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
@@ -615,7 +616,7 @@ Confused by the `-` symbol? If you want to skip using certain criteria, you can 
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png){:height="75%" width="75%"}
+![Timetable before filter](images/timetablefilter/1.png){:height="50%" width="50%"}
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
@@ -645,7 +646,7 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 ```
 
 |Example Commands|Expected Output|
-|--------------|--------------|
+|--------------|--------------:|
 |`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="75%" width="75%"}|
 
 ---
@@ -807,9 +808,3 @@ ra.VI saves all data and says goodbye to you before shutting down!
   Example of usage:
   * `dir`</div>
 </details>
-
-<style>
-table {
-    width:100%;
-}
-</style>
