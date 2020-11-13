@@ -611,6 +611,8 @@ ra.VI will display a message saying that your lesson has been deleted.
 
 ```tip
 Confused by the `-` symbol? If you want to skip using certain criteria, you can use a dash (`-`) in the place of that field! For example, if you only want to filter all lessons on Monday, you could do `timetable -filter - MONDAY - - -`, only filling in the `day` field and using `-` to ignore the other fields. **Any combination of fields is possible!**
+
+Need help with the `<module> <day> <start_time> <end_time> <lesson_type>`? Refer to the [Keywords](#keywords) section to find out more!
 ```
 
 **For some context,** here is the timetable without any filtering:
@@ -663,10 +665,10 @@ To undo an action:
 2. Then, simply press the Enter key to execute it.
 
 **Outcome:**
-ra.VI will display the message saying that your last action has been undone!
+ra.VI will undo the command and display a success message with the details of the undone command!
 
 ```tip
-Refer to the [Undo](#undo) in the [Keywords](#keywords) section above for the commands that can be undone.
+Refer to the [Undo](#undo) in the [Keywords](#keywords) section above for the list of commands that can be undone.
 ```
 
 |Example Commands|Context|Expected Output|
@@ -708,7 +710,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 **A**: Zip the folder where you have installed ra.VI on and transfer the zip file to the other computer. Unzip the folder on the new computer, and you are good to go!
 
 **Q**: Can I edit the files created by ra.VI?\
-**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the JSON format can try their hand at manually editing the save files. (However, we <span style="color:red">**do not recommend this**</span> and we will <span style="color:red">**not be liable for any damages done**</span>. Consider yourself warned.)
+**A**: It is not advised to edit the files created by ra.VI with any other software. However, any advanced user with knowledge of the [JSON](https://en.wikipedia.org/wiki/JSON) format can try their hand at manually editing the save files. (However, we <span style="color:red">**do not recommend this**</span> and we will <span style="color:red">**not be liable for any damages done**</span>. Consider yourself warned.)
 
 **Q**: Can I force close ra.VI?\
 **A**: It is not advised to force close ra.VI. If you decide to do so, the changes made during that current session may get corrupted. To close ra.VI, please enter `bye`.
@@ -744,10 +746,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
-
-<details class="details-overlay">
-  <summary class="btn">v3.0 Graphical User Interface (Wang Qin)</summary>
-  <div class="border p-3 mt-2">
+v3.0 Graphical User Interface (Wang Qin)
 
   ### Change Directory Command `cd`
   Traverse to the target directory.
@@ -805,5 +804,4 @@ ra.VI saves all data and says goodbye to you before shutting down!
   A window will pop out and all module with related tasks will be listed.
 
   Example of usage:
-  * `dir`</div>
-</details>
+  * `dir`
