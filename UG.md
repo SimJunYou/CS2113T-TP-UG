@@ -789,6 +789,8 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
+[:poop:](https://github.com/wangqinNick)
+
 v3.0 Graphical User Interface (Wang Qin)
 
   ### Change Directory Command `cd`
