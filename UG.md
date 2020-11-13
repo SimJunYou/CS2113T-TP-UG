@@ -45,6 +45,8 @@ This box shows you useful information that you will need to know.
 This box tells you about things you need to be alert about. If you're not careful, you might end up with an error!
 ```
 
+---
+
 ### Keywords
 
 #### Command-Line Interface
@@ -168,11 +170,11 @@ New to using ra.VI? Here's how to get ra.VI up and functional in a few simple st
 3. Copy the file to the folder you want to use as the home folder for `ra.VI`.\
 ![Jar file in folder](images/quickstart/1.png){:height="50%" width="50%"}
 4. Use your terminal of choice (like Command Prompt or Powershell on Windows, or Terminal on macOS) in the folder from step 3 and enter `java -jar ravi.jar`.\
-![Console with start jar command](images/quickstart/2.png){:height="50%" width="50%"}
+![Console with start jar command](images/quickstart/2.png)
 5. ra.VI will be launched, and you will be greeted with the welcome screen!\
-![Welcome screen](images/quickstart/3.png){:height="50%" width="50%"}
+![Welcome screen](images/quickstart/3.png)
 6. Enter the current NUS week number as prompted. You will then see the prompt for your command.\
-![Command Prompt](images/quickstart/4.png){:height="50%" width="50%"}
+![Command Prompt](images/quickstart/4.png)
 7. Type the command in the command prompt and press the Enter key to execute it.
   1. For example, typing `help` and pressing the Enter key will show you the help message, with a list of all of ra.VI’s commands.
 8. Refer to the Features below for details of each command, or refer to the command summary for a quick look at all possible commands.
@@ -316,7 +318,7 @@ You can find the index of the tasks by using `list -t`.
 |`edit -t 1 Individual Project`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/1.png)|
 |`edit -t 1 Individual Project -by 30-12-2020 1800`|You have a task "Team Project" at index 1 in the list|![Edit Task](images/edittask/2.png)|
 
-#### Viewing task summary (Amalina)
+#### Viewing task summary
 If you have too many tasks to keep track of, you can use this command to sort your commands into 3 categories:
 1. Incomplete tasks with deadlines. These tasks will be sorted with the most pressing deadline on top.
 2. Incomplete tasks without deadlines.
@@ -613,14 +615,14 @@ Confused by the `-` symbol? If you want to skip using certain criteria, you can 
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png){:height="50%" width="50%"}
+![Timetable before filter](images/timetablefilter/1.png)
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png){:height="50%" width="50%"}|
-|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png){:height="50%" width="50%"}|
-|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png){:height="50%" width="50%"}|
-|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png){:height="50%" width="50%"}|
+|`timetable -filter - THURSDAY - - -`|All lessons on Thursday|![Timetable filter with existing lesson](images/timetablefilter/2.png){:height="75%" width="75%"}|
+|`timetable -filter - - 1200 - -`|All lessons after noon on any day|![Timetable filter with existing lesson](images/timetablefilter/3.png){:height="75%" width="75%"}|
+|`timetable -filter - - - - TUTORIAL`|All tutorials|![Timetable filter with all tutorials](images/timetablefilter/4.png){:height="75%" width="75%"}|
+|`timetable -filter CS2222 - 0800 1000 -`|No such module in the module list|![Timetable filter with error](images/timetablefilter/5.png){:height="75%" width="75%"}|
 
 #### Resetting your timetable (Sean)
 As you move to the next semester, you can still continue to use ra.VI. In fact, we would appreciate it if you could use ra.VI all the way until your graduation!
@@ -663,9 +665,13 @@ To undo an action:
 **Outcome:**
 ra.VI will display the message saying that your last action has been undone!
 
+```tip
+Refer to the [Undo](#undo) in the [Keywords](#keywords) section above for the commands that can be undone.
+```
+
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
-|`undo`|You have previously entered a command that amended the save files|![bye success](images/undo/1.png)|
+|`undo`|You have previously entered a command that can be undone|![bye success](images/undo/1.png)|
 |`undo`|You just launched ra.VI and did not change any data with commands|![bye failure](images/undo/2.png)|
 
 ---
