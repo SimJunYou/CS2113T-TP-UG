@@ -293,7 +293,7 @@ ra.VI will display the message saying that your task has been marked done! Your 
 Put "CS2113 homework" instead of "CS2113T homework"? You can edit the task descriptions and deadlines of existing tasks.
 
 **Format:**
-`edit -t <task_index> <task_description>`
+`edit -t <task_index> <task_description> [-by <deadline>]`
 
 **Example Usage:**
 Let’s say you have a task called "Team Project", with task index `1` (seen from your `list -t` command), and you want to change the description to "Individual Project" instead.
