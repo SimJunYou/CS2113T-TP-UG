@@ -54,6 +54,22 @@ This user guide aims to provide you with a clear documentation of ra.VI's featur
   </div>
 </div>
 
+<div class="CircleBadge CircleBadge--large">
+  <img src="<%= image_path "https://github.com/f0fz.png" %>"  alt="Jun You" class="CircleBadge-icon">
+</div>
+<div class="CircleBadge CircleBadge--large">
+  <img src="<%= image_path "https://github.com/aseanseen.png" %>"  alt="Sean Lim" class="CircleBadge-icon">
+</div>
+<div class="CircleBadge CircleBadge--large">
+  <img src="<%= image_path "https://github.com/amalinasani.png" %>"  alt="Amalina" class="CircleBadge-icon">
+</div>
+<div class="CircleBadge CircleBadge--large">
+  <img src="<%= image_path "https://github.com/tobiasceg.png" %>"  alt="Tobias" class="CircleBadge-icon">
+</div>
+<div class="CircleBadge CircleBadge--large">
+  <img src="<%= image_path "https://github.com/wangqinNick.png" %>"  alt="Wang Qin" class="CircleBadge-icon">
+</div>
+
 ---
 
 ### Product Overview
@@ -790,11 +806,14 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
+[:poop:](https://github.com/wangqinNick)
+
 <details class="details-overlay">
   <summary class="btn">v3.0 Graphical User Interface</summary>
   <div class="border p-3 mt-2">
     ### Change Directory Command `cd`
     Traverse to the target directory.
+
 
     **Note:**
     All the modules and tasks are treated as directories, like the folders in the Window OS.
