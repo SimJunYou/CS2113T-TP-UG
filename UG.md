@@ -791,7 +791,7 @@ ra.VI saves all data and says goodbye to you before shutting down!
 ---
 
 <details class="details-overlay">
-  <summary class="btn">v3.0 Graphical User Interface (Wang Qin)</summary>
+  <summary class="btn">v3.0 Graphical User Interface</summary>
   <div class="border p-3 mt-2">
     ### Change Directory Command `cd`
     Traverse to the target directory.
