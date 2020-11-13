@@ -1,3 +1,5 @@
+{::options parse_block_html="true" /}
+
 # ra.VI User Guide
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
@@ -747,7 +749,8 @@ ra.VI saves all data and says goodbye to you before shutting down!
 ---
 
 
-<div class="anim-fade-in">
+<span class="anim-fade-in">
+<div class="Box">
 ## v3.0 Graphical User Interface (Wang Qin)
 
 ### Change Directory Command `cd`
@@ -808,3 +811,4 @@ A window will pop out and all module with related tasks will be listed.
 Example of usage:
 * `dir`
 </div>
+</span>
