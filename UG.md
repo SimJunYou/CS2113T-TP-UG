@@ -1,4 +1,3 @@
-{::options parse_block_html="true" /}
 # ra.VI User Guide
 
 Welcome to the ra.VI User Guide! Choose a section from the table of contents on the left, or simply start reading from the introduction. This User Guide will give you step-by-step instructions to start your journey in planning out your NUS life.
@@ -10,65 +9,6 @@ Welcome to the ra.VI User Guide! Choose a section from the table of contents on 
 Repository Assistant with a Versatile Interface (ra.VI) is a desktop app for managing tasks, deadlines, and timetable, optimised for use via a Command Line Interface (CLI). If you can type fast, ra.VI can manage your tasks and timetable faster than traditional GUI apps.
 
 This user guide aims to provide you with a clear documentation of ra.VI's features. In addition, the quick start guide provides an start-to-end setup process to begin tracking your tasks, modules, and lessons with ra.VI!
-
-<div class="AvatarStack AvatarStack--three-plus AvatarStack--right">
-  <div
-    class="AvatarStack-body tooltipped tooltipped-sw tooltipped-align-right-1"
-    aria-label="octocat, octocat, and octocat"
-  >
-    <img
-      class="avatar"
-      height="20"
-      alt="@f0fz"
-      src="https://github.com/f0fz.png"
-      width="20"
-    />
-    <img
-      class="avatar"
-      height="20"
-      alt="@aseanseen"
-      src="https://github.com/aseanseen.png"
-      width="20"
-    />
-    <img
-      class="avatar"
-      height="20"
-      alt="@amalinasani"
-      src="https://github.com/amalinasani.png"
-      width="20"
-    />
-    <img
-      class="avatar"
-      height="20"
-      alt="@tobiasceg"
-      src="https://github.com/tobiasceg.png"
-      width="20"
-    />
-    <img
-      class="avatar"
-      height="20"
-      alt="@wangqinNick"
-      src="https://github.com/wangqinNick.png"
-      width="20"
-    />
-  </div>
-</div>
-
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/f0fz.png" %>"  alt="Jun You" class="CircleBadge-icon">
-</div>
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/aseanseen.png" %>"  alt="Sean Lim" class="CircleBadge-icon">
-</div>
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/amalinasani.png" %>"  alt="Amalina" class="CircleBadge-icon">
-</div>
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/tobiasceg.png" %>"  alt="Tobias" class="CircleBadge-icon">
-</div>
-<div class="CircleBadge CircleBadge--large">
-  <img src="<%= image_path "https://github.com/wangqinNick.png" %>"  alt="Wang Qin" class="CircleBadge-icon">
-</div>
 
 ---
 
@@ -677,7 +617,7 @@ Need help with the `<module> <day> <start_time> <end_time> <lesson_type>`? Refer
 
 **For some context,** here is the timetable without any filtering:
 
-![Timetable before filter](images/timetablefilter/1.png){:height="50%" width="50%"}
+![Timetable before filter](images/timetablefilter/1.png){:height="75%" width="75%"}
 
 |Example Commands|Context|Expected Output|
 |--------------|----------|--------------|
@@ -707,7 +647,7 @@ Once you reset your timetable and exit ra.VI, there is no going back! You can on
 ```
 
 |Example Commands|Expected Output|
-|--------------|--------------:|
+|--------------|--------------|
 |`timetable -reset`|![Reset the timetable](images/timetablereset/1.JPG){:height="75%" width="75%"}|
 
 ---
@@ -806,7 +746,6 @@ ra.VI saves all data and says goodbye to you before shutting down!
 
 ---
 
-[:poop:](https://github.com/wangqinNick)
 
 <div class="anim-fade-in">
 ## v3.0 Graphical User Interface (Wang Qin)
